@@ -1,0 +1,58 @@
+19:51:54.712 > ESP-ROM:esp32s3-20210327
+19:51:54.712 > Build:Mar 27 2021
+19:51:54.712 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+19:51:54.712 > SPIWP:0xee
+19:51:54.712 > mode:DIO, clock div:1
+19:51:54.712 > load:0x3fce3808,len:0x44c
+19:51:54.712 > load:0x403c9700,len:0xbec
+19:51:54.712 > load:0x403cc700,len:0x2920
+19:51:54.712 > entry 0x403c98d8
+19:51:54.712 > [0;37m[   159][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)[0m
+19:51:54.712 > [0;37m[   160][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)[0m
+19:51:54.712 > [0;36m[   199][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 0 - WIFI_READY[0m
+19:51:54.712 > [0;37m[   231][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started[0m
+19:51:54.712 > [0;37m[   233][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:51:54.712 > [0;36m[   233][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 2 - STA_START[0m
+19:51:54.712 > 
+19:51:54.712 > ....[0;37m[  2254][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1988 [0m
+19:51:54.712 > ...[0;37m[  3864][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 9e:53:22:14:33:0d, Reason: 15[0m
+19:51:54.869 > [0;36m[  3864][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:51:54.877 > [0;33m[  3873][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 15 - 4WAY_HANDSHAKE_TIMEOUT[0m
+19:51:54.886 > [0;36m[  3881][D][WiFiGeneric.cpp:975] _eventCallback(): WiFi Reconnect Running[0m
+19:51:54.894 > [0;37m[  3890][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:51:55.243 > .[0;37m[  4354][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:51:55.744 > ....[0;37m[  6309][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 00:00:00:00:00:00, Reason: 201[0m
+19:51:57.314 > [0;36m[  6310][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:51:57.323 > [0;33m[  6318][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 201 - NO_AP_FOUND[0m
+19:51:57.331 > [0;36m[  6326][D][WiFiGeneric.cpp:979] _eventCallback(): WiFi AutoReconnect Running[0m
+19:51:57.336 > [0;37m[  6335][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:51:57.448 > [0;37m[  6454][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:51:57.744 > ....[0;37m[  8554][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:51:59.744 > ....[0;37m[ 10654][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:01.744 > .....[0;37m[ 12754][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:04.244 > ....[0;37m[ 14854][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:06.244 > ...[0;37m[ 16432][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 9e:53:22:14:33:0d, Reason: 204[0m
+19:52:07.438 > [0;36m[ 16433][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:52:07.446 > [0;33m[ 16441][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 204 - HANDSHAKE_TIMEOUT[0m
+19:52:07.455 > [0;36m[ 16449][D][WiFiGeneric.cpp:979] _eventCallback(): WiFi AutoReconnect Running[0m
+19:52:07.463 > [0;37m[ 16458][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:52:07.744 > .[0;37m[ 16954][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:08.244 > ....[0;37m[ 18886][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 00:00:00:00:00:00, Reason: 201[0m
+19:52:09.891 > [0;36m[ 18887][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:52:09.900 > [0;33m[ 18895][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 201 - NO_AP_FOUND[0m
+19:52:09.908 > [0;36m[ 18903][D][WiFiGeneric.cpp:979] _eventCallback(): WiFi AutoReconnect Running[0m
+19:52:09.913 > [0;37m[ 18912][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:52:10.049 > [0;37m[ 19054][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:10.244 > ....[0;37m[ 21154][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:12.244 > .[0;37m[ 21332][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 00:00:00:00:00:00, Reason: 201[0m
+19:52:12.337 > [0;36m[ 21332][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:52:12.345 > [0;33m[ 21341][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 201 - NO_AP_FOUND[0m
+19:52:12.354 > [0;36m[ 21349][D][WiFiGeneric.cpp:979] _eventCallback(): WiFi AutoReconnect Running[0m
+19:52:12.359 > [0;37m[ 21357][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:52:12.744 > ....[0;37m[ 23254][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1432 [0m
+19:52:14.744 > .[0;37m[ 23777][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID, BSSID: 00:00:00:00:00:00, Reason: 201[0m
+19:52:14.783 > [0;36m[ 23777][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+19:52:14.791 > [0;33m[ 23786][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 201 - NO_AP_FOUND[0m
+19:52:14.800 > [0;36m[ 23794][D][WiFiGeneric.cpp:979] _eventCallback(): WiFi AutoReconnect Running[0m
+19:52:14.805 > [0;37m[ 23803][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:52:15.245 > .
