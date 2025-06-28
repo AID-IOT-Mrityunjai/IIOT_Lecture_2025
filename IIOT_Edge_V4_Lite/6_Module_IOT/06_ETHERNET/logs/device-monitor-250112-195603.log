@@ -1,0 +1,178 @@
+19:56:07.862 > ESP-ROM:esp32s3-20210327
+19:56:07.862 > Build:Mar 27 2021
+19:56:07.862 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+19:56:07.862 > SPIWP:0xee
+19:56:07.862 > mode:DIO, clock div:1
+19:56:07.862 > load:0x3fce3808,len:0x44c
+19:56:07.862 > load:0x403c9700,len:0xbec
+19:56:07.862 > load:0x403cc700,len:0x2920
+19:56:07.862 > entry 0x403c98d8
+19:56:07.862 > [0;37m[   180][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)[0m
+19:56:07.862 > [0;37m[   180][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)[0m
+19:56:07.862 > [0;36m[   221][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 0 - WIFI_READY[0m
+19:56:07.862 > [0;37m[   252][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started[0m
+19:56:07.862 > [0;37m[   254][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:56:07.862 > [0;36m[   254][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 2 - STA_START[0m
+19:56:07.862 > Connecting to AWS IOT[0;37m[   274][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279436[0m
+19:56:07.862 > [0;37m[   280][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:56:07.862 > [0;31m[   287][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a2385bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+19:56:07.862 > [0;31m[   297][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+19:56:07.862 > [0;37m[   305][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+19:56:07.862 > .[0;37m[   412][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 277964[0m
+19:56:07.862 > [0;37m[   413][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:56:07.862 > [0;37m[   413][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: AID25, BSSID: 9c:53:22:7d:ea:b2, Channel: 4, Auth: WPA2_PSK[0m
+19:56:07.862 > [0;36m[   430][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 4 - STA_CONNECTED[0m
+19:56:07.862 > [0;31m[   438][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a2385bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+19:56:07.862 > [0;31m[   449][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+19:56:07.862 > [0;37m[   453][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.0.221[0m
+19:56:07.862 > [0;36m[   464][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 7 - STA_GOT_IP[0m
+19:56:07.862 > [0;36m[   472][D][WiFiGeneric.cpp:996] _eventCallback(): STA IP: 192.168.0.221, MASK: 255.255.255.0, GW: 192.168.0.1[0m
+19:56:07.862 > [0;37m[   483][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+19:56:07.862 > .[0;37m[   591][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278232[0m
+19:56:07.862 > [0;37m[   591][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:56:07.862 > [0;37m[   651][V][ssl_client.cpp:151] start_ssl_client(): Seeding the random number generator[0m
+19:56:07.862 > [0;37m[   653][V][ssl_client.cpp:160] start_ssl_client(): Setting up the SSL/TLS structure...[0m
+19:56:07.862 > [0;37m[   658][V][ssl_client.cpp:183] start_ssl_client(): Loading CA cert[0m
+19:56:07.862 > [0;37m[   667][V][ssl_client.cpp:239] start_ssl_client(): Loading CRT cert[0m
+19:56:07.862 > [0;37m[   674][V][ssl_client.cpp:248] start_ssl_client(): Loading private key[0m
+19:56:07.862 > [0;37m[   682][V][ssl_client.cpp:259] start_ssl_client(): Setting hostname for TLS session...[0m
+19:56:07.862 > [0;37m[   687][V][ssl_client.cpp:274] start_ssl_client(): Performing the SSL/TLS handshake...[0m
+19:56:07.862 > [0;36m[  1639][D][ssl_client.cpp:287] start_ssl_client(): Protocol is TLSv1.2 Ciphersuite is TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256[0m
+19:56:07.862 > [0;36m[  1640][D][ssl_client.cpp:289] start_ssl_client(): Record expansion is 29[0m
+19:56:07.862 > [0;37m[  1648][V][ssl_client.cpp:295] start_ssl_client(): Verifying peer X.509 certificate...[0m
+19:56:07.862 > [0;37m[  1656][V][ssl_client.cpp:303] start_ssl_client(): Certificate verified.[0m
+19:56:07.862 > [0;37m[  1664][V][ssl_client.cpp:318] start_ssl_client(): Free internal heap after TLS 232360[0m
+19:56:07.862 > [0;37m[  1673][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 25 bytes...[0m
+19:56:07.862 > [0;37m[  1851][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 22 bytes...[0m
+19:56:07.862 > AWS IoT Connected!
+19:56:07.862 > [0;37m[  1955][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 26 bytes...[0m
+19:56:07.862 > [0;37m[  1957][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 33 bytes...[0m
+19:56:15.591 > [0;37m[ 11957][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:56:25.593 > [0;37m[ 21958][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:56:35.593 > [0;37m[ 31959][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:56:45.595 > [0;37m[ 41960][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:56:55.597 > [0;37m[ 51961][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:05.598 > [0;37m[ 61962][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:15.599 > [0;37m[ 71963][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:25.601 > [0;37m[ 81964][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:35.601 > [0;37m[ 91965][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:45.603 > [0;37m[101966][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:57:55.604 > [0;37m[111967][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:05.606 > [0;37m[121968][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:15.608 > [0;37m[131969][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:25.608 > [0;37m[141970][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:35.610 > [0;37m[151971][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:45.611 > [0;37m[161972][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:58:55.613 > [0;37m[171973][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:05.614 > [0;37m[181974][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:15.616 > [0;37m[191975][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:25.617 > [0;37m[201976][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:35.618 > [0;37m[211977][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:45.619 > [0;37m[221978][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:59:55.621 > [0;37m[231979][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:05.622 > [0;37m[241980][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:15.624 > [0;37m[251981][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:25.624 > [0;37m[261982][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:35.626 > [0;37m[271983][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:45.628 > [0;37m[281984][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:00:55.629 > [0;37m[291985][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:05.630 > [0;37m[301986][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:15.632 > [0;37m[311987][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:25.633 > [0;37m[321988][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:35.634 > [0;37m[331989][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:45.635 > [0;37m[341990][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:01:55.637 > [0;37m[351991][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:05.639 > [0;37m[361992][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:15.639 > [0;37m[371993][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:25.641 > [0;37m[381994][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:35.642 > [0;37m[391995][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:45.644 > [0;37m[401996][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:02:55.645 > [0;37m[411997][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:05.646 > [0;37m[421998][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:15.648 > [0;37m[431999][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:25.649 > [0;37m[442000][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:35.650 > [0;37m[452001][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:45.652 > [0;37m[462002][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:03:55.653 > [0;37m[472003][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:05.654 > [0;37m[482004][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:15.655 > [0;37m[492005][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:25.657 > [0;37m[502006][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:35.657 > [0;37m[512007][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:45.659 > [0;37m[522008][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:04:55.661 > [0;37m[532009][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:05.663 > [0;37m[542010][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:15.664 > [0;37m[552011][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:25.666 > [0;37m[562012][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:35.666 > [0;37m[572013][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:45.667 > [0;37m[582014][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:05:55.669 > [0;37m[592015][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:05.671 > [0;37m[602016][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:15.672 > [0;37m[612017][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:25.673 > [0;37m[622018][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:35.675 > [0;37m[632019][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:45.676 > [0;37m[642020][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:06:55.677 > [0;37m[652021][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:05.678 > [0;37m[662022][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:15.680 > [0;37m[672023][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:25.682 > [0;37m[682024][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:35.682 > [0;37m[692025][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:45.685 > [0;37m[702027][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:07:55.687 > [0;37m[712028][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:05.688 > [0;37m[722029][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:15.689 > [0;37m[732030][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:25.690 > [0;37m[742031][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:35.691 > [0;37m[752032][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:45.693 > [0;37m[762033][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:08:55.694 > [0;37m[772034][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:05.695 > [0;37m[782035][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:15.697 > [0;37m[792036][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:25.697 > [0;37m[802037][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:35.700 > [0;37m[812038][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:45.702 > [0;37m[822040][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:09:55.704 > [0;37m[832041][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:05.705 > [0;37m[842042][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:15.706 > [0;37m[852043][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:25.708 > [0;37m[862044][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:35.709 > [0;37m[872045][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:42.571 > [0;37m[878907][V][03_AWS_IOT_CORE_Example.ino:125] messageHandler(): incoming: [0m
+20:10:42.578 > topics/test2025 - {
+20:10:42.580 >   "message": "Hello from AWS IoT console"
+20:10:42.583 > }
+20:10:45.710 > [0;37m[882046][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:10:55.711 > [0;37m[892047][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:05.713 > [0;37m[902048][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:15.713 > [0;37m[912049][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:25.716 > [0;37m[922050][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:35.716 > [0;37m[932051][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:45.718 > [0;37m[942052][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:11:55.719 > [0;37m[952053][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:05.721 > [0;37m[962054][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:15.722 > [0;37m[972055][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:25.723 > [0;37m[982056][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:35.725 > [0;37m[992057][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:45.726 > [0;37m[1002058][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:12:55.727 > [0;37m[1012059][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:05.729 > [0;37m[1022060][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:15.730 > [0;37m[1032061][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:25.731 > [0;37m[1042062][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:35.733 > [0;37m[1052063][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:45.734 > [0;37m[1062064][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:13:55.735 > [0;37m[1072065][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:05.736 > [0;37m[1082066][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:15.738 > [0;37m[1092067][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:25.740 > [0;37m[1102068][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:35.741 > [0;37m[1112069][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:45.743 > [0;37m[1122071][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:14:55.745 > [0;37m[1132072][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:05.746 > [0;37m[1142073][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:15.748 > [0;37m[1152074][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:25.749 > [0;37m[1162075][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:35.751 > [0;37m[1172076][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:45.751 > [0;37m[1182077][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:15:55.753 > [0;37m[1192078][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:05.754 > [0;37m[1202079][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:15.756 > [0;37m[1212081][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:25.758 > [0;37m[1222082][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:35.760 > [0;37m[1232083][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:45.760 > [0;37m[1242084][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+20:16:55.762 > [0;37m[1252085][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
