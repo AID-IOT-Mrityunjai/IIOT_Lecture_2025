@@ -1,0 +1,1558 @@
+21:04:23.837 > ESP-ROM:esp32s3-20210327
+21:04:23.842 > Build:Mar 27 2021
+21:04:23.842 > rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+21:04:23.849 > SPIWP:0xee
+21:04:23.849 > mode:DIO, clock div:1
+21:04:23.851 > load:0x3fce3808,len:0x4bc
+21:04:23.853 > load:0x403c9700,len:0xbd8
+21:04:23.853 > load:0x403cc700,len:0x2a0c
+21:04:23.856 > entry 0x403c98d0
+21:04:24.066 > [0;37m[   229][V][esp32-hal-uart.c:330] uartBegin(): UART0 baud(115200) Mode(800001c) rxPin(44) txPin(43)[0m
+21:04:24.074 > [0;37m[   239][V][esp32-hal-uart.c:416] uartBegin(): UART0 not installed. Starting installation[0m
+21:04:24.082 > [0;37m[   248][V][esp32-hal-uart.c:467] uartBegin(): UART0 initialization done.[0m
+21:04:24.090 > [0;32m[   256][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=1 scl=2 freq=100000[0m
+21:04:24.100 > [0;33m[   265][W][Wire.cpp:301] begin(): Bus already started in Master Mode.[0m
+21:04:24.475 > [0;37m[   638][V][BLEDevice.cpp:76] createServer(): >> createServer[0m
+21:04:24.480 > [0;37m[   645][V][BLEServer.cpp:291] registerApp(): >> registerApp - 0[0m
+21:04:24.486 > [0;37m[   651][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: RegisterAppEvt (0x3fcaa7d8), owner: <N/A> for registerApp[0m
+21:04:24.498 > [0;37m[   663][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: RegisterAppEvt (0x3fcaa7d8), owner: registerApp[0m
+21:04:24.509 > [0;37m[   674][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: RegisterAppEvt (0x3fcaa7d8), owner: registerApp for rgi;36rA p60m][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_REG_EVT[0m
+21:04:24.531 > [0;37m[   697][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_REG_EVT[0m
+21:04:24.542 > [0;37m[   706][V][BLEUtils.cpp:1673] dumpGattServerEvent(): [status: ESP_GATT_OK, app_id: 0][0m
+21:04:24.550 > [0;37m[   714][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_REG_EVT[0m
+21:04:24.559 > [0;37m[   724][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: RegisterAppEvt (0x3fcaa7d8), owner: registerApp[0m
+21:04:24.571 > [0;37m[   735][V][BLEServer.cpp:281] handleGATTServerEvent([)0:; 3<7<m [h a n d7l3e5G]A[TVT]S[eFrrveeerRETvOeSn.tcp[p0:m77
+21:04:24.581 > ] wait(): << wait: Semaphore released: name: RegisterAppEvt (0x3fcaa7d8), owner: <N/A>[0m
+21:04:24.590 > [0;37m[   754][V][BLEServer.cpp:295] registerApp(): << registerApp[0m
+21:04:24.595 > [0;37m[   760][V][BLEDevice.cpp:83] createServer(): << createServer[0m
+21:04:24.601 > [0;37m[   767][V][BLEServer.cpp:67] createService(): >> createService - 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+21:04:24.612 > [0;37m[   777][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcaaa3c), owner: <N/A> for createService[0m
+21:04:24.624 > [0;37m[   788][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcaaa3c), owner: createService[0m
+21:04:24.634 > [0;37m[   799][V][BLEService.cpp:60] executeCreate(): >> executeCreate() - Creating service (esp_ble_gatts_create_service) service uuid: 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+21:04:24.650 > [0;37m[   815][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcaaca8), owner: <N/A> for executeCreate[0m
+21:04:24.660 > [0;37m[   826][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcaaca8), owner: executeCreate[0m
+21:04:24.671 > [0;37m[   837][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcaaca8), owner: executeCreate for execute[0;3te[  0m37][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CREATE_EVT[0m
+21:04:24.694 > [0;37m[   860][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_CREATE_EVT[0m
+21:04:24.706 > [0;37m[   869][V][BLEUtils.cpp:1599] dumpGattServerEvent(): [status: ESP_GATT_OK, service_handle: 40 0x28, service_id: [uuid: 91bad492-b950-4226-aa2b-4ede9fa42f59, inst_id: 0]][0m
+21:04:24.720 > [0;37m[   885][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CREATE_EVT[0m
+21:04:24.731 > [0;37m[   895][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcaaa3c), owner: createService[0m
+21:04:24.741 > [0;37m[   906][V][BLEService.cpp:194] setHandle(): >> setHandle - Handle=0x28, service UUID=91bad492-b950-4226-aa2b-4ede9fa42f59)[0m
+21:04:24.752 > [0;37m[   918][V][BLEService.cpp:200] setHandle(): << setHandle[0m
+21:04:24.759 > [0;37m[   924][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcaaca8), owner: executeCreate[0m
+21:04:24.770 > [0;37m[   934][V][BLEServer.cpp:281] handleG[A0T;T3S7emr[v e r E9v3e4n]t[(V)]:[ F<r<e ehRaTnOdSl.ecGpApT:T7S7e]r vweariEtv(e)n:t<0 w
+21:04:24.781 > it: Semaphore released: name: CreateEvt (0x3fcaaca8), owner: <N/A>[0m
+21:04:24.787 > [0;37m[   953][V][BLEService.cpp:76] executeCreate(): << executeCreate[0m
+21:04:24.795 > [0;37m[   959][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcaaa3c), owner: <N/A> for createService[0m
+21:04:24.807 > [0;37m[   971][V][FreeRTOS.cpp:77] wait(): << wait: Semaphore released: name: CreateEvt (0x3fcaaa3c), owner: <N/A>[0m
+21:04:24.818 > [0;37m[   982][V][BLEServer.cpp:83] createService(): << createService[0m
+21:04:24.823 > [0;37m[   989][V][BLEService.cpp:222] addCharacteristic(): >> addCharacteristic()[0m
+21:04:24.832 > [0;36m[   996][D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=cba1d466-344c-4be3-ab3f-189f80dd7518 to service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+21:04:24.849 > [0;37m[  1014][V][BLEService.cpp:237] addCharacteristic(): << addCharacteristic()[0m
+21:04:24.857 > [0;37m[  1022][V][BLECharacteristic.cpp:68] addDescriptor(): >> addDescriptor(): Adding UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff to UUID: cba1d466-344c-4be3-ab3f-189f80dd7518, handle : 0xffff Notify [0m
+21:04:24.877 > [0;37m[  1042][V][BLECharacteristic.cpp:70] addDescriptor(): << addDescriptor()[0m
+21:04:24.886 > [0;37m[  1049][V][BLEService.cpp:222] addCharacteristic(): >> addCharacteristic()[0m
+21:04:24.894 > [0;36m[  1057][D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=ca73b3ba-39f6-4ab3-91ae-186dc9577d99 to service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+21:04:24.910 > [0;37m[  1075][V][BLEService.cpp:237] addCharacteristic(): << addCharacteristic()[0m
+21:04:24.919 > [0;37m[  1082][V][BLECharacteristic.cpp:68] addDescriptor(): >> addDescriptor(): Adding UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff to UUID: ca73b3ba-39f6-4ab3-91ae-186dc9577d99, handle : 0xffff Notify [0m
+21:04:24.939 > [0;37m[  1102][V][BLECharacteristic.cpp:70] addDescriptor(): << addDescriptor()[0m
+21:04:24.944 > [0;37m[  1110][V][BLEService.cpp:134] start(): >> start(): Starting service (esp_ble_gatts_start_service): UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+21:04:24.961 > [0;37m[  1125][V][BLECharacteristic.cpp:79] executeCreate(): >> executeCreate()[0m
+21:04:24.967 > [0;36m[  1132][D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: ca73b3ba-39f6-4ab3-91ae-186dc9577d99, service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+21:04:24.989 > [0;37m[  1153][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcf1d98), owner: <N/A> for executeCreate[0m
+21:04:25.001 > [0;37m[  1164][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcf1d98), owner: executeCreate[0m
+21:04:25.008 > [0;37m[  1175][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcf1d98), owner: executeCreate for execte;rem[e 10m5][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.034 > [0;37m[  1198][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.042 > [0;37m[  1207][V][BLEUtils.cpp:1553] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 42 0x2a, service_handle: 40 0x28, char_uuid: ca73b3ba-39f6-4ab3-91ae-186dc9577d99][0m
+21:04:25.059 > [0;37m[  1224][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.068 > [0;37m[  1234][V][BLECharacteristic.cpp:604] setHandle(): >> setHandle: handle=0x2a, characteristic uuid=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:04:25.082 > [0;37m[  1247][V][BLECharacteristic.cpp:606] setHandle(): << setHandle[0m
+21:04:25.088 > [0;37m[  1254][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.099 > [0;37m[  1264][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcf1d98), owner: executeCreate[0m
+21:04:25.110 > [0;37m[  1275][V][BLECharacteristic.[c0p;p3:74m6[5 ]  1h2a7n5d]l[eVG]A[TFTrSeeerRvTeOrSE.vcepnpt:(7)7:]  <w<a ihta(n)d:l e<G<A Taie:vSeEapntr[ mleased: name: CreateEvt (0x3fcf1d98), owner: <N/A>[0m
+21:04:25.127 > [0;37m[  1293][V][BLECharacteristic.cpp:205] handleGATTServerE[v0e;n3t7(m)[:   >1>2 9h3a]n[dVl]e[GBALTETDSeesrcvreirpEtvoern.tc:ppSP7GATTe_AtD_reAR_(VT [0 
+21:04:25.142 > ecuteCreate(): UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff[0m
+21:04:25.149 > [0;37m[  1313][V][BLECharacteristic.cpp:465] handleGATTServer[E0v;e3n7tm([) :  1<3<1 3h]a[nVd]l[eFGrAeTeTRSTeOrSv.ecrpEpv:e1n8t9][tmk
+21:04:25.160 > (): Semaphore taking: name: CreateEvt (0x3fcab598), owner: <N/A> for executeCreate[0m
+21:04:25.169 > [0;37m[  1333][V][BLEServer.cpp:281] handleGATTServerEvent(): <<[ 0h;a3n7dml[e G A1T3T3S3e]r[vVe]r[EFvreenetRT[O0Sm.c
+21:04:25.180 > pp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcab598), owner: executeCreate[0m
+21:04:25.186 > [0;37m[  1352][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcab598), own[e0r;:3 6emx[e c u1t3e5C][at[ foDeeixe.cteCr02t g[tt
+21:04:25.200 > rverEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.210 > [0;37m[  1374][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.220 > [0;37m[  1384][V][BLEUtils.cpp:1541] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 43 0x2b, service_handle: 40 0x28, char_uuid: 00002902-0000-1000-8000-00805f9b34fb][0m
+21:04:25.236 > [0;37m[  1400][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.247 > [0;37m[  1411][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.259 > [0;37m[  1422][V][BLEDescriptor.cpp:220] setHandle(): >> setHandle(0x2b): Setting descriptor handle to be 0x2b[0m
+21:04:25.267 > [0;37m[  1433][V][BLEDescriptor.cpp:222] setHandle(): << setHandle()[0m
+21:04:25.276 > [0;37m[  1439][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcab598), owner: executeCreate[0m
+21:04:25.284 > [0;37m[  1450][V][BLECharacteristic.cpp:465] handleGATTServer[E0v;e3n7tm([) :  1<4<5 0h]a[nVd]l[eFGrAeTeTRSTeOrSv.ecrpEpv:e7n7t] wm
+21:04:25.298 > (): << wait: Semaphore released: name: CreateEvt (0x3fcab598), owner: <N/A>[0m
+21:04:25.303 > [0;37m[  1469][[0V;]3[7BmL[E D e1s4c6r9i]p[tVo]r[.BcLpEpC:h8a1r]a cetxeerciustteiCcr.ecaptpe:(2)0:5 ]< <h aenxdelceuGtAeTCTrSeearv[Evnt(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.323 > [0;37[m0[; 3 71m486][V][[BL E C1h4a8r6a]c[tVe]r[iBsLtEiCch.acrpapc:t1e1r6i]s teixce.ccuptpe:C4r6e5a]t eh(a)n:d l<e<G AeTxTeSceurveCrvene)0m
+21:04:25.334 >  handleGATTServerEvent[0m
+21:04:25.337 > [0;37m[[ 0 ;13570m1[] [ V1]5[0B1L]E[CVh]a[rBaLcEtSeerrivsetri.cc.pcpp:p2:8719]]  heaxnedcluetGeACTrTeSaetrev(e)r:E v>e>n te(x)e:cu< Crndte(GA[0S
+21:04:25.351 > verEvent[0m
+21:04:25.351 > [0;36m[  1515][D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: cba1d466-344c-4be3-ab3f-189f80dd7518, service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+21:04:25.372 > [0;37m[  1536][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcf1b94), owner: <N/A> for executeCreate[0m
+21:04:25.381 > [0;37m[  1547][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcf1b94), owner: executeCreate[0m
+21:04:25.393 > [0;37m[  1558][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcf1b94), owner: executeCreate for exeu0;C6mat [5m
+21:04:25.407 > D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.416 > [0;37m[  1581][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.426 > [0;37m[  1590][V][BLEUtils.cpp:1553] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 45 0x2d, service_handle: 40 0x28, char_uuid: cba1d466-344c-4be3-ab3f-189f80dd7518][0m
+21:04:25.440 > [0;37m[  1607][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.453 > [0;37m[  1617][V][BLECharacteristic.cpp:604] setHandle(): >> setHandle: handle=0x2d, characteristic uuid=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:04:25.467 > [0;37m[  1630][V][BLECharacteristic.cpp:606] setHandle(): << setHandle[0m
+21:04:25.472 > [0;37m[  1637][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.483 > [0;37m[  1648][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:25.491 > [0;37m[  1656][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+21:04:25.502 > [0;37m[  1667][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcf1b94), owner: executeCreate[0m
+21:04:25.514 > [0;37m[  1678][V][BLECharacteristic.cpp:465] handleGATTServerEvent():[ 0<;<3 7hma[n d l1e6G7A8T]T[SVe]r[vFerreEevReTnOtS.[c0pmp:77] wait(): << wait: Semaphore released: name: CreateEvt (0x3fcf1b94), owner: <N/A>[0m
+21:04:25.533 > [0;37m[  1697][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEven[t0;[307mm[
+21:04:25.541 >   1697][V][BLEDescriptor.cpp:57] executeCreate(): >> executeCreate(): UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff[0m
+21:04:25.553 > [0;37m[  1717][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcf1cc0), owner: <N/A> for executeCreate[0m
+21:04:25.564 > [0;37m[  1729][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcf1cc0), owner: executeCreate[0m
+21:04:25.576 > [0;37m[  1739][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcf1cc0), owner: executeCreate for exeu0e3re[ e[39
+21:04:25.587 > D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.598 > [0;37m[  1763][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.609 > [0;37m[  1773][V][BLEUtils.cpp:1541] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 46 0x2e, service_handle: 40 0x28, char_uuid: 00002902-0000-1000-8000-00805f9b34fb][0m
+21:04:25.625 > [0;37m[  1789][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.635 > [0;37m[  1800][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.646 > [0;37m[  1811][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:25.657 > [0;37m[  1820][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+21:04:25.668 > [0;37m[  1832][V][BLEDescriptor.cpp:220] setHandle(): >> setHandle(0x2e): Setting descriptor handle to be 0x2e[0m
+21:04:25.676 > [0;37m[  1842][V][BLEDescriptor.cpp:222] setHandle(): << setHandle()[0m
+21:04:25.685 > [0;37m[  1849][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcf1cc0), owner: executeCreate[0m
+21:04:25.693 > [0;37m[  1859][V][BLECharacteristic.cpp:465] handleGATTS[e0r;v3e7rmE[v e n1t8(5)9:] [<V<] [hFarnedelReTGOAST.TcSpepr:v7e7r]E vweai[0: << wait: Semaphore released: name: CreateEvt (0x3fcf1cc0), owner: <N/A>[0m
+21:04:25.713 > [0;37m[[0 ; 3178m7[8 ] [1V8]7[8B]L[EVD]e[sBcLrEiSpetrovre.rc.pcpp:p8:12]8 1e]x ehcauntdelCerGeAaTtTeS(e)r:v e<r<E veexnetc(u)t:eCr< tandlmG
+21:04:25.727 > TTServerEvent[0m
+21:04:25.727 > [0;37m[  1892][V][BLECharacteristic.cpp:116] executeCreate(): << executeCreate[0m
+21:04:25.736 > [0;37m[  1899][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: StartEvt (0x3fcaad70), owner: <N/A> for start[0m
+21:04:25.747 > [0;37m[  1910][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: StartEvt (0x3fcaad70), owner: start[0m
+21:04:25.755 > [0;37m[  1919][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: StartEvt (0x3fcaad70), owner: start for start[0m
+21:04:25.766 > [0;36m[  1920][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_START_EVT[0m
+21:04:25.777 > [0;37m[  1942][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_START_EVT[0m
+21:04:25.786 > [0;37m[  1951][V][BLEUtils.cpp:1686] dumpGattServerEvent(): [status: ESP_GATT_OK, service_handle: 0x28][0m
+21:04:25.797 > [0;37m[  1961][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_START_EVT[0m
+21:04:25.805 > [0;37m[  1971][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: StartEvt (0x3fcaad70), owner: start[0m
+21:04:25.817 > [0;37m[  1981][V][BLECharacteristic.cpp:[200;53]7 mh[a n d1l9e8G1A]T[TVS]e[rFvreereERvTeOnSt.(c)p:p :>7>7 ]h awnadilte(G)A:T T<SerwarEv St: pSPreAreSeSseR: nEVe:[StrtEvt (0x3fcaad70), owner: <N/A>[0m
+21:04:25.834 > [0;37m[  1999][V][B[L0E;S3e7rmv[i c e1.9c9p9p]:[1V5]9[]B LsEtCahratr(a)c:t e<r<i ssttiacr.tc(p)p:[406m5] 
+21:04:25.845 > handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:25.847 > [0;37m[  2013][V][BLECharacteristic.cpp:205[]0 ;h3a2nmd[l e G2A0T1T3S]e[rIv]e[rBELvEeDnetv(i)c:e .>c>p ph:a5n7d7l]e GgAeTtTASdeverersieg(:: SP_atTT _SveRTisVn[[0
+21:04:25.864 > [0;36m[[ 0 ;23072m8[] [ D2]0[2B8L]E[DVe]v[iBcLeE.Cchpapr:a5c7t9e]r igsettiAcd.vceprpt:i4s6i5n]g (h)a:n dgleetG AaTdTvSeerrtviesrEvngt():
+21:04:25.876 > < handleGATTServerEvent[0m
+21:04:25.878 > [0;37m[  2042][V][BLEServer.cpp:281] handleGATTServe[r0E;v3e6nmt[( ) :2 0<4<2 ]h[aDn]d[lBeLGEADTeTvSiecrev.ecrpEpv:e5n7t9][ 0gme
+21:04:25.889 > Advertising(): get advertising[0m
+21:04:25.891 > [0;37m[  2057][V][BLEAdvertising.cpp:187] start(): >> start: customAdvData: 0, customScanResponseData: 0[0m
+21:04:25.904 > [0;36m[  2067][D][BLEAdvertising.cpp:199] start(): - advertising service: 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+21:04:25.912 > [0;37m[  2077][V][BLEAdvertising.cpp:252] start(): << start[0m
+21:04:25.918 > [0;37m[  2081][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT[0m
+21:04:25.928 > Waiting a client connection to notify...
+21:04:25.931 > [0;37m[  2094][V][BLEUtils.cpp:1056] dumpGapEvent(): [status: 0][0m
+21:04:25.940 > [0;36m[  2103][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:04:25.945 > [0;36m[  2110][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 0][0m
+21:04:25.954 > [0;37m[  2119][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT[0m
+21:04:25.966 > [0;37m[  2129][V][BLEUtils.cpp:1206] dumpGapEvent(): [status: 0][0m
+21:04:25.971 > [0;36m[  2136][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:04:25.976 > [0;36m[  2143][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 1][0m
+21:04:25.985 > [0;37m[  2151][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_ADV_START_COMPLETE_EVT[0m
+21:04:25.996 > [0;37m[  2161][V][BLEUtils.cpp:1074] dumpGapEvent(): [status: 0][0m
+21:04:26.002 > [0;36m[  2167][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:04:26.009 > [0;36m[  2174][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 6][0m
+21:04:26.026 > [0;36m[  2189][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONNECT_EVT[0m
+21:04:26.038 > [0;37m[  2201][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_CONNECT_EVT[0m
+21:04:26.046 > [0;37m[  2210][V][BLEUtils.cpp:1590] dumpGattServerEvent(): [conn_id: 0, remote_bda: 78:38:da:f9:07:ec][0m
+21:04:26.054 > [0;37m[  2220][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+21:04:26.066 > [0;36m[  2230][D][BLEServer.cpp:366] onConnect(): BLEServerCallbacks[0m
+21:04:26.071 > [0;36m[  2237][D][BLEServer.cpp:367] onConnect(): BLEServerCallbacks[0m
+21:04:26.080 > [0;36m[  2244][D][BLEServer.cpp:368] onConnect(): BLEServerCallbacks[0m
+21:04:26.085 > [0;37m[  2250][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+21:04:26.096 > [0;37m[  2261][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:26.105 > [0;37m[  2270][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+21:04:26.116 > [0;37m[  2281][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:26.124 > [0;37m[  2290][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:27.312 > [0;37m[  3476][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:04:27.321 > [0;37m[  3476][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:04:27.330 > [0;37m[  3495][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:04:27.338 > [0;36m[  3503][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:04:27.344 > [0;36m[  3510][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:04:36.586 > [0;36m[ 12748][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_WRITE_EVT[0m
+21:04:36.597 > [0;37m[ 12760][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:36.605 > [0;37m[ 12769][V][BLEUtils.cpp:1712] dumpGattServerEvent(): [conn_id: 0, trans_id: 5, bda: 78:38:da:f9:07:ec, handle: 0x2b, offset: 0, need_rsp: 0, is_prep: 0, len: 2][0m
+21:04:36.619 > [0;37m[ 12785][V][BLEUtils.cpp:1714] dumpGattServerEvent(): [Data: 0000][0m
+21:04:36.627 > [0;37m[ 12792][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:36.636 > [0;37m[ 12802][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:36.648 > [0;36m[ 12812][D][BLEDescriptor.cpp:240] setValue(): Set the value in the GATTS database using handle 0x2b[0m
+21:04:36.659 > [0;37m[ 12822][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:36.667 > [0;37m[ 12831][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:36.678 > [0;37m[ 12842][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:36.687 > [0;37m[ 12851][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:36.696 > [0;36m[ 12859][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:36.707 > [0;37m[ 12871][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:36.718 > [0;37m[ 12881][V][BLEUtils.cpp:1720] dumpGattServerEvent(): dumpGattServerEvent: *** NOT CODED ***[0m
+21:04:36.726 > [0;37m[ 12890][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:36.738 > [0;37m[ 12901][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:36.749 > [0;37m[ 12912][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:36.757 > [0;37m[ 12921][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:36.769 > [0;37m[ 12932][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:36.777 > [0;37m[ 12941][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.396 > [0;36m[ 13558][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_WRITE_EVT[0m
+21:04:37.407 > [0;37m[ 13570][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:37.416 > [0;37m[ 13579][V][BLEUtils.cpp:1712] dumpGattServerEvent(): [conn_id: 0, trans_id: 6, bda: 78:38:da:f9:07:ec, handle: 0x2b, offset: 0, need_rsp: 0, is_prep: 0, len: 2][0m
+21:04:37.429 > [0;37m[ 13595][V][BLEUtils.cpp:1714] dumpGattServerEvent(): [Data: 0100][0m
+21:04:37.438 > [0;37m[ 13602][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:37.446 > [0;37m[ 13612][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:37.458 > [0;36m[ 13622][D][BLEDescriptor.cpp:240] setValue(): Set the value in the GATTS database using handle 0x2b[0m
+21:04:37.469 > [0;37m[ 13632][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.478 > [0;37m[ 13641][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_WRITE_EVT[0m
+21:04:37.489 > [0;37m[ 13652][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.497 > [0;37m[ 13661][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.506 > [0;36m[ 13669][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:37.516 > [0;37m[ 13681][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:37.527 > [0;37m[ 13691][V][BLEUtils.cpp:1720] dumpGattServerEvent(): dumpGattServerEvent: *** NOT CODED ***[0m
+21:04:37.537 > [0;37m[ 13700][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:37.548 > [0;37m[ 13711][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:37.559 > [0;37m[ 13722][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.567 > [0;37m[ 13731][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_SET_ATTR_VAL_EVT[0m
+21:04:37.579 > [0;37m[ 13742][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:37.587 > [0;37m[ 13751][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:49.336 > [0;36m[ 25498][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_READ_EVT[0m
+21:04:49.346 > [0;37m[ 25510][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_READ_EVT[0m
+21:04:49.355 > [0;37m[ 25519][V][BLEUtils.cpp:1659] dumpGattServerEvent(): [conn_id: 0, trans_id: 13, bda: 78:38:da:f9:07:ec, handle: 0x2b, is_long: 0, need_rsp:0][0m
+21:04:49.370 > [0;37m[ 25533][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_READ_EVT[0m
+21:04:49.378 > [0;37m[ 25543][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_READ_EVT[0m
+21:04:49.389 > [0;37m[ 25553][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:49.398 > [0;37m[ 25562][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_READ_EVT[0m
+21:04:49.409 > [0;37m[ 25573][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:49.417 > [0;37m[ 25582][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:53.839 > [0;37m[ 30002][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:04:53.854 > [0;37m[ 30016][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:04:53.862 > [0;37m[ 30027][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:04:53.874 > [0;37m[ 30037][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:04:53.885 > [0;37m[ 30047][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:04:53.890 > [0;37m[ 30054][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:04:53.896 > [0;36m[ 30061][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:04:53.905 > [0;36m[ 30069][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:04:53.910 > [0;37m[ 30075][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:04:53.922 > [0;37m[ 30085][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:04:53.930 > [0;37m[ 30094][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:04:53.941 > [0;37m[ 30105][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:04:53.950 > [0;36m[ 30113][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:04:53.958 > [0;36m[ 30121][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:04:53.963 > Temperature Celsius: 21.61 ºC[0;37m[ 30127][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:04:53.980 > [0;37m[ 30144][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:04:53.991 > [0;37m[ 30155][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:04:54.000 > [0;37m[ 30165][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:04:54.010 > [0;37m[ 30175][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:04:54.016 > [0;37m[ 30181][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:04:54.025 > [0;36m[ 30189][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:04:54.033 > [0;36m[ 30196][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:04:54.038 > [0;37m[ 30203][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:04:54.047 > [0;37m[ 30212][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:04:54.059 > [0;37m[ 30222][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:04:54.067 > [0;36m[ 30232][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:04:54.076 > [0;36m[ 30233][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:04:54.087 > [0;36m[ 30251][D][BLE[C0h;a3r7amc[t e3r0i2s5t1i]c[.Vc]p[pB:L7E9U7t]i losn.Sctpapt:u1s5(3)0:]  <d<u mopnGSattattSuesrv[e0rmEv
+21:04:54.099 > ent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:04:54.104 > [0;37m[ 30267][V][BLECharacteristic[.0c;p3p7:m5[5 73]0 2n6o7t]i[fVy]([)B:L E<U<t inlost.icfpyp:[105m75
+21:04:54.112 > ] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:04:54.118 >  - Humidity: 21.[0;37m[ 30282]6[V][BLEServer.cpp:1144] handleGATTServ %erEvent(): >> han
+21:04:54.126 > dleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:04:54.128 > [0;37m[ 30294][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:04:54.140 > [0;37m[ 30304][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:04:54.152 > [0;37m[ 30314][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:54.160 > [0;37m[ 30323][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:04:54.171 > [0;37m[ 30333][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:04:54.180 > [0;37m[ 30343][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:04:54.188 > [0;37m[ 30352][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:24.122 > [0;37m[ 60284][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:05:24.137 > [0;37m[ 60298][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:05:24.145 > [0;37m[ 60309][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:05:24.156 > [0;37m[ 60319][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:05:24.168 > [0;37m[ 60329][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:05:24.173 > [0;37m[ 60336][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:05:24.179 > [0;36m[ 60343][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:05:24.187 > [0;36m[ 60351][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:05:24.193 > [0;37m[ 60357][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:05:24.205 > [0;37m[ 60367][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:05:24.212 > [0;37m[ 60376][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:05:24.223 > [0;37m[ 60387][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:05:24.233 > [0;36m[ 60395][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:05:24.240 > [0;36m[ 60403][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:05:24.246 > Temperature Celsius: 21.61 ºC[0;37m[ 60409][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:05:24.264 > [0;37m[ 60426][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:05:24.275 > [0;37m[ 60437][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:05:24.283 > [0;37m[ 60447][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:05:24.294 > [0;37m[ 60457][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:05:24.299 > [0;37m[ 60463][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:05:24.308 > [0;36m[ 60471][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:05:24.317 > [0;36m[ 60478][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:05:24.322 > [0;37m[ 60485][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:05:24.331 > [0;37m[ 60494][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:05:24.342 > [0;37m[ 60504][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:05:24.350 > [0;36m[ 60514][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:05:24.359 > [0;36m[ 60515][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:05:24.370 > [0;36m[ 60533][D][BLECharacteris[t0i;c3.7cmp[p :6709573]3 ]o[nVS]t[aBtLuEsU(t)i:l s<.<c popn:S1t5a3t0u]s d[u0mmpG
+21:05:24.381 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:24.387 > [0;37m[ 60549][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f y6(0)5:4 9<]<[ Vn]o[tBiLfEyUt[i0lms.cpp:1575] du
+21:05:24.395 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:05:24.400 >  - Humidity: 21.[0;37m[ 60564][V]6[BLEServer.cpp:144]1 handleGATTServerE %vent(): >> handle
+21:05:24.409 > GATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:24.411 > [0;37m[ 60576][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:24.423 > [0;37m[ 60586][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:05:24.435 > [0;37m[ 60596][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:24.442 > [0;37m[ 60605][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:24.453 > [0;37m[ 60615][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:05:24.462 > [0;37m[ 60625][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:24.471 > [0;37m[ 60634][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:54.406 > [0;37m[ 90566][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:05:54.420 > [0;37m[ 90580][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:05:54.429 > [0;37m[ 90591][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:05:54.439 > [0;37m[ 90601][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:05:54.451 > [0;37m[ 90611][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:05:54.456 > [0;37m[ 90618][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:05:54.462 > [0;36m[ 90625][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:05:54.471 > [0;36m[ 90633][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:05:54.477 > [0;37m[ 90639][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:05:54.488 > [0;37m[ 90649][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:05:54.496 > [0;37m[ 90658][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:05:54.508 > [0;37m[ 90669][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:05:54.516 > [0;36m[ 90677][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:05:54.524 > [0;36m[ 90685][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:05:54.530 > Temperature Celsius: 21.63 ºC[0;37m[ 90691][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:05:54.546 > [0;37m[ 90708][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:05:54.558 > [0;37m[ 90719][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:05:54.566 > [0;37m[ 90729][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:05:54.577 > [0;37m[ 90739][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:05:54.583 > [0;37m[ 90745][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:05:54.591 > [0;36m[ 90753][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:05:54.600 > [0;36m[ 90760][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:05:54.606 > [0;37m[ 90767][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:05:54.614 > [0;37m[ 90776][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:05:54.625 > [0;37m[ 90786][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:05:54.634 > [0;36m[ 90796][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:05:54.641 > [0;36m[ 90797][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:05:54.653 > [0;36m[ 90815][D[]0[;B3L7EmC[h a9r0a8c1t5e]r[iVs]t[iBcL.EcUptpi:l7s9.7c]p po:n1S5t3a0t]u sd(u)m:p G<a<t toSneSrtvaetruEsve[n0tm(
+21:05:54.664 > : GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:54.670 > [0;37m[ 90831][V][BLECharacteristic.cpp:557][ 0n;o3t7imf[y (9)0:8 3<1<] [nVo]t[iBfLyEU[t0imls
+21:05:54.678 > .cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:05:54.683 >  - Humidity: 21[0;37m[. 90846][V][BLEServer.c6pp:144] handleGATTS3erverEvent(): >> h %andleGATTServerEv
+21:05:54.692 > ent: ESP_GATTS_CONF_EVT[0m
+21:05:54.695 > [0;37m[ 90858][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:54.707 > [0;37m[ 90868][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:05:54.717 > [0;37m[ 90878][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:54.725 > [0;37m[ 90887][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:05:54.734 > [0;37m[ 90897][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:05:54.746 > [0;37m[ 90907][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:05:54.754 > [0;37m[ 90916][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:24.689 > [0;37m[120848][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:06:24.703 > [0;37m[120862][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:06:24.711 > [0;37m[120873][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:06:24.723 > [0;37m[120883][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:06:24.734 > [0;37m[120893][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:06:24.740 > [0;37m[120900][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:06:24.745 > [0;36m[120907][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:06:24.754 > [0;36m[120914][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:06:24.759 > [0;37m[120921][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:06:24.771 > [0;37m[120931][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:06:24.779 > [0;37m[120940][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:06:24.791 > [0;37m[120951][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:06:24.799 > [0;36m[120959][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:06:24.807 > [0;36m[120967][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:06:24.812 > Temperature Celsius: 21.62 ºC[0;37m[120973][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:06:24.829 > [0;37m[120990][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:06:24.841 > [0;37m[121001][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:06:24.849 > [0;37m[121011][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:06:24.859 > [0;37m[121021][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:06:24.865 > [0;37m[121027][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:06:24.874 > [0;36m[121035][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:06:24.884 > [0;36m[121042][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:06:24.888 > [0;37m[121049][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:06:24.897 > [0;37m[121058][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:06:24.908 > [0;37m[121068][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:06:24.917 > [0;36m[121078][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:06:24.925 > [0;36m[121079][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:06:24.935 > [0;36m[121097][D][BLECharacteristi[c0.;c3p7pm:[719271]0 9o7n]S[tVa]t[uBsL(E)U:t i<l<s .ocnpSpt:a1t5u3s0][ 0dmum
+21:06:24.947 > pGattServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:24.952 > [0;37m[121113][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f1y2(1)1:1 3<]<[ Vn]o[tBiLEUtils.cpp:f1y57[50]m du
+21:06:24.961 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:06:24.967 >  - Humidity: 21.[0;37m[1211268][V][BLEServer.cpp2:144] handleGATTSe %rverEvent(): >> h
+21:06:24.975 > andleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:24.978 > [0;37m[121140][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:24.990 > [0;37m[121150][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:06:25.001 > [0;37m[121160][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:25.009 > [0;37m[121169][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:25.021 > [0;37m[121179][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:06:25.029 > [0;37m[121189][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:25.037 > [0;37m[121198][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:54.972 > [0;37m[151130][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:06:54.987 > [0;37m[151144][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:06:54.994 > [0;37m[151155][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:06:55.006 > [0;37m[151165][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:06:55.017 > [0;37m[151175][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:06:55.022 > [0;37m[151182][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:06:55.029 > [0;36m[151189][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:06:55.037 > [0;36m[151196][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:06:55.043 > [0;37m[151203][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:06:55.054 > [0;37m[151213][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:06:55.062 > [0;37m[151222][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:06:55.073 > [0;37m[151233][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:06:55.082 > [0;36m[151241][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:06:55.090 > [0;36m[151249][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:06:55.096 > Temperature Celsius: 21.62 ºC[0;37m[151255][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:06:55.111 > [0;37m[151272][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:06:55.124 > [0;37m[151283][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:06:55.132 > [0;37m[151293][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:06:55.143 > [0;37m[151303][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:06:55.149 > [0;37m[151309][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:06:55.157 > [0;36m[151317][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:06:55.166 > [0;36m[151324][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:06:55.172 > [0;37m[151331][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:06:55.180 > [0;37m[151340][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:06:55.191 > [0;37m[151350][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:06:55.200 > [0;36m[151360][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:06:55.208 > [0;36m[151361][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:06:55.219 > [0;36m[151379][D][B[L0E;C3h7amr[a1c5t1e3r7i9s]t[iVc].[cBpLpE:U7t9i7l]s .ocnpSpt:a1t5u3s0(]) :d u<m<p GoantSttSaetruvser[E0vmen
+21:06:55.231 > (): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:55.236 > [0;37m[151395][V][BLECharacteristic.cpp:557] [n0o;t3i7fmy[(1)5:1 3<9<5 ]n[oVt]i[fByLE[U0tmils
+21:06:55.245 > .cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:06:55.250 >  - Humidity: 21[0;37m[1514.10][V][BLEServer.cpp:1464] handleGATTServer2Event(): >> handle %GATTServerEvent: 
+21:06:55.261 > ESP_GATTS_CONF_EVT[0m
+21:06:55.261 > [0;37m[151422][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:55.273 > [0;37m[151432][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:06:55.284 > [0;37m[151442][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:55.292 > [0;37m[151451][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:06:55.304 > [0;37m[151461][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:06:55.311 > [0;37m[151471][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:06:55.319 > [0;37m[151480][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:17.301 > [0;37m[173457][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:07:17.308 > [0;37m[173457][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:07:17.316 > [0;37m[173476][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:07:17.325 > [0;36m[173484][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:07:17.331 > [0;36m[173491][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:07:19.340 > [0;37m[175497][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:07:19.349 > [0;37m[175497][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:07:19.357 > [0;37m[175515][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:07:19.365 > [0;36m[175524][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:07:19.371 > [0;36m[175531][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:07:25.255 > [0;37m[181412][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:07:25.269 > [0;37m[181426][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:07:25.277 > [0;37m[181437][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:07:25.288 > [0;37m[181447][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:07:25.300 > [0;37m[181457][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:07:25.306 > [0;37m[181464][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:07:25.311 > [0;36m[181471][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:07:25.320 > [0;36m[181478][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:07:25.325 > [0;37m[181485][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:07:25.336 > [0;37m[181495][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:07:25.345 > [0;37m[181504][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:07:25.356 > [0;37m[181515][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:07:25.365 > [0;36m[181523][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:07:25.373 > [0;36m[181531][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:07:25.379 > Temperature Celsius: 21.61 ºC[0;37m[181537][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:07:25.395 > [0;37m[181554][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:07:25.406 > [0;37m[181565][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:07:25.415 > [0;37m[181575][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:07:25.426 > [0;37m[181585][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:07:25.432 > [0;37m[181591][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:07:25.440 > [0;36m[181599][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:07:25.448 > [0;36m[181606][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:07:25.455 > [0;37m[181613][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:07:25.463 > [0;37m[181622][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:07:25.474 > [0;37m[181632][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:07:25.482 > [0;36m[181642][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:07:25.491 > [0;36m[181643][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:07:25.502 > [0;36m[181661][D][BLECh[a0r;a3c7tme[r1i8s1t6i6c1.]c[pVp]:[7B9L7E]U toinlSst.actpups:(1)5:3 0<]<  dounmSptGaattutsSe[r0vmer
+21:07:25.514 > Event(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:25.519 > [0;37m[181677][V][BLECharacteristic.cpp:5[507;]3 7m[181677][Vn][oBtLiEfUyt(i)l:s .<c<p pn:o1t5i7f5y] [d0ummp
+21:07:25.528 > GattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:07:25.532 >  - Humidity: 21.[0;37m[181692][V][BL6EServer.cpp:144] ha1ndleGATTServerEven %t(): >> handleGAT
+21:07:25.541 > TServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:25.544 > [0;37m[181704][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:25.555 > [0;37m[181714][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:07:25.566 > [0;37m[181724][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:25.575 > [0;37m[181733][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:25.586 > [0;37m[181743][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:07:25.594 > [0;37m[181753][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:25.603 > [0;37m[181762][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:55.538 > [0;37m[211694][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:07:55.552 > [0;37m[211708][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:07:55.561 > [0;37m[211719][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:07:55.572 > [0;37m[211729][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:07:55.583 > [0;37m[211739][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:07:55.589 > [0;37m[211746][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:07:55.593 > [0;36m[211753][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:07:55.603 > [0;36m[211760][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:07:55.608 > [0;37m[211767][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:07:55.620 > [0;37m[211777][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:07:55.628 > [0;37m[211786][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:07:55.639 > [0;37m[211797][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:07:55.648 > [0;36m[211805][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:07:55.656 > [0;36m[211813][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:07:55.662 > Temperature Celsius: 21.61 ºC[0;37m[211819][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:07:55.679 > [0;37m[211836][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:07:55.690 > [0;37m[211847][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:07:55.698 > [0;37m[211857][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:07:55.710 > [0;37m[211867][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:07:55.715 > [0;37m[211873][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:07:55.723 > [0;36m[211881][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:07:55.732 > [0;36m[211888][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:07:55.737 > [0;37m[211895][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:07:55.745 > [0;37m[211904][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:07:55.757 > [0;37m[211914][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:07:55.766 > [0;36m[211924][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:07:55.774 > [0;36m[211925][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:07:55.786 > [0;36m[211943][D][BLECharacteri[s0t;i3c7.mc[p2p1:1799473]] [oVn]S[tBaLtEuUst(i)l:s .<c<p po:n1S5t3a0t]u sdu[m0pmGa
+21:07:55.796 > ttServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:55.802 > [0;37m[211959][V][BLECharacteristic.cpp:[0;37m[211595579]] [nVo]t[iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:07:55.811 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:07:55.816 >  - Humidity: 21.[0;37m[211974]6[V][BLEServer.cpp:1144] handleGATTServ %erEvent(): >> han
+21:07:55.824 > dleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:55.827 > [0;37m[211986][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:55.839 > [0;37m[211996][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:07:55.850 > [0;37m[212006][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:55.858 > [0;37m[212015][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:07:55.869 > [0;37m[212025][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:07:55.878 > [0;37m[212035][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:07:55.886 > [0;37m[212044][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:25.821 > [0;37m[241976][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:08:25.836 > [0;37m[241990][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:08:25.844 > [0;37m[242001][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:08:25.855 > [0;37m[242011][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:08:25.866 > [0;37m[242021][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:08:25.872 > [0;37m[242028][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:08:25.877 > [0;36m[242035][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:08:25.886 > [0;36m[242042][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:08:25.892 > [0;37m[242049][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:08:25.902 > [0;37m[242059][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:08:25.911 > [0;37m[242068][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:08:25.922 > [0;37m[242079][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:08:25.930 > [0;36m[242087][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:08:25.939 > [0;36m[242095][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:08:25.945 > Temperature Celsius: 21.60 ºC[0;37m[242101][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:08:25.961 > [0;37m[242118][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:08:25.973 > [0;37m[242129][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:08:25.981 > [0;37m[242139][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:08:25.992 > [0;37m[242149][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:08:25.998 > [0;37m[242155][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:08:26.007 > [0;36m[242163][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:08:26.015 > [0;36m[242170][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:08:26.020 > [0;37m[242177][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:08:26.029 > [0;37m[242186][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:08:26.040 > [0;37m[242196][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:08:26.048 > [0;36m[242206][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:08:26.057 > [0;36m[242207][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:08:26.068 > [0;36m[242225][D][B[L0E;C3h7amr[a2c4t2e2r2i5s]t[iVc].[cBpLpE:U7t9i7l]s .ocnpSpt:a1t5u3s0(]) :d u<m<p GoantSttSaetruvser[E0vment(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:26.085 > [0;37m[242241][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f2y4(2)2:4 1<]<[ Vn]o[tBiLfEyUt[i0lms.
+21:08:26.094 > cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:08:26.099 >  - Humidity: 21[0;37m[24.2256][V][BLEServer.cpp6:144] handleGATTSer0verEvent(): >> han %dleGATTServerEven
+21:08:26.111 > t: ESP_GATTS_CONF_EVT[0m
+21:08:26.111 > [0;37m[242268][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:26.122 > [0;37m[242278][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:08:26.133 > [0;37m[242288][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:26.141 > [0;37m[242297][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:26.153 > [0;37m[242307][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:08:26.161 > [0;37m[242317][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:26.169 > [0;37m[242326][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:56.104 > [0;37m[272258][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3537, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:08:56.118 > [0;37m[272272][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:08:56.127 > [0;37m[272283][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:08:56.138 > [0;37m[272293][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:08:56.150 > [0;37m[272303][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:08:56.155 > [0;37m[272310][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:08:56.160 > [0;36m[272317][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:08:56.169 > [0;36m[272324][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:08:56.175 > [0;37m[272331][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:08:56.186 > [0;37m[272341][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:08:56.194 > [0;37m[272350][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 37                                 21.57[0m
+21:08:56.206 > [0;37m[272361][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:08:56.214 > [0;36m[272369][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:08:56.222 > [0;36m[272377][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:08:56.228 > Temperature Celsius: 21.57 ºC[0;37m[272383][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3537, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:08:56.244 > [0;37m[272400][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:08:56.256 > [0;37m[272411][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:08:56.265 > [0;37m[272421][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:08:56.275 > [0;37m[272431][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:08:56.281 > [0;37m[272437][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:08:56.289 > [0;36m[272445][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:08:56.299 > [0;36m[272452][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:08:56.303 > [0;37m[272459][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:08:56.312 > [0;37m[272468][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:08:56.323 > [0;37m[272478][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 37                                 21.57[0m
+21:08:56.332 > [0;36m[272488][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:08:56.340 > [0;36m[272489][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:08:56.352 > [0;36m[272507][D][BLECharacteristic.[c0p;p3:77m9[72]7 2o5n0S7t]a[tVu]s[(B)L:E U<t<i losn.Sctpapt:u1s53[00]m d
+21:08:56.362 > umpGattServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:56.368 > [0;37m[272523][V][BLECharacteristic.cpp:55[70];37m[272523] [nVo]t[iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:08:56.377 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:08:56.382 >  - Humidity: 21.[0;357m[272538][V][BLESe7rver.cpp:144] hand %leGATTServerEvent
+21:08:56.391 > (): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:56.394 > [0;37m[272550][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:56.404 > [0;37m[272560][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:08:56.415 > [0;37m[272570][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:56.425 > [0;37m[272579][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:08:56.435 > [0;37m[272589][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:08:56.444 > [0;37m[272599][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:08:56.452 > [0;37m[272608][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:13.464 > [0;37m[289618][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:09:13.473 > [0;37m[289618][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:09:13.482 > [0;37m[289636][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:09:13.490 > [0;36m[289645][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:09:13.496 > [0;36m[289652][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:09:14.485 > [0;37m[290638][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:09:14.493 > [0;37m[290638][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:09:14.502 > [0;37m[290656][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:09:14.510 > [0;36m[290665][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:09:14.515 > [0;36m[290671][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:09:26.387 > [0;37m[302540][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3537, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:09:26.401 > [0;37m[302554][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:09:26.410 > [0;37m[302565][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:09:26.421 > [0;37m[302575][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:09:26.432 > [0;37m[302585][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:09:26.438 > [0;37m[302592][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:09:26.444 > [0;36m[302599][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:09:26.452 > [0;36m[302606][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:09:26.457 > [0;37m[302613][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:09:26.469 > [0;37m[302623][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:09:26.477 > [0;37m[302632][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 37                                 21.57[0m
+21:09:26.488 > [0;37m[302643][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:09:26.496 > [0;36m[302651][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:09:26.505 > [0;36m[302659][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:09:26.510 > Temperature Celsius: 21.57 ºC[0;37m[302665][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3537, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:09:26.527 > [0;37m[302682][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:09:26.539 > [0;37m[302693][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:09:26.547 > [0;37m[302703][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:09:26.559 > [0;37m[302713][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:09:26.564 > [0;37m[302719][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:09:26.572 > [0;36m[302727][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:09:26.581 > [0;36m[302734][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:09:26.587 > [0;37m[302740][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:09:26.595 > [0;37m[302750][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:09:26.606 > [0;37m[302760][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 37                                 21.57[0m
+21:09:26.615 > [0;36m[302770][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:09:26.623 > [0;36m[302771][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:09:26.634 > [0;36m[302789][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:09:26.643 > [0;37[m0[;33072m7[9360]2[7V9]6[]B[LVE]C[hBaLrEaUcttielrsi.sctpipc:.1c5p3p0:]5 5d7u]m pnGoattitfSye(r)v:e r<E<v ennott(i)f:y G[ATT
+21:09:26.654 > erverEvent: ESP_GATTS_CONF_EVT[0m
+21:09:26.657 >  - Humidity: 21.57[0;37m[302811][V] %[BLEUtils.cpp:157
+21:09:26.663 > 5] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:09:26.668 > [0;37m[302822][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:26.677 > [0;37m[302831][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:26.687 > [0;37m[302842][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:09:26.696 > [0;37m[302852][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:26.708 > [0;37m[302861][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:26.716 > [0;37m[302871][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:09:26.726 > [0;37m[302881][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:26.735 > [0;37m[302890][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:56.661 > [0;37m[332813][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:09:56.676 > [0;37m[332827][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:09:56.684 > [0;37m[332838][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:09:56.695 > [0;37m[332848][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:09:56.706 > [0;37m[332858][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:09:56.712 > [0;37m[332865][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:09:56.717 > [0;36m[332872][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:09:56.726 > [0;36m[332879][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:09:56.732 > [0;37m[332886][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:09:56.743 > [0;37m[332896][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:09:56.751 > [0;37m[332905][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:09:56.761 > [0;37m[332916][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:09:56.770 > [0;36m[332924][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:09:56.779 > [0;36m[332932][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:09:56.785 > Temperature Celsius: 21.59 ºC[0;37m[332938][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:09:56.802 > [0;37m[332955][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:09:56.813 > [0;37m[332966][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:09:56.822 > [0;37m[332976][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:09:56.833 > [0;37m[332986][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:09:56.839 > [0;37m[332992][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:09:56.847 > [0;36m[333000][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:09:56.856 > [0;36m[333007][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:09:56.861 > [0;37m[333014][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:09:56.869 > [0;37m[333023][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:09:56.881 > [0;37m[333033][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:09:56.889 > [0;36m[333043][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:09:56.897 > [0;36m[333044][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:09:56.909 > [0;36m[333062][D][B[L0E;C3h7amr[a3c3t3e0r6i2s]t[iVc].[cBpLpE:U7t9i7l]s .ocnpSpt:a1t5u3s0(]) :d u<m<p GoantSttSaetruvser[E0vmen
+21:09:56.920 > (): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:56.926 > [0;37m[333078][V][BLECharacteristic.cpp:55[70]; 3n7omt[i3f3y3(0)7:8 ]<[<V ]n[oBtLiEfUyti[l0sm.c
+21:09:56.934 > pp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:09:56.939 >  - Humidity: 21[0;37m[33.3093][V][BLEServer.cpp5:144] handleGATTSer9verEvent(): >> han %dleGATTServerEven
+21:09:56.951 > t: ESP_GATTS_CONF_EVT[0m
+21:09:56.951 > [0;37m[333105][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:56.962 > [0;37m[333115][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:09:56.974 > [0;37m[333125][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:56.982 > [0;37m[333134][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:09:56.992 > [0;37m[333144][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:09:57.001 > [0;37m[333154][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:09:57.009 > [0;37m[333163][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:26.945 > [0;37m[363095][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3538, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:10:26.958 > [0;37m[363109][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:10:26.967 > [0;37m[363120][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:10:26.978 > [0;37m[363130][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:10:26.989 > [0;37m[363140][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:10:26.995 > [0;37m[363147][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:10:27.001 > [0;36m[363154][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:10:27.009 > [0;36m[363162][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:10:27.015 > [0;37m[363168][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:10:27.026 > [0;37m[363178][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:10:27.034 > [0;37m[363187][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 38                                 21.58[0m
+21:10:27.046 > [0;37m[363198][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:10:27.054 > [0;36m[363206][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:10:27.062 > [0;36m[363214][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:10:27.068 > Temperature Celsius: 21.58 ºC[0;37m[363220][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3538, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:10:27.085 > [0;37m[363237][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:10:27.096 > [0;37m[363248][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:10:27.104 > [0;37m[363258][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:10:27.115 > [0;37m[363268][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:10:27.121 > [0;37m[363274][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:10:27.130 > [0;36m[363282][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:10:27.138 > [0;36m[363289][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:10:27.144 > [0;37m[363296][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:10:27.152 > [0;37m[363305][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:10:27.164 > [0;37m[363315][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 38                                 21.58[0m
+21:10:27.172 > [0;36m[363325][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:10:27.180 > [0;36m[363326][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:10:27.192 > [0;36m[363344][D][BL[E0C;h3a7rma[c3t6e3r3i4s4t]i[cV.]c[pBpL:E7U9t7i]l so.ncSptpa:t1u5s3(0)]:  d<u<m poGnaStttaSteursve[r0Emve
+21:10:27.203 > nt(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:27.208 > [0;37m[363360][V][BLECharacteristic.cpp:557][0;37m[36336 0n]o[tVi]f[yB(L)E:U t<i<l sn.octpipf:y15[705m] d
+21:10:27.217 > umpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:10:27.223 >  - Humidity: 21[0;.37m[363375][V][BLEServe5r.cpp:144] handleGA8TTServerEvent(): > %> handleGATTServe
+21:10:27.230 > rEvent: ESP_GATTS_CONF_EVT[0m
+21:10:27.233 > [0;37m[363387][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:27.245 > [0;37m[363397][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:10:27.256 > [0;37m[363407][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:27.265 > [0;37m[363416][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:27.276 > [0;37m[363426][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:10:27.284 > [0;37m[363436][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:27.293 > [0;37m[363445][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:55.619 > [0;37m[391768][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:10:55.627 > [0;37m[391768][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:10:55.635 > [0;37m[391787][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:10:55.644 > [0;36m[391795][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:10:55.649 > [0;36m[391802][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:10:57.228 > [0;37m[393377][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:10:57.241 > [0;37m[393391][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:10:57.250 > [0;37m[393402][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:10:57.261 > [0;37m[393412][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:10:57.273 > [0;37m[393422][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:10:57.278 > [0;37m[393429][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:10:57.284 > [0;36m[393436][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:10:57.292 > [0;36m[393443][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:10:57.298 > [0;37m[393450][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:10:57.309 > [0;37m[393460][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:10:57.317 > [0;37m[393469][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:10:57.328 > [0;37m[393480][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:10:57.337 > [0;36m[393488][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:10:57.345 > [0;36m[393496][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:10:57.351 > Temperature Celsius: 21.59 ºC[0;37m[393502][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:10:57.368 > [0;37m[393519][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:10:57.379 > [0;37m[393530][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:10:57.388 > [0;37m[393540][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:10:57.398 > [0;37m[393550][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:10:57.405 > [0;37m[393556][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:10:57.412 > [0;36m[393564][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:10:57.421 > [0;36m[393571][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:10:57.427 > [0;37m[393578][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:10:57.435 > [0;37m[393587][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:10:57.447 > [0;37m[393597][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:10:57.454 > [0;36m[393607][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:10:57.464 > [0;36m[393608][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:10:57.475 > [0;36m[393626][D][BLECharacte[r0i;s3t7imc[.3c9p3p6:2769]7[]V ]o[nBSLtEaUttuisl(s).:c p<p<: 1o5n3S0t]a tduusmp[G0amtt
+21:10:57.486 > ServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:57.492 > [0;37m[393642][V][BLECharacteri[s0t;i3c7.mc[p3p9:3565472]] [nVo]t[iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdum
+21:10:57.500 > pGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:10:57.505 >  - Humidity: 21.[0;37m[393657][5V][BLEServer.cpp:1494] handleGATTServe %rEvent(): >> hand
+21:10:57.514 > leGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:57.516 > [0;37m[393669][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:57.528 > [0;37m[393679][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:10:57.539 > [0;37m[393689][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:57.548 > [0;37m[393698][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:10:57.559 > [0;37m[393709][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:10:57.567 > [0;37m[393718][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:57.576 > [0;37m[393727][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:10:57.658 > [0;37m[393808][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:10:57.667 > [0;37m[393808][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:10:57.675 > [0;37m[393827][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:10:57.684 > [0;36m[393835][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:10:57.690 > [0;36m[393842][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:11:27.509 > [0;37m[423659][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:11:27.524 > [0;37m[423673][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:11:27.533 > [0;37m[423684][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:11:27.545 > [0;37m[423694][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:11:27.556 > [0;37m[423704][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:11:27.562 > [0;37m[423711][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:11:27.566 > [0;36m[423718][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:11:27.575 > [0;36m[423726][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:11:27.580 > [0;37m[423732][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:11:27.592 > [0;37m[423742][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:11:27.600 > [0;37m[423751][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:11:27.612 > [0;37m[423762][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:11:27.620 > [0;36m[423770][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:11:27.629 > [0;36m[423778][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:11:27.633 > Temperature Celsius: 21.60 ºC[0;37m[423784][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:11:27.651 > [0;37m[423801][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:11:27.662 > [0;37m[423812][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:11:27.671 > [0;37m[423822][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:11:27.682 > [0;37m[423832][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:11:27.687 > [0;37m[423838][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:11:27.696 > [0;36m[423846][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:11:27.706 > [0;36m[423853][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:11:27.709 > [0;37m[423860][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:11:27.718 > [0;37m[423869][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:11:27.729 > [0;37m[423879][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:11:27.738 > [0;36m[423889][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:11:27.747 > [0;36m[423890][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:11:27.758 > [0;36m[423908][D][[B0L;E3C7hma[r4a2c3t9e0r8i]s[tVi]c[.BcLpEpU:t7i9l7s]. copnpS:t1a5t3u0s]( )d:u m<p<G aotntSSteartvuesrE[v0emnt
+21:11:27.768 > ): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:27.775 > [0;37m[423924][V][BLECharacteristic.cpp:557][ 0n;o3t7imf[y4(2)3:9 2<4<] [nVo]t[iBfLyEU[t0imls
+21:11:27.782 > .cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:11:27.789 >  - Humidity: 21[0;3.7m[423939][V][BLEServer6.cpp:144] handleGA0TTServerEvent(): > %> handleGATTServe
+21:11:27.797 > rEvent: ESP_GATTS_CONF_EVT[0m
+21:11:27.800 > [0;37m[423951][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:27.811 > [0;37m[423961][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:11:27.822 > [0;37m[423971][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:11:27.830 > [0;37m[423980][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:27.839 > [0;37m[423990][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:11:27.850 > [0;37m[424000][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:11:27.859 > [0;37m[424009][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:11:57.794 > [0;37m[453941][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:11:57.807 > [0;37m[453955][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:11:57.816 > [0;37m[453966][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:11:57.828 > [0;37m[453976][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:11:57.838 > [0;37m[453986][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:11:57.844 > [0;37m[453993][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:11:57.850 > [0;36m[454000][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:11:57.858 > [0;36m[454008][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:11:57.864 > [0;37m[454014][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:11:57.874 > [0;37m[454024][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:11:57.883 > [0;37m[454033][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:11:57.895 > [0;37m[454044][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:11:57.903 > [0;36m[454052][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:11:57.911 > [0;36m[454060][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:11:57.917 > Temperature Celsius: 21.61 ºC[0;37m[454066][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:11:57.934 > [0;37m[454083][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:11:57.945 > [0;37m[454094][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:11:57.954 > [0;37m[454104][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:11:57.965 > [0;37m[454114][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:11:57.969 > [0;37m[454120][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:11:57.979 > [0;36m[454128][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:11:57.987 > [0;36m[454135][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:11:57.993 > [0;37m[454142][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:11:58.001 > [0;37m[454151][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:11:58.012 > [0;37m[454161][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:11:58.021 > [0;36m[454171][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:11:58.029 > [0;36m[454172][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:11:58.041 > [0;36m[454190][D][BLECharacterist[i0c;.3c7pmp[:4759471]9 0o]n[SVt]a[tBuLsE(U)t:i l<s<. copnpS:t1a5t3u0s] [d0ummpG
+21:11:58.052 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:58.057 > [0;37m[454206][V][BLECharacteristic.cpp:557[]0 ;n3o7tm[454206][V][iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:11:58.065 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:11:58.071 >  - Humidity: 21[0.;37m[454221][V][BLEServ6er.cpp:144] handle1GATTServerEvent(): % >> handleGATTSer
+21:11:58.080 > verEvent: ESP_GATTS_CONF_EVT[0m
+21:11:58.083 > [0;37m[454233][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:58.094 > [0;37m[454243][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:11:58.105 > [0;37m[454253][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:11:58.113 > [0;37m[454262][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:11:58.125 > [0;37m[454272][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:11:58.133 > [0;37m[454282][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:11:58.141 > [0;37m[454291][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:28.077 > [0;37m[484223][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:12:28.090 > [0;37m[484237][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:12:28.099 > [0;37m[484248][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:12:28.110 > [0;37m[484258][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:12:28.121 > [0;37m[484268][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:12:28.127 > [0;37m[484275][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:12:28.133 > [0;36m[484282][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:12:28.141 > [0;36m[484289][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:12:28.146 > [0;37m[484296][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:12:28.159 > [0;37m[484306][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:12:28.166 > [0;37m[484315][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:12:28.178 > [0;37m[484326][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:12:28.186 > [0;36m[484334][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:12:28.194 > [0;36m[484342][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:12:28.200 > Temperature Celsius: 21.63 ºC[0;37m[484348][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:12:28.217 > [0;37m[484365][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:12:28.228 > [0;37m[484376][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:12:28.236 > [0;37m[484386][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:12:28.249 > [0;37m[484396][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:12:28.253 > [0;37m[484402][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:12:28.262 > [0;36m[484410][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:12:28.270 > [0;36m[484417][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:12:28.276 > [0;37m[484424][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:12:28.284 > [0;37m[484433][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:12:28.296 > [0;37m[484443][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:12:28.304 > [0;36m[484453][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:12:28.312 > [0;36m[484454][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:12:28.324 > [0;36m[484472][D][BL[E0C;h3a7rma[c4t8e4r4i7s2t]i[cV.]c[pBpL:E7U9t7i]l so.ncSptpa:t1u5s3(0)]:  d<u<m poGnaStttaSteursve[r0Emve
+21:12:28.335 > nt(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:28.341 > [0;37m[484488][V][BLECharacteristi[0;c3.7cmp[p4:8545478]8 ]n[oVt]i[fByL(E)U:t i<l<s .ncoptpi:f1y57[50]m d
+21:12:28.349 > umpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:12:28.354 >  - Humidity: 21.6[03;37m[484503][V][BL %EServer.cpp:144] 
+21:12:28.360 > handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:28.366 > [0;37m[484515][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:28.377 > [0;37m[484525][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:12:28.388 > [0;37m[484535][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:28.397 > [0;37m[484544][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:28.408 > [0;37m[484554][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:12:28.416 > [0;37m[484564][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:28.425 > [0;37m[484573][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:58.360 > [0;37m[514505][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:12:58.373 > [0;37m[514519][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:12:58.382 > [0;37m[514530][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:12:58.394 > [0;37m[514540][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:12:58.405 > [0;37m[514550][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:12:58.411 > [0;37m[514557][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:12:58.415 > [0;36m[514564][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:12:58.424 > [0;36m[514571][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:12:58.430 > [0;37m[514578][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:12:58.441 > [0;37m[514588][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:12:58.450 > [0;37m[514597][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:12:58.460 > [0;37m[514608][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:12:58.470 > [0;36m[514616][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:12:58.477 > [0;36m[514624][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:12:58.483 > Temperature Celsius: 21.63 ºC[0;37m[514630][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:12:58.500 > [0;37m[514647][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:12:58.511 > [0;37m[514658][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:12:58.520 > [0;37m[514668][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:12:58.531 > [0;37m[514678][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:12:58.537 > [0;37m[514684][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:12:58.545 > [0;36m[514692][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:12:58.554 > [0;36m[514699][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:12:58.558 > [0;37m[514706][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:12:58.568 > [0;37m[514715][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:12:58.578 > [0;37m[514725][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:12:58.587 > [0;36m[514735][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:12:58.596 > [0;36m[514736][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:12:58.607 > [0;36m[514754][D][[0B;L3E7Cmh[a5r1a4c7t5e4r]i[sVt]i[cB.LcEpUpt:i7l9s7.]c popn:S1t5a3t0u]s (d)u:m p<G<a totnSSetravteursEv[e0nmt): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:58.624 > [0;37m[514770][V][BLECharacteristic.cpp:557] notify(): << notify[0m
+21:12:58.629 > [0;37m[514770][V][BLEUtils.cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:12:58.637 >  - Humidity: 21.[0;37m[514785][V][BLES6erver.cpp:144] hand3leGATTServerEvent( %): >> handleGATTS
+21:12:58.645 > erverEvent: ESP_GATTS_CONF_EVT[0m
+21:12:58.648 > [0;37m[514797][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:58.660 > [0;37m[514807][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:12:58.672 > [0;37m[514817][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:58.680 > [0;37m[514826][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:12:58.688 > [0;37m[514836][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:12:58.699 > [0;37m[514846][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:12:58.708 > [0;37m[514855][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:28.642 > [0;37m[544787][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:13:28.656 > [0;37m[544801][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:13:28.665 > [0;37m[544812][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:13:28.676 > [0;37m[544822][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:13:28.687 > [0;37m[544832][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:13:28.693 > [0;37m[544839][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:13:28.699 > [0;36m[544846][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:13:28.708 > [0;36m[544853][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:13:28.712 > [0;37m[544860][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:13:28.724 > [0;37m[544870][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:13:28.732 > [0;37m[544879][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:13:28.743 > [0;37m[544890][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:13:28.753 > [0;36m[544898][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:13:28.761 > [0;36m[544906][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:13:28.766 > Temperature Celsius: 21.61 ºC[0;37m[544912][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:13:28.783 > [0;37m[544929][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:13:28.794 > [0;37m[544940][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:13:28.802 > [0;37m[544950][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:13:28.813 > [0;37m[544960][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:13:28.820 > [0;37m[544966][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:13:28.827 > [0;36m[544974][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:13:28.836 > [0;36m[544981][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:13:28.842 > [0;37m[544988][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:13:28.851 > [0;37m[544997][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:13:28.862 > [0;37m[545007][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:13:28.871 > [0;36m[545017][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:13:28.879 > [0;36m[545018][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:13:28.890 > [0;36m[545036][D][BLECharacteris[t0i;c3.7cmp[p5:4759073]6 ]o[nVS]t[aBtLuEsU(t)i:l s<.<c popn:S1t5a3t0u]s d[u0mmpGa
+21:13:28.900 > ttServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:28.907 > [0;37m[545052][V][BLECharacteristic[0;3.7mc[p5p4:5505572]] [nVo]t[iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:13:28.915 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:13:28.920 >  - Humidity: 21.[0;37m[545067][V]6[BLEServer.cpp:144]1 handleGATTServerE %vent(): >> handle
+21:13:28.930 > GATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:28.931 > [0;37m[545079][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:28.943 > [0;37m[545089][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:13:28.955 > [0;37m[545099][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:28.963 > [0;37m[545108][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:28.974 > [0;37m[545118][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:13:28.982 > [0;37m[545128][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:28.991 > [0;37m[545137][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:52.476 > [0;37m[568619][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:13:52.484 > [0;37m[568619][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:13:52.492 > [0;37m[568638][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:13:52.501 > [0;36m[568646][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:13:52.507 > [0;36m[568653][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:13:58.926 > [0;37m[575069][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:13:58.940 > [0;37m[575083][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:13:58.949 > [0;37m[575094][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:13:58.959 > [0;37m[575104][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:13:58.971 > [0;37m[575114][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:13:58.977 > [0;37m[575121][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:13:58.982 > [0;36m[575128][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:13:58.990 > [0;36m[575135][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:13:58.996 > [0;37m[575142][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:13:59.008 > [0;37m[575152][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:13:59.016 > [0;37m[575161][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:13:59.027 > [0;37m[575172][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:13:59.036 > [0;36m[575180][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:13:59.044 > [0;36m[575188][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:13:59.050 > Temperature Celsius: 21.59 ºC[0;37m[575194][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:13:59.066 > [0;37m[575211][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:13:59.077 > [0;37m[575222][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:13:59.086 > [0;37m[575232][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:13:59.097 > [0;37m[575242][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:13:59.103 > [0;37m[575248][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:13:59.111 > [0;36m[575256][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:13:59.120 > [0;36m[575263][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:13:59.126 > [0;37m[575270][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:13:59.134 > [0;37m[575279][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:13:59.145 > [0;37m[575289][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:13:59.154 > [0;36m[575299][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:13:59.162 > [0;36m[575300][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:13:59.173 > [0;36m[575318][D][[0B;L3E7Cmh[a5r7a5c3t1e8r]i[sVt]i[cB.LcEpUpt:i7l9s7.]c popn:S1t5a3t0u]s (d)u:m p<G<a totnSSetravteursEv[e0nmt): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:59.190 > [0;37m[575334][V][BLECharacteristic.cpp:55[70]; 3n7omt[i5f7y5(3)3:4 ]<[<V ]n[oBtLiEfUyti[l0sm.c
+21:13:59.198 > pp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:13:59.204 >  - Humidity: 21.[0;37m[5753549][V][BLEServer.cp9p:144] handleGATTS %erverEvent(): >> 
+21:13:59.212 > handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:59.215 > [0;37m[575361][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:59.226 > [0;37m[575371][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:13:59.238 > [0;37m[575381][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:59.246 > [0;37m[575390][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:13:59.254 > [0;37m[575400][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:13:59.266 > [0;37m[575410][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:59.274 > [0;37m[575419][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:13:59.496 > [0;37m[575639][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:13:59.504 > [0;37m[575639][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:13:59.513 > [0;37m[575658][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:13:59.522 > [0;36m[575666][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:13:59.527 > [0;36m[575673][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:14:29.209 > [0;37m[605351][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:14:29.223 > [0;37m[605365][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:14:29.231 > [0;37m[605376][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:14:29.243 > [0;37m[605386][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:14:29.254 > [0;37m[605396][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:14:29.259 > [0;37m[605403][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:14:29.265 > [0;36m[605410][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:14:29.273 > [0;36m[605417][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:14:29.279 > [0;37m[605424][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:14:29.290 > [0;37m[605434][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:14:29.299 > [0;37m[605443][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:14:29.310 > [0;37m[605454][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:14:29.318 > [0;36m[605462][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:14:29.326 > [0;36m[605470][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:14:29.333 > Temperature Celsius: 21.60 ºC[0;37m[605476][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:14:29.349 > [0;37m[605493][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:14:29.361 > [0;37m[605504][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:14:29.369 > [0;37m[605514][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:14:29.380 > [0;37m[605524][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:14:29.385 > [0;37m[605530][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:14:29.394 > [0;36m[605538][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:14:29.403 > [0;36m[605545][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:14:29.407 > [0;37m[605552][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:14:29.416 > [0;37m[605561][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:14:29.427 > [0;37m[605571][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:14:29.436 > [0;36m[605581][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:14:29.444 > [0;36m[605582][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:14:29.456 > [0;36m[605600][D][BLECharacteris[t0i;c3.7cmp[p6:0759670]0 ]o[nVS]t[aBtLuEsU(t)i:l s<.<c popn:S1t5a3t0u]s d[u0mmpGa
+21:14:29.467 > ttServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:29.473 > [0;37m[605616][V][BLECharacteristic.cpp:557][ 0n;o3t7imf[y6(0)5:6 1<6<][V][BLEUtil s.ncoptpi:f1y57[50]m d
+21:14:29.480 > umpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:14:29.487 >  - Humidity: 21.[0;37m[6056631][V][BLEServer.cp0p:144] handleGATT %ServerEvent(): >>
+21:14:29.494 >  handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:29.498 > [0;37m[605643][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:29.509 > [0;37m[605653][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:14:29.520 > [0;37m[605663][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:14:29.529 > [0;37m[605672][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:29.540 > [0;37m[605682][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:14:29.548 > [0;37m[605692][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:14:29.556 > [0;37m[605701][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:14:59.492 > [0;37m[635633][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:14:59.506 > [0;37m[635647][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:14:59.514 > [0;37m[635658][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:14:59.526 > [0;37m[635668][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:14:59.537 > [0;37m[635678][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:14:59.543 > [0;37m[635685][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:14:59.549 > [0;36m[635692][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:14:59.557 > [0;36m[635700][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:14:59.563 > [0;37m[635706][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:14:59.574 > [0;37m[635716][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:14:59.582 > [0;37m[635725][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:14:59.593 > [0;37m[635736][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:14:59.602 > [0;36m[635744][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:14:59.610 > [0;36m[635752][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:14:59.616 > Temperature Celsius: 21.59 ºC[0;37m[635758][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3539, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:14:59.631 > [0;37m[635775][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:14:59.644 > [0;37m[635786][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:14:59.652 > [0;37m[635796][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:14:59.663 > [0;37m[635806][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:14:59.669 > [0;37m[635812][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:14:59.677 > [0;36m[635820][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:14:59.686 > [0;36m[635827][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:14:59.691 > [0;37m[635834][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:14:59.699 > [0;37m[635843][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:14:59.711 > [0;37m[635853][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 35 39                                 21.59[0m
+21:14:59.720 > [0;36m[635863][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:14:59.728 > [0;36m[635864][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:14:59.739 > [0;36m[635882][D][[B0L;E3C7hma[r6a3c5t8e8r2i]s[tVi]c[.BcLpEpU:t7i9l7s]. copnpS:t1a5t3u0s]( )d:u m<p<G aotntSSteartvuesrE[v0emn
+21:14:59.750 > (): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:59.756 > [0;37m[635898][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f6y3(5)8:9 8<]<[ Vn]o[tBiLfEyUt[i0lms.
+21:14:59.764 > cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:14:59.770 >  - Humidity: 21[0;37m[63591.3][V][BLEServer.cpp:1454] handleGATTServer9Event(): >> handle %GATTServerEvent: 
+21:14:59.781 > ESP_GATTS_CONF_EVT[0m
+21:14:59.781 > [0;37m[635925][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:59.793 > [0;37m[635935][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:14:59.804 > [0;37m[635945][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:14:59.811 > [0;37m[635954][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:14:59.823 > [0;37m[635964][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:14:59.831 > [0;37m[635974][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:14:59.839 > [0;37m[635983][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:15:29.775 > [0;37m[665915][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:15:29.789 > [0;37m[665929][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:15:29.797 > [0;37m[665940][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:15:29.808 > [0;37m[665950][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:15:29.820 > [0;37m[665960][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:15:29.825 > [0;37m[665967][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:15:29.831 > [0;36m[665974][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:15:29.840 > [0;36m[665981][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:15:29.845 > [0;37m[665988][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:15:29.857 > [0;37m[665998][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:15:29.865 > [0;37m[666007][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:15:29.876 > [0;37m[666018][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:15:29.884 > [0;36m[666026][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:15:29.892 > [0;36m[666034][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:15:29.898 > Temperature Celsius: 21.61 ºC[0;37m[666040][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:15:29.915 > [0;37m[666057][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:15:29.927 > [0;37m[666068][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:15:29.935 > [0;37m[666078][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:15:29.946 > [0;37m[666088][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:15:29.951 > [0;37m[666094][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:15:29.960 > [0;36m[666102][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:15:29.968 > [0;36m[666109][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:15:29.974 > [0;37m[666116][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:15:29.983 > [0;37m[666125][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:15:29.994 > [0;37m[666135][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:15:30.003 > [0;36m[666145][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:15:30.011 > [0;36m[666146][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:15:30.021 > [0;36m[666164][D][BLEChar[a0c;t3e7rmi[s6t6i6c1.6c4p]p[:V7]9[7B]L EoUntSitlast.ucsp(p)::1 5<3<0 ]o ndSutmatus[0mpG
+21:15:30.033 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:15:30.039 > [0;37m[666180][V][BLECharacteris[t0i;c3.7cmp[p6:6565178]0 ]n[oVt]i[fByL(E)U:t i<l<s .ncoptpi:f1y57[50]m du
+21:15:30.048 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:15:30.053 >  - Humidity: 21.[0;37m[666195][V6][BLEServer.cpp:1441] handleGATTServer %Event(): >> handl
+21:15:30.061 > eGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:15:30.064 > [0;37m[666207][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:15:30.075 > [0;37m[666217][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:15:30.087 > [0;37m[666227][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:15:30.095 > [0;37m[666236][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:15:30.106 > [0;37m[666246][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:15:30.114 > [0;37m[666256][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:15:30.123 > [0;37m[666265][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:00.057 > [0;37m[696197][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:16:00.072 > [0;37m[696211][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:16:00.081 > [0;37m[696222][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:16:00.092 > [0;37m[696232][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:16:00.103 > [0;37m[696242][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:16:00.108 > [0;37m[696249][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:16:00.114 > [0;36m[696256][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:16:00.122 > [0;36m[696264][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:16:00.128 > [0;37m[696270][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:16:00.140 > [0;37m[696280][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:16:00.147 > [0;37m[696289][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:16:00.159 > [0;37m[696300][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:16:00.168 > [0;36m[696308][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:16:00.176 > [0;36m[696316][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:16:00.181 > Temperature Celsius: 21.61 ºC[0;37m[696322][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:16:00.198 > [0;37m[696339][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:16:00.209 > [0;37m[696350][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:16:00.218 > [0;37m[696360][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:16:00.229 > [0;37m[696370][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:16:00.235 > [0;37m[696376][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:16:00.244 > [0;36m[696384][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:16:00.251 > [0;36m[696391][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:16:00.257 > [0;37m[696398][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:16:00.266 > [0;37m[696407][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:16:00.277 > [0;37m[696417][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:16:00.286 > [0;36m[696427][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:16:00.294 > [0;36m[696428][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:16:00.305 > [0;36m[696446][D][BLECharacterist[i0c;.3c7pmp[:6799674]4 6o]n[SVt]a[tBuLsE(U)t:i l<s<. copnpS:t1a5t3u0s] [d0ummpG
+21:16:00.316 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:00.322 > [0;37m[696462][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f6y96462][V][BL(EU)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:16:00.331 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:16:00.336 >  - Humidity: 21[0.;37m[696477][V][BLEServ6er.cpp:144] handle1GATTServerEvent(): % >> handleGATTSer
+21:16:00.344 > verEvent: ESP_GATTS_CONF_EVT[0m
+21:16:00.347 > [0;37m[696489][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:00.359 > [0;37m[696499][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:16:00.369 > [0;37m[696509][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:00.377 > [0;37m[696518][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:00.390 > [0;37m[696528][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:16:00.398 > [0;37m[696538][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:00.406 > [0;37m[696547][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:30.341 > [0;37m[726479][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:16:30.355 > [0;37m[726493][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:16:30.364 > [0;37m[726504][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:16:30.375 > [0;37m[726514][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:16:30.386 > [0;37m[726524][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:16:30.392 > [0;37m[726531][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:16:30.397 > [0;36m[726538][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:16:30.406 > [0;36m[726545][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:16:30.412 > [0;37m[726552][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:16:30.423 > [0;37m[726562][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:16:30.432 > [0;37m[726571][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:16:30.442 > [0;37m[726582][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:16:30.451 > [0;36m[726590][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:16:30.459 > [0;36m[726598][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:16:30.465 > Temperature Celsius: 21.62 ºC[0;37m[726604][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:16:30.482 > [0;37m[726621][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:16:30.493 > [0;37m[726632][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:16:30.502 > [0;37m[726642][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:16:30.513 > [0;37m[726652][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:16:30.518 > [0;37m[726658][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:16:30.527 > [0;36m[726666][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:16:30.535 > [0;36m[726673][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:16:30.541 > [0;37m[726680][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:16:30.549 > [0;37m[726689][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:16:30.561 > [0;37m[726699][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:16:30.569 > [0;36m[726709][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:16:30.577 > [0;36m[726710][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:16:30.589 > [0;36m[726728][D][BL[E0C;h3a7rma[c7t2e6r7i2s8t]i[cV.]c[pBpL:E7U9t7i]l so.ncSptpa:t1u5s3(0)]:  d<u<m poGnaStttaSteursve[r0m
+21:16:30.600 > Event(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:30.606 > [0;37m[726744][V][BLECharacterist[i0c;.3c7pmp[:7525677]4 4n]o[tVi]f[yB(L)E:U t<i<l sn.octpipf:y15[705m] 
+21:16:30.614 > dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:16:30.619 >  - Humidity: 21.[0;37m[726759][V][B6LEServer.cpp:144] h2andleGATTServerEve %nt(): >> handleGA
+21:16:30.628 > TTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:30.630 > [0;37m[726771][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:30.642 > [0;37m[726781][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:16:30.653 > [0;37m[726791][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:30.662 > [0;37m[726800][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:16:30.673 > [0;37m[726810][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:16:30.681 > [0;37m[726820][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:16:30.690 > [0;37m[726829][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:00.625 > [0;37m[756761][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:17:00.638 > [0;37m[756775][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:17:00.647 > [0;37m[756786][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:17:00.658 > [0;37m[756796][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:17:00.669 > [0;37m[756806][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:17:00.675 > [0;37m[756813][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:17:00.680 > [0;36m[756820][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:17:00.688 > [0;36m[756827][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:17:00.695 > [0;37m[756834][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:17:00.706 > [0;37m[756844][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:17:00.714 > [0;37m[756853][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:17:00.725 > [0;37m[756864][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:17:00.733 > [0;36m[756872][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:17:00.742 > [0;36m[756880][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:17:00.748 > Temperature Celsius: 21.61 ºC[0;37m[756886][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:17:00.765 > [0;37m[756903][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:17:00.776 > [0;37m[756914][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:17:00.785 > [0;37m[756924][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:17:00.796 > [0;37m[756934][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:17:00.801 > [0;37m[756940][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:17:00.810 > [0;36m[756948][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:17:00.818 > [0;36m[756955][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:17:00.824 > [0;37m[756962][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:17:00.832 > [0;37m[756971][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:17:00.843 > [0;37m[756981][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:17:00.852 > [0;36m[756991][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:17:00.860 > [0;36m[756992][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:17:00.872 > [0;36m[757010][D][BLECharacteris[t0i;c3.7cmp[p7:5779071]0 ]o[nVS]t[aBtLuEsU(t)i:l s<.<c popn:S1t5a3t0u]s d[u0mmpG
+21:17:00.883 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:00.888 > [0;37m[757026][V][BLECharacteristic.cpp:557[]0 ;n3o7tm[757026][V]i[fByL(E)U:t i<l<s .ncoptpi:f1y57[50]m du
+21:17:00.896 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:17:00.901 >  - Humidity: 21.[0;37m[757041][V6][BLEServer.cpp:1414] handleGATTServe r%Event(): >> handl
+21:17:00.910 > eGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:00.913 > [0;37m[757053][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:00.925 > [0;37m[757063][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:17:00.935 > [0;37m[757073][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:00.944 > [0;37m[757082][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:00.956 > [0;37m[757092][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:17:00.963 > [0;37m[757102][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:00.972 > [0;37m[757111][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:30.907 > [0;37m[787043][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:17:30.921 > [0;37m[787057][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:17:30.929 > [0;37m[787068][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:17:30.941 > [0;37m[787078][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:17:30.953 > [0;37m[787088][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:17:30.958 > [0;37m[787095][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:17:30.963 > [0;36m[787102][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:17:30.972 > [0;36m[787109][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:17:30.977 > [0;37m[787116][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:17:30.989 > [0;37m[787126][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:17:30.997 > [0;37m[787135][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:17:31.009 > [0;37m[787146][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:17:31.017 > [0;36m[787154][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:17:31.026 > [0;36m[787162][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:17:31.031 > Temperature Celsius: 21.62 ºC[0;37m[787168][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:17:31.047 > [0;37m[787185][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:17:31.059 > [0;37m[787196][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:17:31.067 > [0;37m[787206][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:17:31.079 > [0;37m[787216][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:17:31.084 > [0;37m[787222][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:17:31.093 > [0;36m[787230][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:17:31.101 > [0;36m[787237][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:17:31.106 > [0;37m[787244][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:17:31.115 > [0;37m[787253][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:17:31.126 > [0;37m[787263][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:17:31.134 > [0;36m[787273][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:17:31.143 > [0;36m[787274][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:17:31.154 > [0;36m[787292][D][[B0L;E3C7hma[r7a8c7t2e9r2i]s[tVi]c[.BcLpEpU:t7i9l7s]. copnpS:t1a5t3u0s]( )d:u m<p<G aotntSSteartvuesrE[v0emnt(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:31.171 > [0;37m[787308][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f7y8(7)3:0 8<]<[ Vn]o[tBiLfEyUt[i0lms.
+21:17:31.180 > cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:17:31.185 >  - Humidity: 21[0;37m.[787323][V][BLEServer.6cpp:144] handleGATT2ServerEvent(): >>  %handleGATTServerE
+21:17:31.193 > vent: ESP_GATTS_CONF_EVT[0m
+21:17:31.196 > [0;37m[787335][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:31.207 > [0;37m[787345][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:17:31.219 > [0;37m[787355][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:31.227 > [0;37m[787364][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:17:31.237 > [0;37m[787374][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:17:31.247 > [0;37m[787384][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:17:31.256 > [0;37m[787393][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:01.190 > [0;37m[817325][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:18:01.205 > [0;37m[817339][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:18:01.214 > [0;37m[817350][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:18:01.225 > [0;37m[817360][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:18:01.235 > [0;37m[817370][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:18:01.241 > [0;37m[817377][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:18:01.247 > [0;36m[817384][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:18:01.254 > [0;36m[817392][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:18:01.261 > [0;37m[817398][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:18:01.272 > [0;37m[817408][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:18:01.280 > [0;37m[817417][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:18:01.292 > [0;37m[817428][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:18:01.299 > [0;36m[817436][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:18:01.307 > [0;36m[817444][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:18:01.314 > Temperature Celsius: 21.63 ºC[0;37m[817450][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3633, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:18:01.330 > [0;37m[817467][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:18:01.343 > [0;37m[817478][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:18:01.350 > [0;37m[817488][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:18:01.362 > [0;37m[817498][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:18:01.368 > [0;37m[817504][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:18:01.376 > [0;36m[817512][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:18:01.385 > [0;36m[817519][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:18:01.390 > [0;37m[817526][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:18:01.398 > [0;37m[817535][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:18:01.410 > [0;37m[817545][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 33                                 21.63[0m
+21:18:01.418 > [0;36m[817555][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:18:01.427 > [0;36m[817556][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:18:01.438 > [0;36m[817574][D][[0B;L3E7Cmh[a8r1a7c5t7e4r]i[sVt]i[cB.LcEpUpt:i7l9s7.]c popn:S1t5a3t0u]s (d)u:m p<G<a totnSSetravteursEv[e0nmt(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:01.455 > [0;37m[817590][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f8y1(7)5:9 0<]<[ Vn]o[tBiLfEyUt[i0lms.
+21:18:01.463 > cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:18:01.469 >  - Humidity: 21[0;37m[817605.][V][BLEServer.cpp:144]6 handleGATTServerEv3ent(): >> handleGA %TTServerEvent: ES
+21:18:01.480 > P_GATTS_CONF_EVT[0m
+21:18:01.480 > [0;37m[817617][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:01.491 > [0;37m[817627][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:18:01.502 > [0;37m[817637][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:01.511 > [0;37m[817646][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:01.519 > [0;37m[817656][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:18:01.530 > [0;37m[817666][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:01.539 > [0;37m[817675][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:31.474 > [0;37m[847607][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:18:31.488 > [0;37m[847621][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:18:31.496 > [0;37m[847632][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:18:31.507 > [0;37m[847642][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:18:31.519 > [0;37m[847652][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:18:31.524 > [0;37m[847659][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:18:31.530 > [0;36m[847666][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:18:31.538 > [0;36m[847674][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:18:31.544 > [0;37m[847680][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:18:31.555 > [0;37m[847690][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:18:31.563 > [0;37m[847699][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:18:31.575 > [0;37m[847710][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:18:31.583 > [0;36m[847718][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:18:31.592 > [0;36m[847726][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:18:31.597 > Temperature Celsius: 21.62 ºC[0;37m[847732][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3632, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:18:31.614 > [0;37m[847749][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:18:31.625 > [0;37m[847760][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:18:31.634 > [0;37m[847770][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:18:31.645 > [0;37m[847780][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:18:31.650 > [0;37m[847786][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:18:31.658 > [0;36m[847794][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:18:31.667 > [0;36m[847801][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:18:31.673 > [0;37m[847808][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:18:31.681 > [0;37m[847817][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:18:31.693 > [0;37m[847827][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 32                                 21.62[0m
+21:18:31.701 > [0;36m[847837][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:18:31.710 > [0;36m[847838][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:18:31.720 > [0;36m[847856][D][BLECharacterist[i0c;.3c7pmp[:8749778]5 6o]n[SVt]a[tBuLsE(U)t:i l<s<. copnpS:t1a5t3u0s] [d0ummpG
+21:18:31.732 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:31.738 > [0;37m[847872][V][BLECharacteri[s0t;i3c7.mc[p8p4:7585772]] [nVo]t[iBfLyE(U)t:i l<s<. cnpopt:i1f5y75[]0 mdu
+21:18:31.745 > mpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:18:31.751 >  - Humidity: 21.[0;37m[847887][V6][BLEServer.cpp:1442] handleGATTServer %Event(): >> handl
+21:18:31.760 > eGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:31.763 > [0;37m[847899][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:31.773 > [0;37m[847909][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:18:31.785 > [0;37m[847919][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:31.794 > [0;37m[847928][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:18:31.805 > [0;37m[847938][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:18:31.813 > [0;37m[847948][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:18:31.821 > [0;37m[847957][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:01.757 > [0;37m[877889][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:19:01.771 > [0;37m[877903][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:19:01.779 > [0;37m[877914][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:19:01.791 > [0;37m[877924][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:19:01.802 > [0;37m[877934][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:19:01.807 > [0;37m[877941][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:19:01.813 > [0;36m[877948][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:19:01.822 > [0;36m[877956][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:19:01.827 > [0;37m[877962][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:19:01.838 > [0;37m[877972][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:19:01.846 > [0;37m[877981][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:19:01.857 > [0;37m[877992][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:19:01.866 > [0;36m[878000][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:19:01.875 > [0;36m[878008][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:19:01.880 > Temperature Celsius: 21.61 ºC[0;37m[878014][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:19:01.897 > [0;37m[878031][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:19:01.908 > [0;37m[878042][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:19:01.916 > [0;37m[878052][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:19:01.928 > [0;37m[878062][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:19:01.933 > [0;37m[878068][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:19:01.942 > [0;36m[878076][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:19:01.950 > [0;36m[878083][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:19:01.956 > [0;37m[878090][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:19:01.963 > [0;37m[878099][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:19:01.975 > [0;37m[878109][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:19:01.984 > [0;36m[878119][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:19:01.993 > [0;36m[878120][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:19:02.004 > [0;36m[878138][D][B[L0E;C3h7amr[a8c7t8e1r3i8s]t[iVc].[cBpLpE:U7t9i7l]s .ocnpSpt:a1t5u3s0(]) :d u<m<p GoantSttSaetruvser[E0vment(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:02.020 > [0;37m[878154][V][BLECharacteristic.cpp:557][ 0n;o3t7imf[y8(7)8:1 5<4<] [nVo]t[iBfLyEU[t0imls
+21:19:02.029 > .cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:19:02.034 >  - Humidity: 21[0;.37m[878169][V][BLEServe6r.cpp:144] handleGA1TTServerEvent(): > %> handleGATTServe
+21:19:02.043 > rEvent: ESP_GATTS_CONF_EVT[0m
+21:19:02.045 > [0;37m[878181][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:02.057 > [0;37m[878191][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:19:02.068 > [0;37m[878201][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:02.077 > [0;37m[878210][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:02.087 > [0;37m[878220][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:19:02.096 > [0;37m[878230][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:02.105 > [0;37m[878239][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:32.040 > [0;37m[908171][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:19:32.053 > [0;37m[908185][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:19:32.062 > [0;37m[908196][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:19:32.074 > [0;37m[908206][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:19:32.085 > [0;37m[908216][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:19:32.090 > [0;37m[908223][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:19:32.096 > [0;36m[908230][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:19:32.105 > [0;36m[908238][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:19:32.110 > [0;37m[908244][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:19:32.121 > [0;37m[908254][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:19:32.130 > [0;37m[908263][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:19:32.140 > [0;37m[908274][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:19:32.149 > [0;36m[908282][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:19:32.157 > [0;36m[908290][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:19:32.163 > Temperature Celsius: 21.61 ºC[0;37m[908296][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:19:32.180 > [0;37m[908313][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:19:32.191 > [0;37m[908324][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:19:32.199 > [0;37m[908334][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:19:32.211 > [0;37m[908344][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:19:32.217 > [0;37m[908350][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:19:32.225 > [0;36m[908358][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:19:32.234 > [0;36m[908365][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:19:32.239 > [0;37m[908372][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:19:32.247 > [0;37m[908381][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:19:32.259 > [0;37m[908391][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:19:32.267 > [0;36m[908401][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:19:32.276 > [0;36m[908402][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:19:32.286 > [0;36m[908420][D][BLECharacterist[i0c;.3c7pmp[:9709874]2 0o]n[SVt]a[tBuLsE(U)t:i l<s<. copnpS:t1a5t3u0s] [d0ummpG
+21:19:32.298 > attServerEvent(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:32.303 > [0;37m[908436][V][BLECharacteristic.cpp:557[]0 ;n3o7tmi[f9y0(8)4:3 6<]<[ Vn]o[tBiLfEyUt[i0lms.
+21:19:32.312 > cpp:1575] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:19:32.317 >  - Humidity: 21.[0;37m[9084651][V][BLEServer.cp1p:144] handleGATTS %erverEvent(): >> 
+21:19:32.326 > handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:32.329 > [0;37m[908463][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:32.339 > [0;37m[908473][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:19:32.351 > [0;37m[908483][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:32.360 > [0;37m[908492][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:19:32.371 > [0;37m[908502][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:19:32.379 > [0;37m[908512][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:19:32.388 > [0;37m[908521][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:02.322 > [0;37m[938453][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:20:02.337 > [0;37m[938467][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:20:02.345 > [0;37m[938478][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:20:02.357 > [0;37m[938488][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:20:02.367 > [0;37m[938498][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:20:02.373 > [0;37m[938505][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:20:02.379 > [0;36m[938512][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:20:02.387 > [0;36m[938519][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:20:02.393 > [0;37m[938526][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:20:02.404 > [0;37m[938536][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:20:02.413 > [0;37m[938545][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:20:02.424 > [0;37m[938556][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:20:02.431 > [0;36m[938564][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:20:02.441 > [0;36m[938572][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:20:02.446 > Temperature Celsius: 21.61 ºC[0;37m[938578][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3631, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:20:02.463 > [0;37m[938595][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:20:02.474 > [0;37m[938606][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:20:02.483 > [0;37m[938616][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:20:02.494 > [0;37m[938626][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:20:02.500 > [0;37m[938632][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:20:02.508 > [0;36m[938640][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:20:02.516 > [0;36m[938647][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:20:02.521 > [0;37m[938654][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:20:02.530 > [0;37m[938663][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:20:02.541 > [0;37m[938673][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 31                                 21.61[0m
+21:20:02.551 > [0;36m[938683][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:20:02.558 > [0;36m[938684][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:20:02.569 > [0;36m[938702][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:20:02.578 > [0[;03;73m7[m9[3983780790]9[]V[]V[]B[LBELUEtCihlasr.accptpe:r1i5s3t0i]c .dcupmpp:G5a5t7t]S enrovteirfEyv(e)n:t (<)<:  nGoAtTiTf Se[0m
+21:20:02.589 > vent: ESP_GATTS_CONF_EVT[0m
+21:20:02.592 >  - Humidity: 21.61[0;37m[938723][V %][BLEUtils.cpp:15
+21:20:02.597 > 75] dumpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:20:02.604 > [0;37m[938734][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:02.611 > [0;37m[938744][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:02.623 > [0;37m[938755][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:20:02.632 > [0;37m[938764][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:02.643 > [0;37m[938773][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:02.651 > [0;37m[938784][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:20:02.663 > [0;37m[938793][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:02.671 > [0;37m[938802][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:32.597 > [0;37m[968726][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+21:20:32.611 > [0;37m[968740][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1c5c), owner: <N/A> for <Unknown>[0m
+21:20:32.619 > [0;37m[968751][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:20:32.631 > [0;37m[968761][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1c5c), owner: <Unknown>[0m
+21:20:32.642 > [0;37m[968771][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:20:32.648 > [0;37m[968778][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:20:32.653 > [0;36m[968785][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:20:32.661 > [0;36m[968793][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:20:32.667 > [0;37m[968799][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:20:32.678 > [0;37m[968809][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:20:32.687 > [0;37m[968818][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:20:32.697 > [0;37m[968829][V][BLECharacteristic.cpp:511] notify(): << notifications disabled; ignoring[0m
+21:20:32.706 > [0;36m[968837][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:20:32.714 > [0;36m[968845][D][BLECharacteristic.cpp:797] onStatus(): << onStatus[0m
+21:20:32.721 > Temperature Celsius: 21.60 ºC[0;37m[968851][V][BLECharacteristic.cpp:659] setValue(): >> setValue: length=6, data=2032312e3630, characteristic UUID=ca73b3ba-39f6-4ab3-91ae-186dc9577d99[0m
+21:20:32.737 > [0;37m[968868][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3fcf1e60), owner: <N/A> for <Unknown>[0m
+21:20:32.748 > [0;37m[968879][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:20:32.757 > [0;37m[968889][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: SetValue (0x3fcf1e60), owner: <Unknown>[0m
+21:20:32.768 > [0;37m[968899][V][BLECharacteristic.cpp:668] setValue(): << setValue[0m
+21:20:32.774 > [0;37m[968905][V][BLECharacteristic.cpp:490] notify(): >> notify: length: 6[0m
+21:20:32.782 > [0;36m[968913][D][BLECharacteristic.cpp:790] onNotify(): >> onNotify: default[0m
+21:20:32.791 > [0;36m[968920][D][BLECharacteristic.cpp:791] onNotify(): << onNotify[0m
+21:20:32.796 > [0;37m[968927][V][GeneralUtils.cpp:296] hexDump():      00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f[0m
+21:20:32.805 > [0;37m[968936][V][GeneralUtils.cpp:297] hexDump():      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --[0m
+21:20:32.816 > [0;37m[968946][V][GeneralUtils.cpp:323] hexDump(): 0000 20 32 31 2e 36 30                                 21.60[0m
+21:20:32.824 > [0;36m[968956][D][BLECharacteristic.cpp:796] onStatus(): >> onStatus: default[0m
+21:20:32.832 > [0;36m[968957][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONF_EVT[0m
+21:20:32.844 > [0;36m[968975][D][BL[E0C;h3a7rma[c9t6e8r9i7s5t]i[cV.]c[pBpL:E7U9t7i]l so.ncSptpa:t1u5s3(0)]:  d<u<m poGnaStttaSteursve[r0Emve
+21:20:32.855 > nt(): GATT ServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:32.860 > [0;37m[968991][V][BLECharacteristic.cpp:557[]0 ;n3o7tm[968991][V]i[fByL(E)U:t i<l<s .ncoptpi:f1y57[50]m d
+21:20:32.868 > umpGattServerEvent(): [status: ESP_GATT_OK, conn_id: 0x00][0m
+21:20:32.874 >  - Humidity: 21.[0;37m[9690066][V][BLEServer.cpp:0144] handleGATTSer %verEvent(): >> ha
+21:20:32.882 > ndleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:32.886 > [0;37m[969018][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:32.897 > [0;37m[969028][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:20:32.909 > [0;37m[969038][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:32.916 > [0;37m[969047][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONF_EVT[0m
+21:20:32.928 > [0;37m[969057][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:20:32.936 > [0;37m[969067][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:32.945 > [0;37m[969076][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:38.903 > [0;37m[975031][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+21:20:38.910 > [0;37m[975031][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+21:20:38.918 > [0;37m[975049][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+21:20:38.927 > [0;36m[975058][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+21:20:38.933 > [0;36m[975065][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+21:20:51.595 > [0;36m[987723][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_DISCONNECT_EVT[0m
+21:20:51.606 > [0;37m[987735][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+21:20:51.615 > [0;37m[987745][V][BLEUtils.cpp:1606] dumpGattServerEvent(): [conn_id: 0, remote_bda: 78:38:da:f9:07:ec][0m
+21:20:51.625 > [0;37m[987755][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+21:20:51.634 > [0;36m[987765][D][BLEServer.cpp:379] onDisconnect(): BLEServerCallbacks[0m
+21:20:51.643 > [0;36m[987772][D][BLEServer.cpp:380] onDisconnect(): BLEServerCallbacks[0m
+21:20:51.648 > [0;36m[987779][D][BLEServer.cpp:381] onDisconnect(): BLEServerCallbacks[0m
+21:20:51.657 > [0;37m[987786][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+21:20:51.668 > [0;37m[987797][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1dfc), owner: <N/A>[0m
+21:20:51.676 > [0;37m[987807][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:51.685 > [0;37m[987815][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+21:20:51.696 > [0;37m[987827][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+21:20:51.707 > [0;37m[987836][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+21:20:51.716 > [0;37m[987845][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
