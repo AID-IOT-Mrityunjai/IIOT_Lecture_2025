@@ -1,0 +1,429 @@
+20:19:11.094 > ESP-ROM:esp32s3-20210327
+20:19:11.094 > Build:Mar 27 2021
+20:19:11.094 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.094 > SPIWP:0xee
+20:19:11.094 > mode:DIO, clock div:1
+20:19:11.094 > load:0x3fce3808,len:0x44c
+20:19:11.094 > load:0x403c9700,len:0xbec
+20:19:11.094 > load:0x403cc700,len:0x2920
+20:19:11.094 > entry 0x403c98d8
+20:19:11.094 > [0;33m[   106][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.094 > Task2, Filling the data onto queue[0m
+20:19:11.094 > [0;33m[   106][W][02_Queue.ino:60] MyTask1ES:_E
+20:19:11.094 > TaR_1HEReafing dheedptarfrtm0qu05 (E0m_E[_N3T_F  ND0 ][ ]x4237ue5eini:9:] IyT/ckmp):en
+20:19:11.094 > sasre: toccpsstulor ssyt ick.datl[em1f0n32 vP r1Se][p][me_Queueriso:on: Mspasnt(_: loTaEk2_SSSTceERfuARyEse_E tEe Nat_S[0RCE [0c32id  E12_I[IR_0LAQuIueM nole1]lM SasTi(kI HTadk2r,S&scetifur_yalenN tL)
+20:19:11.094 > 
+20:19:11.094 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.094 > 
+20:19:11.094 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.094 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.094 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.094 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.094 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.094 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.094 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.094 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.094 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.094 > 
+20:19:11.094 > Rebooting...
+20:19:11.094 > ESP-ROM:esp32s3-20210327
+20:19:11.094 > Build:Mar 27 2021
+20:19:11.094 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.094 > Saved PC:0x40048839
+20:19:11.094 > SPIWP:0xee
+20:19:11.094 > mode:DIO, clock div:1
+20:19:11.094 > load:0x3fce3808,len:0x44c
+20:19:11.094 > load:0x403c9700,len:0xbec
+20:19:11.094 > load:0x403cc700,len:0x2920
+20:19:11.094 > entry 0x403c98d8
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.094 > Task2, Filling the data onto queue[0m
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:60] MyTask1()P_
+20:19:11.094 > ROskC, CK faig dheedptarr_t 0qu05 ([SP_
+20:19:11.094 > R0;OTm[ U 11 ][ ]x003Quf5e.
+20:19:11.094 > fo:e1 "MDFaso2(o: n
+20:19:11.094 > T/fke: toccpsstulor ssyt ick.datl[em1f0n32 vP  tS4]up][m2_
+20:19:11.094 > exerins:91: esTaik2r_: l
+20:19:11.094 > c(skS_ YucIMss_TllG s0_tDGheINat_S[URC
+20:19:11.094 >  [0;pum[,  SP1]NT][F2_G_eRA.i| :9ve ,yTask2ck: r
+20:19:11.094 > ansle:  ucysssmellh s, tULhe d
+20:19:11.094 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.094 > 
+20:19:11.094 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.094 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.094 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.094 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.094 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.094 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.094 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.094 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.094 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.094 > 
+20:19:11.094 > Rebooting...
+20:19:11.094 > ESP-ROM:esp32s3-20210327
+20:19:11.094 > Build:Mar 27 2021
+20:19:11.094 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.094 > Saved PC:0x40048839
+20:19:11.094 > SPIWP:0xee
+20:19:11.094 > mode:DIO, clock div:1
+20:19:11.094 > load:0x3fce3808,len:0x44c
+20:19:11.094 > load:0x403c9700,len:0xbec
+20:19:11.094 > load:0x403cc700,len:0x2920
+20:19:11.094 > entry 0x403c98d8
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.094 > Task2, Filling the data onto queue[0m
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:60] MyTaskE()_ RORskH, K aaing :hesd_tarfr mx10eu(ES0_R[NO3_FO  D)1a][0]40279uec
+20:19:11.094 > fnle9 ] DyTcokpo):nt
+20:19:11.094 > /asee: osccoss/ulrt syst ck.c"alane 8[u;c2m[Po t2et[IT[0erQueuprenoi91: Myp_sktr): loT(Ek2_SSuTIeERfuAlyET0enD t_I dRtSO[0C +[0;uim[   P_1NTI_F02G_ueAe.| o:v1], yTsTk2k):rH
+20:19:11.094 > Tdser: &ucsesserlla s NtLLhe 
+20:19:11.094 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.094 > 
+20:19:11.094 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.094 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.094 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.094 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.094 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.094 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.094 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.094 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.094 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.094 > 
+20:19:11.094 > Rebooting...
+20:19:11.094 >  �ESP-ROM:esp32s3-20210327
+20:19:11.094 > Build:Mar 27 2021
+20:19:11.094 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.094 > Saved PC:0x40048839
+20:19:11.094 > SPIWP:0xee
+20:19:11.094 > mode:DIO, clock div:1
+20:19:11.094 > load:0x3fce3808,len:0x44c
+20:19:11.094 > load:0x403c9700,len:0xbec
+20:19:11.094 > load:0x403cc700,len:0x2920
+20:19:11.094 > entry 0x403c98d8
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.094 > Task2, Filling the data onto queue[0m
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:60] MyTask1()P_
+20:19:11.094 > ROskC, CK faig dheedptarr_t 0qu05 ([SP_
+20:19:11.094 > R0;OTm[ U 11 ][ ]x003Quf5e.
+20:19:11.094 > fo:e1 "MDFaso2(o: n
+20:19:11.094 > T/fke: toccpsstulor ssyt ick.datl[em1f0n32 vP  tS4]up][m2_
+20:19:11.094 > exerins:91: esTaik2r_: l
+20:19:11.094 > c(skS_ YucIMss_TllG s0_tDGheINat_S[URC
+20:19:11.094 >  [0;pum[,  SP1]NT][F2_G_eRA.i| :9ve ,yTask2ck: r
+20:19:11.094 > ansle:  ucysssmellh s, tULhe d
+20:19:11.094 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.094 > 
+20:19:11.094 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.094 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.094 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.094 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.094 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.094 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.094 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.094 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.094 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.094 > 
+20:19:11.094 > Rebooting...
+20:19:11.094 > ESP-ROM:esp32s3-20210327
+20:19:11.094 > Build:Mar 27 2021
+20:19:11.094 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.094 > Saved PC:0x40048839
+20:19:11.094 > SPIWP:0xee
+20:19:11.094 > mode:DIO, clock div:1
+20:19:11.094 > load:0x3fce3808,len:0x44c
+20:19:11.094 > load:0x403c9700,len:0xbec
+20:19:11.094 > load:0x403cc700,len:0x2920
+20:19:11.094 > entry 0x403c98d8
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.094 > Task2, Filling the data onto queue[0m
+20:19:11.094 > [0;33m[   111][W][02_Queue.ino:60] MyTaskE()_ERORskH, K aailg :hesd_tarfr mx10eueE[0_ER[NO3_FOU D1 2t[Ix402_9feu.fnle9 ] DyTcokpo):nt
+20:19:11.094 > /ase2: osccoss/ulrt syst ck.c"alane 8
+20:19:11.094 > [u;c2m[Po 1Se][pT[0e_Quexe.ens:9n: esTain2(_: l
+20:19:11.094 > T(EkS_ SSccMss_TlRGE s_EtGEheNTR_aU0mE +[0p32d, ES13I][I_F0AGQuRue |noev1],MSyasic(Is andskr, Ssyctsserlla s NtLLhe 
+20:19:11.094 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.094 > 
+20:19:11.094 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.094 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.094 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.094 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.094 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.094 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.094 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.094 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.094 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > 
+20:19:11.094 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.094 > 
+20:19:11.458 > Rebooting...
+20:19:11.458 >  �ESP-ROM:esp32s3-20210327
+20:19:11.458 > Build:Mar 27 2021
+20:19:11.458 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.458 > Saved PC:0x40048839
+20:19:11.458 > SPIWP:0xee
+20:19:11.458 > mode:DIO, clock div:1
+20:19:11.458 > load:0x3fce3808,len:0x44c
+20:19:11.458 > load:0x403c9700,len:0xbec
+20:19:11.458 > load:0x403cc700,len:0x2920
+20:19:11.458 > entry 0x403c98d8
+20:19:11.458 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.458 > Task2, Filling the data onto queue[0m
+20:19:11.458 > [0;33m[   111][W][02_Queue.ino:60] MyTask1()P_
+20:19:11.458 > ROskC, CK faig dheedptarr_t 0qu05 ([SP_
+20:19:11.458 > R0;OTm[ U 11 ][ ]x003Quf5e.
+20:19:11.458 > fo:e1 "MDFaso2(o: n
+20:19:11.458 > T/fke: toccpsstulor ssyt ick.datl[em1f0n32 vP  tS4]up][m2_
+20:19:11.458 > exerins:91: esTaik2r_: l
+20:19:11.458 > c(skS_ YucIMss_TllG s0_tDGheINat_S[URC
+20:19:11.458 >  [0;pum[,  SP1]NT][F2_G_eRA.i| :9ve ,yTask2ck: r
+20:19:11.458 > ansle:  ucysssmellh s, tULhe d
+20:19:11.458 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.458 > 
+20:19:11.458 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.458 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.458 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.458 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.458 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.458 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.458 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.458 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.458 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.458 > 
+20:19:11.458 > Rebooting...
+20:19:11.458 > ESP-ROM:esp32s3-20210327
+20:19:11.458 > Build:Mar 27 2021
+20:19:11.458 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.458 > Saved PC:0x40048839
+20:19:11.458 > SPIWP:0xee
+20:19:11.458 > mode:DIO, clock div:1
+20:19:11.458 > load:0x3fce3808,len:0x44c
+20:19:11.458 > load:0x403c9700,len:0xbec
+20:19:11.458 > load:0x403cc700,len:0x2920
+20:19:11.458 > entry 0x403c98d8
+20:19:11.458 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.458 > Task2, Filling the data onto queue[0m
+20:19:11.458 > [0;33m[   111][W][02_Queue.ino:60] MyTaskE()_ ROaskH, K aaile :hesd_tarfr mx10eu(ES0_R[NO3_FO  D)1a][0]40279uec
+20:19:11.458 > fnle9 ] DyTcokpo):nt
+20:19:11.458 > /asee: osccoss/ulrt syst ck.c"alane 8f0;c2 vP r12et[IT[0erQuexe.ens:9n] Mspasn2(_: loT(Ek2_SSSccMEsfTAlyETseED t_e TatSO[0CE +[0;uim[   P_1]TR][L2__IeAM.i l:9el  yTaTk2kI: H
+20:19:11.458 > ndser: &ucstsserlla s NtLLhe 
+20:19:11.458 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.458 > 
+20:19:11.458 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.458 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.458 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.458 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.458 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.458 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.458 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.458 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.458 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > 
+20:19:11.458 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.458 > 
+20:19:11.458 > Rebooting...
+20:19:11.458 >  �ESP-ROM:esp32s3-20210327
+20:19:11.458 > Build:Mar 27 2021
+20:19:11.458 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.458 > Saved PC:0x40048839
+20:19:11.458 > SPIWP:0xee
+20:19:11.458 > mode:DIO, clock div:1
+20:19:11.458 > load:0x3fce3808,len:0x44c
+20:19:11.458 > load:0x403c9700,len:0xbec
+20:19:11.458 > load:0x403cc700,len:0x2920
+20:19:11.458 > entry 0x403c98d8
+20:19:11.635 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.635 > Task2, Filling the data onto queue[0m
+20:19:11.635 > [0;33m[   111][W][02_Queue.ino:60] MyTask1()P_
+20:19:11.635 > ROskC, CK faig dheedptarr_t 0qu05 ([SP_
+20:19:11.635 > R0;OTm[ U 11 ][ ]x003Quf5e.
+20:19:11.635 > fo:e1 "MDFaso2(o: n
+20:19:11.635 > T/fke: toccpsstulor ssyt ick.datl[em1f0n32 vP  tS4]up][m2_
+20:19:11.635 > exerins:91: esTaik2r_: l
+20:19:11.635 > c(skS_ YucIMss_TllG s0_tDGheINat_S[URC
+20:19:11.635 >  [0;pum[,  SP1]NT][F2_G_eRA.i| :9ve ,yTask2ck: r
+20:19:11.635 > ansle:  ucysssmellh s, tULhe d
+20:19:11.635 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.635 > 
+20:19:11.635 > 
+20:19:11.635 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.635 > 
+20:19:11.635 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.635 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.635 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.635 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.635 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.635 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.635 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.635 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.635 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.635 > 
+20:19:11.635 > 
+20:19:11.635 > 
+20:19:11.635 > 
+20:19:11.635 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.635 > 
+20:19:11.635 > Rebooting...
+20:19:11.635 > ESP-ROM:esp32s3-20210327
+20:19:11.635 > Build:Mar 27 2021
+20:19:11.635 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.635 > Saved PC:0x40048839
+20:19:11.635 > SPIWP:0xee
+20:19:11.635 > mode:DIO, clock div:1
+20:19:11.635 > load:0x3fce3808,len:0x44c
+20:19:11.635 > load:0x403c9700,len:0xbec
+20:19:11.635 > load:0x403cc700,len:0x2920
+20:19:11.635 > entry 0x403c98d8
+20:19:11.812 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.812 > Task2, Filling the data onto queue[0m
+20:19:11.812 > [0;33m[   111][W][02_Queue.ino:60] MyTask1()P_
+20:19:11.812 > ROskC, CK faig dheedptarr_t 0qu05 ([SP_
+20:19:11.812 > R0;OTm[ U 11 ][ ]x003Quf5e.
+20:19:11.812 > fo:e1 "MDFaso2(o: n
+20:19:11.812 > T/fke: toccpsstulor ssyt ick.datl[em1f0n32 vP  tS4]up][m2_
+20:19:11.812 > exerins:91: esTaik2r_: l
+20:19:11.812 > c(skS_ YucIMss_TllG s0_tDGheINat_S[URC
+20:19:11.812 >  [0;pum[,  SP1]NT][F2_G_eRA.i| :9ve ,yTask2ck: r
+20:19:11.812 > ansle:  ucysssmellh s, tULhe d
+20:19:11.812 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.812 > 
+20:19:11.812 > 
+20:19:11.812 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:11.812 > 
+20:19:11.812 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:11.812 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:11.812 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:11.812 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:11.812 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:11.812 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:11.812 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:11.812 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:11.812 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:11.812 > 
+20:19:11.812 > 
+20:19:11.812 > 
+20:19:11.812 > 
+20:19:11.812 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:11.812 > 
+20:19:11.812 > Rebooting...
+20:19:11.812 > ESP-ROM:esp32s3-20210327
+20:19:11.812 > Build:Mar 27 2021
+20:19:11.812 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:11.812 > Saved PC:0x40048839
+20:19:11.812 > SPIWP:0xee
+20:19:11.812 > mode:DIO, clock div:1
+20:19:11.812 > load:0x3fce3808,len:0x44c
+20:19:11.812 > load:0x403c9700,len:0xbec
+20:19:11.812 > load:0x403cc700,len:0x2920
+20:19:11.812 > entry 0x403c98d8
+20:19:11.871 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:11.873 > Task2, Filling the data onto queue[0m
+20:19:11.876 > [0;33m[   111][W][02_Queue.ino:60] MyTaskE()_ RORskH, K aaing :hesd_tarfr mx10eu(ES0_R[NO3_FO  D)1a][0]40279uec
+20:19:11.888 > fnle9 ] DyTcokpo):nt
+20:19:11.891 > /asee: osccoss/ulrt syst ck.c"alane 8[u;c2m[Po t2et[IT[0erQueuprenoi91: Myp_sktr): loT(Ek2_SSuTIeERfuAlyET0enD t_I dRtSO[0C +[0;uim[   P_1NTI_F02G_ueAe.| o:v1], yTsTk2k):rH
+20:19:11.904 > Tdser: &ucsesserlla s NtLLhe 
+20:19:11.907 > abort() was called at PC 0x40379f5f on core 1
+20:19:11.912 > 
+20:19:11.912 > 
+20:19:11.912 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:12.124 > 
+20:19:12.124 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:12.124 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:12.124 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:12.124 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:12.124 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:12.124 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:12.124 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:12.124 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:12.124 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:12.124 > 
+20:19:12.124 > 
+20:19:12.124 > 
+20:19:12.124 > 
+20:19:12.124 > ELF file SHA256: 9b02ba49d8f1a773
+20:19:12.124 > 
+20:19:12.124 > Rebooting...
+20:19:12.124 >  �ESP-ROM:esp32s3-20210327
+20:19:12.124 > Build:Mar 27 2021
+20:19:12.124 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:19:12.125 > Saved PC:0x40048839
+20:19:12.125 > SPIWP:0xee
+20:19:12.128 > mode:DIO, clock div:1
+20:19:12.128 > load:0x3fce3808,len:0x44c
+20:19:12.131 > load:0x403c9700,len:0xbec
+20:19:12.133 > load:0x403cc700,len:0x2920
+20:19:12.136 > entry 0x403c98d8
+20:19:12.222 > [0;33m[   111][W][02_Queue.ino:85] MyTask2(): 
+20:19:12.225 > Task2, Filling the data onto queue[0m
+20:19:12.228 > [0;33m[   111][W][02_Queue.ino:60] MyTask1ES:_E
+20:19:12.233 > TOskCH RK ding dheedptarfrtm0qu05 (E0m_E[_N3T_F  ND1 ][ ]x4237ue5eini:9:] IyT/ckmp):en
+20:19:12.241 > sasre: toccpsstulor ssyt ick.datl[em1
+20:19:12.245 > fun32 [P  1Se][p][me_Queueriso:on: Mspasnt(_: loTaEk2_SSSTceERfuARyEse_E tEe Nat_S[0RCE [0c32id  E13_I[IR_0LAQuIueM nole1]lM SasTi(kI HTadk2r,S&scetifur_yalenN tL)
+20:19:12.258 > 
+20:19:12.258 > abort() was called at PC 0x40379f5f on core 1
+20:19:12.264 > 
+20:19:12.264 > 
+20:19:12.264 > Backtrace: 0x40376fc6:0x3fcec2a0 0x40379f69:0x3fcec2c0 0x4037f749:0x3fcec2e0 0x40379f5f:0x3fcec360 0x4037a2b8:0x3fcec380 0x4037c995:0x3fcec3a0 0x4037c753:0x3fcec3c0 0x4200189b:0x3fcec400 0x42002c32:0x3fcec430
+20:19:12.455 > 
+20:19:12.455 >   #0  0x40376fc6:0x3fcec2a0 in panic_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:402
+20:19:12.455 >   #1  0x40379f69:0x3fcec2c0 in esp_system_abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_system.c:128
+20:19:12.455 >   #2  0x4037f749:0x3fcec2e0 in abort at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/abort.c:46
+20:19:12.455 >   #3  0x40379f5f:0x3fcec360 in _esp_error_check_failed at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/esp_err.c:43
+20:19:12.455 >   #4  0x4037a2b8:0x3fcec380 in vPortSetupTimer at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/port_systick.c:81 (discriminator 1)
+20:19:12.455 >   #5  0x4037c995:0x3fcec3a0 in xPortStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:104
+20:19:12.455 >   #6  0x4037c753:0x3fcec3c0 in vTaskStartScheduler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/tasks.c:2377
+20:19:12.455 >   #7  0x4200189b:0x3fcec400 in setup() at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:45
+20:19:12.455 >   #8  0x42002c32:0x3fcec430 in loopTask(void*) at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/main.cpp:42
+20:19:12.455 > 
+20:19:12.455 > 
+20:19:12.455 > 
+20:19:12.455 > 

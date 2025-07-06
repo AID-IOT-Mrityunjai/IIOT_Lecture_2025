@@ -1,0 +1,2224 @@
+20:16:57.383 > ESP-ROM:esp32s3-20210327
+20:16:57.383 > Build:Mar 27 2021
+20:16:57.383 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:57.383 > SPIWP:0xee
+20:16:57.383 > mode:DIO, clock div:1
+20:16:57.383 > load:0x3fce3808,len:0x44c
+20:16:57.383 > load:0x403c9700,len:0xbec
+20:16:57.383 > load:0x403cc700,len:0x2920
+20:16:57.383 > entry 0x403c98d8
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:57.383 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037cac3  PS      : 0x00060636  A0      : 0x8037f23c  A1      : 0x3fceced0  
+20:16:57.383 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000abab  A5      : 0x00060623  
+20:16:57.383 > A6      : 0x00060620  A7      : 0x0000cdcd  A8      : 0x0000abab  A9      : 0xffffffff  
+20:16:57.383 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:57.383 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037cac0:0x3fceced0 0x4037f239:0x3fcecf10 0x4037f4a5:0x3fcecf30 0x403771f1:0x3fcecf50 0x40377205:0x3fcecf80 0x40377232:0x3fcecfa0 0x4037f859:0x3fcecfc0 0x42002b95:0x3fcecfe0 0x4200d538:0x3fced020 0x42001787:0x3fced0a0
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037cac0:0x3fceced0 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:57.383 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:57.383 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:57.383 >   #1  0x4037f239:0x3fcecf10 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:57.383 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:57.383 >   #2  0x4037f4a5:0x3fcecf30 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:57.383 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:57.383 >   #3  0x403771f1:0x3fcecf50 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:57.383 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:57.383 >   #4  0x40377205:0x3fcecf80 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:57.383 >   #5  0x40377232:0x3fcecfa0 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:57.383 >   #6  0x4037f859:0x3fcecfc0 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:57.383 >   #7  0x42002b95:0x3fcecfe0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:57.383 >   #8  0x4200d538:0x3fced020 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:57.383 >   #9  0x42001787:0x3fced0a0 in MyTask1(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:60
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Core  1 register dump:
+20:16:57.383 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:16:57.383 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:16:57.383 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:16:57.383 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:57.383 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:57.383 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:57.383 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:57.383 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:57.383 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:57.383 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:57.383 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:57.383 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:57.383 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:57.383 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:57.383 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:57.383 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:57.383 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:57.383 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:57.383 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+20:16:57.383 > 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037c7c9  PS      : 0x00060b34  A0      : 0x8200e594  A1      : 0x3fcecbd0  
+20:16:57.383 > A2      : 0x3fc9543c  A3      : 0x00000002  A4      : 0x3fced22c  A5      : 0x00000001  
+20:16:57.383 > A6      : 0x00000003  A7      : 0x00000001  A8      : 0x8037c829  A9      : 0x3fcecbb0  
+20:16:57.383 > A10     : 0x3fced234  A11     : 0x3c037da1  A12     : 0x000000ff  A13     : 0x0000ff00  
+20:16:57.383 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+20:16:57.383 > EXCVADDR: 0x0000000e  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037c7c6:0x3fcecbd0 0x4200e591:0x3fcecc10 0x4200f12f:0x3fcecc30 0x4200f544:0x3fceccc0 0x4200e663:0x3fceccf0 0x4200eb6e:0x3fcecd10 0x4200956a:0x3fcecd30 0x42009846:0x3fcecda0 0x4037705d:0x3fcecdf0 0x40378519:0x3fcece10 0x00040021:0x3fceced0 |<-CORRUPTED
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037c7c6:0x3fcecbd0 in pxTaskGetNext at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/esp_additions/task_snapshot.c:155 (discriminator 2)
+20:16:57.383 >   #1  0x4200e591:0x3fcecc10 in esp_core_dump_get_next_task at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:195
+20:16:57.383 >   #2  0x4200f12f:0x3fcecc30 in elf_process_tasks_regs at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:395
+20:16:57.383 >       (inlined by) elf_write_tasks_data at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:442
+20:16:57.383 >       (inlined by) esp_core_dump_do_write_elf_pass at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:551
+20:16:57.383 >   #3  0x4200f544:0x3fceccc0 in esp_core_dump_write_elf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:584 (discriminator 2)
+20:16:57.383 >   #4  0x4200e663:0x3fceccf0 in esp_core_dump_write at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:157
+20:16:57.383 >   #5  0x4200eb6e:0x3fcecd10 in esp_core_dump_to_flash at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_flash.c:342
+20:16:57.383 >   #6  0x4200956a:0x3fcecd30 in esp_panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:346
+20:16:57.383 >   #7  0x42009846:0x3fcecda0 in panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:188
+20:16:57.383 >   #8  0x4037705d:0x3fcecdf0 in panicHandler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:213
+20:16:57.383 >   #9  0x40378519:0x3fcece10 in _xt_panic at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/arch/xtensa/panic_handler_asm.S:62
+20:16:57.383 >   #10 0x00040021:0x3fceced0 in ?? ??:0
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Core  1 register dump:
+20:16:57.383 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:16:57.383 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:16:57.383 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:16:57.383 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:57.383 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:57.383 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:57.383 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:57.383 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:57.383 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:57.383 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:57.383 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:57.383 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:57.383 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:57.383 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:57.383 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:57.383 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:57.383 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:57.383 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:57.383 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:57.383 > Re-entered core dump! Exception happened during core dump!
+20:16:57.383 > Rebooting...
+20:16:57.383 > ESP-ROM:esp32s3-20210327
+20:16:57.383 > Build:Mar 27 2021
+20:16:57.383 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:57.383 > Saved PC:0x40376bd4
+20:16:57.383 > SPIWP:0xee
+20:16:57.383 > mode:DIO, clock div:1
+20:16:57.383 > load:0x3fce3808,len:0x44c
+20:16:57.383 > load:0x403c9700,len:0xbec
+20:16:57.383 > load:0x403cc700,len:0x2920
+20:16:57.383 > entry 0x403c98d8
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:57.383 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:57.383 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:57.383 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:57.383 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:57.383 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:57.383 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:57.383 > Rebooting...
+20:16:57.383 > � �ESP-ROM:esp32s3-20210327
+20:16:57.383 > Build:Mar 27 2021
+20:16:57.383 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:57.383 > Saved PC:0x40376bd4
+20:16:57.383 > SPIWP:0xee
+20:16:57.383 > mode:DIO, clock div:1
+20:16:57.383 > load:0x3fce3808,len:0x44c
+20:16:57.383 > load:0x403c9700,len:0xbec
+20:16:57.383 > load:0x403cc700,len:0x2920
+20:16:57.383 > entry 0x403c98d8
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:57.383 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:57.383 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:57.383 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:57.383 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:57.383 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:57.383 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:57.383 > Rebooting...
+20:16:57.383 > � �ESP-ROM:esp32s3-20210327
+20:16:57.383 > Build:Mar 27 2021
+20:16:57.383 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:57.383 > Saved PC:0x40376bd4
+20:16:57.383 > SPIWP:0xee
+20:16:57.383 > mode:DIO, clock div:1
+20:16:57.383 > load:0x3fce3808,len:0x44c
+20:16:57.383 > load:0x403c9700,len:0xbec
+20:16:57.383 > load:0x403cc700,len:0x2920
+20:16:57.383 > entry 0x403c98d8
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:57.383 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:57.383 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:57.383 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:57.383 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:57.383 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:57.383 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:57.383 > Rebooting...
+20:16:57.383 > � �ESP-ROM:esp32s3-20210327
+20:16:57.383 > Build:Mar 27 2021
+20:16:57.383 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:57.383 > Saved PC:0x40376bd4
+20:16:57.383 > SPIWP:0xee
+20:16:57.383 > mode:DIO, clock div:1
+20:16:57.383 > load:0x3fce3808,len:0x44c
+20:16:57.383 > load:0x403c9700,len:0xbec
+20:16:57.383 > load:0x403cc700,len:0x2920
+20:16:57.383 > entry 0x403c98d8
+20:16:57.383 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:57.383 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:57.383 > Core  0 register dump:
+20:16:57.383 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:57.383 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:57.383 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:57.383 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:57.383 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:57.383 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:57.383 > 
+20:16:57.383 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:57.383 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > 
+20:16:57.383 > ELF file SHA256: 84c608c750f52e7e
+20:16:57.383 > 
+20:16:58.342 > Rebooting...
+20:16:58.342 > � �ESP-ROM:esp32s3-20210327
+20:16:58.342 > Build:Mar 27 2021
+20:16:58.342 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.342 > Saved PC:0x40376bd4
+20:16:58.342 > SPIWP:0xee
+20:16:58.342 > mode:DIO, clock div:1
+20:16:58.342 > load:0x3fce3808,len:0x44c
+20:16:58.342 > load:0x403c9700,len:0xbec
+20:16:58.342 > load:0x403cc700,len:0x2920
+20:16:58.342 > entry 0x403c98d8
+20:16:58.342 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.342 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.342 > Core  0 register dump:
+20:16:58.342 > PC      : 0x4037cac3  PS      : 0x00060636  A0      : 0x8037f23c  A1      : 0x3fceced0  
+20:16:58.342 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000abab  A5      : 0x00060623  
+20:16:58.342 > A6      : 0x00060620  A7      : 0x0000cdcd  A8      : 0x0000abab  A9      : 0xffffffff  
+20:16:58.342 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:58.342 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037cac0:0x3fceced0 0x4037f239:0x3fcecf10 0x4037f4a5:0x3fcecf30 0x403771f1:0x3fcecf50 0x40377205:0x3fcecf80 0x40377232:0x3fcecfa0 0x4037f859:0x3fcecfc0 0x42002b95:0x3fcecfe0 0x4200d538:0x3fced020 0x42001787:0x3fced0a0
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037cac0:0x3fceced0 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:58.342 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:58.342 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:58.342 >   #1  0x4037f239:0x3fcecf10 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:58.342 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:58.342 >   #2  0x4037f4a5:0x3fcecf30 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:58.342 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:58.342 >   #3  0x403771f1:0x3fcecf50 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:58.342 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:58.342 >   #4  0x40377205:0x3fcecf80 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:58.342 >   #5  0x40377232:0x3fcecfa0 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:58.342 >   #6  0x4037f859:0x3fcecfc0 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:58.342 >   #7  0x42002b95:0x3fcecfe0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:58.342 >   #8  0x4200d538:0x3fced020 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:58.342 >   #9  0x42001787:0x3fced0a0 in MyTask1(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:60
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Core  1 register dump:
+20:16:58.342 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:16:58.342 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:16:58.342 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:16:58.342 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:58.342 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:58.342 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:58.342 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:58.342 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:58.342 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:58.342 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:58.342 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:58.342 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:58.342 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:58.342 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:58.342 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:58.342 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:58.342 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:58.342 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:58.342 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.342 > 
+20:16:58.342 > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+20:16:58.342 > 
+20:16:58.342 > Core  0 register dump:
+20:16:58.342 > PC      : 0x4037c7c9  PS      : 0x00060b34  A0      : 0x8200e594  A1      : 0x3fcecbd0  
+20:16:58.342 > A2      : 0x3fc9543c  A3      : 0x00000002  A4      : 0x3fced22c  A5      : 0x00000001  
+20:16:58.342 > A6      : 0x00000003  A7      : 0x00000001  A8      : 0x8037c829  A9      : 0x3fcecbb0  
+20:16:58.342 > A10     : 0x3fced234  A11     : 0x3c037da1  A12     : 0x000000ff  A13     : 0x0000ff00  
+20:16:58.342 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+20:16:58.342 > EXCVADDR: 0x0000000e  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037c7c6:0x3fcecbd0 0x4200e591:0x3fcecc10 0x4200f12f:0x3fcecc30 0x4200f544:0x3fceccc0 0x4200e663:0x3fceccf0 0x4200eb6e:0x3fcecd10 0x4200956a:0x3fcecd30 0x42009846:0x3fcecda0 0x4037705d:0x3fcecdf0 0x40378519:0x3fcece10 0x00040021:0x3fceced0 |<-CORRUPTED
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037c7c6:0x3fcecbd0 in pxTaskGetNext at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/esp_additions/task_snapshot.c:155 (discriminator 2)
+20:16:58.342 >   #1  0x4200e591:0x3fcecc10 in esp_core_dump_get_next_task at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:195
+20:16:58.342 >   #2  0x4200f12f:0x3fcecc30 in elf_process_tasks_regs at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:395
+20:16:58.342 >       (inlined by) elf_write_tasks_data at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:442
+20:16:58.342 >       (inlined by) esp_core_dump_do_write_elf_pass at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:551
+20:16:58.342 >   #3  0x4200f544:0x3fceccc0 in esp_core_dump_write_elf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:584 (discriminator 2)
+20:16:58.342 >   #4  0x4200e663:0x3fceccf0 in esp_core_dump_write at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:157
+20:16:58.342 >   #5  0x4200eb6e:0x3fcecd10 in esp_core_dump_to_flash at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_flash.c:342
+20:16:58.342 >   #6  0x4200956a:0x3fcecd30 in esp_panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:346
+20:16:58.342 >   #7  0x42009846:0x3fcecda0 in panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:188
+20:16:58.342 >   #8  0x4037705d:0x3fcecdf0 in panicHandler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:213
+20:16:58.342 >   #9  0x40378519:0x3fcece10 in _xt_panic at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/arch/xtensa/panic_handler_asm.S:62
+20:16:58.342 >   #10 0x00040021:0x3fceced0 in ?? ??:0
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Core  1 register dump:
+20:16:58.342 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:16:58.342 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:16:58.342 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:16:58.342 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:58.342 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:16:58.342 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:16:58.342 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:16:58.342 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:16:58.342 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:16:58.342 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:16:58.342 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:16:58.342 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:16:58.342 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:16:58.342 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:16:58.342 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:16:58.342 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:16:58.342 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:16:58.342 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:16:58.342 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.342 > 
+20:16:58.342 > Re-entered core dump! Exception happened during core dump!
+20:16:58.342 > Rebooting...
+20:16:58.342 > ESP-ROM:esp32s3-20210327
+20:16:58.342 > Build:Mar 27 2021
+20:16:58.342 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.342 > Saved PC:0x40376bd4
+20:16:58.342 > SPIWP:0xee
+20:16:58.342 > mode:DIO, clock div:1
+20:16:58.342 > load:0x3fce3808,len:0x44c
+20:16:58.342 > load:0x403c9700,len:0xbec
+20:16:58.342 > load:0x403cc700,len:0x2920
+20:16:58.342 > entry 0x403c98d8
+20:16:58.342 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.342 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.342 > Core  0 register dump:
+20:16:58.342 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.342 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.342 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.342 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.342 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.342 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.342 > 
+20:16:58.342 > Rebooting...
+20:16:58.342 > � �ESP-ROM:esp32s3-20210327
+20:16:58.342 > Build:Mar 27 2021
+20:16:58.342 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.342 > Saved PC:0x40376bd4
+20:16:58.342 > SPIWP:0xee
+20:16:58.342 > mode:DIO, clock div:1
+20:16:58.342 > load:0x3fce3808,len:0x44c
+20:16:58.342 > load:0x403c9700,len:0xbec
+20:16:58.342 > load:0x403cc700,len:0x2920
+20:16:58.342 > entry 0x403c98d8
+20:16:58.342 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.342 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.342 > Core  0 register dump:
+20:16:58.342 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.342 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.342 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.342 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.342 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.342 > 
+20:16:58.342 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.342 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > 
+20:16:58.342 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.342 > 
+20:16:58.342 > Rebooting...
+20:16:58.342 > � �ESP-ROM:esp32s3-20210327
+20:16:58.342 > Build:Mar 27 2021
+20:16:58.342 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.342 > Saved PC:0x40376bd4
+20:16:58.342 > SPIWP:0xee
+20:16:58.342 > mode:DIO, clock div:1
+20:16:58.342 > load:0x3fce3808,len:0x44c
+20:16:58.342 > load:0x403c9700,len:0xbec
+20:16:58.342 > load:0x403cc700,len:0x2920
+20:16:58.342 > entry 0x403c98d8
+20:16:58.342 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.342 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.342 > Core  0 register dump:
+20:16:58.342 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.342 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.342 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.342 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.342 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.342 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.450 > 
+20:16:58.450 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.450 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.450 > 
+20:16:58.450 > Rebooting...
+20:16:58.450 > � �ESP-ROM:esp32s3-20210327
+20:16:58.450 > Build:Mar 27 2021
+20:16:58.450 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.450 > Saved PC:0x40376bd4
+20:16:58.450 > SPIWP:0xee
+20:16:58.450 > mode:DIO, clock div:1
+20:16:58.450 > load:0x3fce3808,len:0x44c
+20:16:58.450 > load:0x403c9700,len:0xbec
+20:16:58.450 > load:0x403cc700,len:0x2920
+20:16:58.450 > entry 0x403c98d8
+20:16:58.450 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.450 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.450 > Core  0 register dump:
+20:16:58.450 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.450 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.450 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.450 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.450 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.450 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.450 > 
+20:16:58.450 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.450 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.450 > 
+20:16:58.450 > Rebooting...
+20:16:58.450 > � �ESP-ROM:esp32s3-20210327
+20:16:58.450 > Build:Mar 27 2021
+20:16:58.450 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.450 > Saved PC:0x40376bd4
+20:16:58.450 > SPIWP:0xee
+20:16:58.450 > mode:DIO, clock div:1
+20:16:58.450 > load:0x3fce3808,len:0x44c
+20:16:58.450 > load:0x403c9700,len:0xbec
+20:16:58.450 > load:0x403cc700,len:0x2920
+20:16:58.450 > entry 0x403c98d8
+20:16:58.450 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.450 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.450 > Core  0 register dump:
+20:16:58.450 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.450 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.450 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.450 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.450 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.450 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.450 > 
+20:16:58.450 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.450 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > 
+20:16:58.450 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.450 > 
+20:16:58.450 > Rebooting...
+20:16:58.450 > � �ESP-ROM:esp32s3-20210327
+20:16:58.450 > Build:Mar 27 2021
+20:16:58.450 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.450 > Saved PC:0x40376bd4
+20:16:58.450 > SPIWP:0xee
+20:16:58.450 > mode:DIO, clock div:1
+20:16:58.450 > load:0x3fce3808,len:0x44c
+20:16:58.450 > load:0x403c9700,len:0xbec
+20:16:58.450 > load:0x403cc700,len:0x2920
+20:16:58.450 > entry 0x403c98d8
+20:16:58.450 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.450 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.450 > Core  0 register dump:
+20:16:58.450 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.450 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.450 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.450 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.450 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.450 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.487 > 
+20:16:58.487 > 
+20:16:58.487 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.487 > 
+20:16:58.487 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.487 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.487 > 
+20:16:58.487 > 
+20:16:58.487 > 
+20:16:58.487 > 
+20:16:58.487 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.487 > 
+20:16:58.492 > Rebooting...
+20:16:58.492 > � �ESP-ROM:esp32s3-20210327
+20:16:58.499 > Build:Mar 27 2021
+20:16:58.502 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.507 > Saved PC:0x40376bd4
+20:16:58.507 > SPIWP:0xee
+20:16:58.510 > mode:DIO, clock div:1
+20:16:58.510 > load:0x3fce3808,len:0x44c
+20:16:58.513 > load:0x403c9700,len:0xbec
+20:16:58.515 > load:0x403cc700,len:0x2920
+20:16:58.518 > entry 0x403c98d8
+20:16:58.602 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.608 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.614 > Core  0 register dump:
+20:16:58.616 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.621 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.629 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.638 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.646 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.655 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.661 > 
+20:16:58.663 > 
+20:16:58.663 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:58.712 > 
+20:16:58.712 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:58.712 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:58.712 > 
+20:16:58.712 > 
+20:16:58.712 > 
+20:16:58.712 > 
+20:16:58.712 > ELF file SHA256: 84c608c750f52e7e
+20:16:58.713 > 
+20:16:58.803 > Rebooting...
+20:16:58.803 > � �ESP-ROM:esp32s3-20210327
+20:16:58.810 > Build:Mar 27 2021
+20:16:58.813 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:58.819 > Saved PC:0x40376bd4
+20:16:58.819 > SPIWP:0xee
+20:16:58.822 > mode:DIO, clock div:1
+20:16:58.822 > load:0x3fce3808,len:0x44c
+20:16:58.824 > load:0x403c9700,len:0xbec
+20:16:58.827 > load:0x403cc700,len:0x2920
+20:16:58.830 > entry 0x403c98d8
+20:16:58.914 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:58.919 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:58.925 > Core  0 register dump:
+20:16:58.927 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:58.933 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:58.942 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:58.950 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:58.959 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:58.966 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:58.972 > 
+20:16:58.975 > 
+20:16:58.975 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:59.021 > 
+20:16:59.021 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:59.021 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:59.021 > 
+20:16:59.021 > 
+20:16:59.021 > 
+20:16:59.021 > 
+20:16:59.021 > ELF file SHA256: 84c608c750f52e7e
+20:16:59.021 > 
+20:16:59.116 > Rebooting...
+20:16:59.116 > � �ESP-ROM:esp32s3-20210327
+20:16:59.124 > Build:Mar 27 2021
+20:16:59.127 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:59.132 > Saved PC:0x40376bd4
+20:16:59.132 > SPIWP:0xee
+20:16:59.135 > mode:DIO, clock div:1
+20:16:59.135 > load:0x3fce3808,len:0x44c
+20:16:59.136 > load:0x403c9700,len:0xbec
+20:16:59.140 > load:0x403cc700,len:0x2920
+20:16:59.143 > entry 0x403c98d8
+20:16:59.227 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:59.233 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:59.237 > Core  0 register dump:
+20:16:59.241 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:59.247 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:59.254 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:59.264 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:59.271 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:59.280 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:59.285 > 
+20:16:59.288 > 
+20:16:59.288 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:59.329 > 
+20:16:59.329 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:59.329 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:59.329 > 
+20:16:59.329 > 
+20:16:59.329 > 
+20:16:59.329 > 
+20:16:59.329 > ELF file SHA256: 84c608c750f52e7e
+20:16:59.330 > 
+20:16:59.431 > Rebooting...
+20:16:59.431 > � �ESP-ROM:esp32s3-20210327
+20:16:59.438 > Build:Mar 27 2021
+20:16:59.441 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:59.447 > Saved PC:0x40376bd4
+20:16:59.447 > SPIWP:0xee
+20:16:59.449 > mode:DIO, clock div:1
+20:16:59.449 > load:0x3fce3808,len:0x44c
+20:16:59.453 > load:0x403c9700,len:0xbec
+20:16:59.455 > load:0x403cc700,len:0x2920
+20:16:59.458 > entry 0x403c98d8
+20:16:59.543 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:59.547 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:59.553 > Core  0 register dump:
+20:16:59.556 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:16:59.561 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:16:59.570 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:16:59.578 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:16:59.587 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:16:59.595 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:16:59.601 > 
+20:16:59.604 > 
+20:16:59.604 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:16:59.649 > 
+20:16:59.649 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:16:59.649 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:16:59.649 > 
+20:16:59.649 > 
+20:16:59.649 > 
+20:16:59.649 > 
+20:16:59.649 > ELF file SHA256: 84c608c750f52e7e
+20:16:59.649 > 
+20:16:59.743 > Rebooting...
+20:16:59.743 > � �ESP-ROM:esp32s3-20210327
+20:16:59.751 > Build:Mar 27 2021
+20:16:59.753 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:16:59.758 > Saved PC:0x40376bd4
+20:16:59.758 > SPIWP:0xee
+20:16:59.762 > mode:DIO, clock div:1
+20:16:59.762 > load:0x3fce3808,len:0x44c
+20:16:59.765 > load:0x403c9700,len:0xbec
+20:16:59.767 > load:0x403cc700,len:0x2920
+20:16:59.770 > entry 0x403c98d8
+20:16:59.854 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:16:59.860 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:16:59.865 > Core  0 register dump:
+20:16:59.868 > PC      : 0x4037cac3  PS      : 0x00060636  A0      : 0x8037f23c  A1      : 0x3fceced0  
+20:16:59.874 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000abab  A5      : 0x00060623  
+20:16:59.881 > A6      : 0x00060620  A7      : 0x0000cdcd  A8      : 0x0000abab  A9      : 0xffffffff  
+20:16:59.890 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:16:59.898 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:16:59.907 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:16:59.913 > 
+20:16:59.916 > 
+20:16:59.916 > Backtrace: 0x4037cac0:0x3fceced0 0x4037f239:0x3fcecf10 0x4037f4a5:0x3fcecf30 0x403771f1:0x3fcecf50 0x40377205:0x3fcecf80 0x40377232:0x3fcecfa0 0x4037f859:0x3fcecfc0 0x42002b95:0x3fcecfe0 0x4200d538:0x3fced020 0x42001787:0x3fced0a0
+20:17:00.140 > 
+20:17:00.140 >   #0  0x4037cac0:0x3fceced0 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:17:00.140 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:17:00.140 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:17:00.140 >   #1  0x4037f239:0x3fcecf10 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:17:00.140 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:17:00.140 >   #2  0x4037f4a5:0x3fcecf30 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:17:00.140 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:17:00.140 >   #3  0x403771f1:0x3fcecf50 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:17:00.140 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:17:00.140 >   #4  0x40377205:0x3fcecf80 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:17:00.140 >   #5  0x40377232:0x3fcecfa0 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:17:00.140 >   #6  0x4037f859:0x3fcecfc0 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:17:00.140 >   #7  0x42002b95:0x3fcecfe0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:17:00.140 >   #8  0x4200d538:0x3fced020 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:17:00.140 >   #9  0x42001787:0x3fced0a0 in MyTask1(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:60
+20:17:00.140 > 
+20:17:00.140 > 
+20:17:00.140 > Core  1 register dump:
+20:17:00.596 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:17:00.596 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:17:00.596 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:17:00.596 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:17:00.596 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:17:00.596 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:17:00.596 > 
+20:17:00.596 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:17:00.596 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:17:00.596 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:17:00.596 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:17:00.596 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:17:00.596 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:17:00.596 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:17:00.596 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:17:00.596 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:17:00.596 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:17:00.596 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:17:00.596 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:17:00.596 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:17:00.596 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:17:00.596 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > ELF file SHA256: 84c608c750f52e7e
+20:17:00.596 > 
+20:17:00.596 > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+20:17:00.596 > 
+20:17:00.596 > Core  0 register dump:
+20:17:00.596 > PC      : 0x4037c7c9  PS      : 0x00060b34  A0      : 0x8200e594  A1      : 0x3fcecbd0  
+20:17:00.596 > A2      : 0x3fc9543c  A3      : 0x00000002  A4      : 0x3fced22c  A5      : 0x00000001  
+20:17:00.596 > A6      : 0x00000003  A7      : 0x00000001  A8      : 0x8037c829  A9      : 0x3fcecbb0  
+20:17:00.596 > A10     : 0x3fced234  A11     : 0x3c037da1  A12     : 0x000000ff  A13     : 0x0000ff00  
+20:17:00.596 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+20:17:00.596 > EXCVADDR: 0x0000000e  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > Backtrace: 0x4037c7c6:0x3fcecbd0 0x4200e591:0x3fcecc10 0x4200f12f:0x3fcecc30 0x4200f544:0x3fceccc0 0x4200e663:0x3fceccf0 0x4200eb6e:0x3fcecd10 0x4200956a:0x3fcecd30 0x42009846:0x3fcecda0 0x4037705d:0x3fcecdf0 0x40378519:0x3fcece10 0x00040021:0x3fceced0 |<-CORRUPTED
+20:17:00.596 > 
+20:17:00.596 >   #0  0x4037c7c6:0x3fcecbd0 in pxTaskGetNext at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/esp_additions/task_snapshot.c:155 (discriminator 2)
+20:17:00.596 >   #1  0x4200e591:0x3fcecc10 in esp_core_dump_get_next_task at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:195
+20:17:00.596 >   #2  0x4200f12f:0x3fcecc30 in elf_process_tasks_regs at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:395
+20:17:00.596 >       (inlined by) elf_write_tasks_data at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:442
+20:17:00.596 >       (inlined by) esp_core_dump_do_write_elf_pass at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:551
+20:17:00.596 >   #3  0x4200f544:0x3fceccc0 in esp_core_dump_write_elf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_elf.c:584 (discriminator 2)
+20:17:00.596 >   #4  0x4200e663:0x3fceccf0 in esp_core_dump_write at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_common.c:157
+20:17:00.596 >   #5  0x4200eb6e:0x3fcecd10 in esp_core_dump_to_flash at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/espcoredump/src/core_dump_flash.c:342
+20:17:00.596 >   #6  0x4200956a:0x3fcecd30 in esp_panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/panic.c:346
+20:17:00.596 >   #7  0x42009846:0x3fcecda0 in panic_handler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:188
+20:17:00.596 >   #8  0x4037705d:0x3fcecdf0 in panicHandler at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/panic_handler.c:213
+20:17:00.596 >   #9  0x40378519:0x3fcece10 in _xt_panic at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_system/port/arch/xtensa/panic_handler_asm.S:62
+20:17:00.596 >   #10 0x00040021:0x3fceced0 in ?? ??:0
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > Core  1 register dump:
+20:17:00.596 > PC      : 0x4037cac3  PS      : 0x00060f36  A0      : 0x8037f23c  A1      : 0x3fced390  
+20:17:00.596 > A2      : 0x3fc965f4  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x00060f23  
+20:17:00.596 > A6      : 0x00060f20  A7      : 0x0000abab  A8      : 0xb33fffff  A9      : 0xffffffff  
+20:17:00.596 > A10     : 0x00000059  A11     : 0x3fc94d81  A12     : 0x0000003f  A13     : 0x0000005a  
+20:17:00.596 > A14     : 0x02c965f4  A15     : 0x00ffffff  SAR     : 0x00000004  EXCCAUSE: 0x00000001  
+20:17:00.596 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+20:17:00.596 > 
+20:17:00.596 > 
+20:17:00.596 > Backtrace: 0x4037cac0:0x3fced390 0x4037f239:0x3fced3d0 0x4037f4a5:0x3fced3f0 0x403771f1:0x3fced410 0x40377205:0x3fced440 0x40377232:0x3fced460 0x4037f859:0x3fced480 0x42002b95:0x3fced4a0 0x4200d538:0x3fced4e0 0x4200166f:0x3fced560
+20:17:00.860 > 
+20:17:00.860 >   #0  0x4037cac0:0x3fced390 in compare_and_set_native at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/compare_set.h:25
+20:17:00.860 >       (inlined by) spinlock_acquire at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/esp_hw_support/include/soc/spinlock.h:103
+20:17:00.860 >       (inlined by) xPortEnterCriticalTimeout at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/port.c:288
+20:17:00.860 >   #1  0x4037f239:0x3fced3d0 in vPortEnterCritical at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/include/freertos/portmacro.h:578 (discriminator 1)
+20:17:00.860 >       (inlined by) multi_heap_internal_lock at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap.c:152 (discriminator 1)
+20:17:00.860 >   #2  0x4037f4a5:0x3fced3f0 in multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:229
+20:17:00.860 >       (inlined by) multi_heap_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/multi_heap_poisoning.c:219
+20:17:00.860 >   #3  0x403771f1:0x3fced410 in heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:154
+20:17:00.860 >       (inlined by) heap_caps_malloc_base at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:99
+20:17:00.860 >   #4  0x40377205:0x3fced440 in heap_caps_malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:174
+20:17:00.860 >   #5  0x40377232:0x3fced460 in heap_caps_malloc_default at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/heap/heap_caps.c:199
+20:17:00.860 >   #6  0x4037f859:0x3fced480 in malloc at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/newlib/heap.c:24
+20:17:00.860 >   #7  0x42002b95:0x3fced4a0 in log_printfv at C:/Users/MJ/.platformio/packages/framework-arduinoespressif32@3.20006.221224/cores/esp32/esp32-hal-uart.c:546
+20:17:00.860 >   #8  0x4200d538:0x3fced4e0 in __wrap_log_printf at /Users/ficeto/Desktop/ESP32/ESP32S2/esp32-arduino-lib-builder/components/esp-insights/components/esp_diagnostics/src/esp_diagnostics_log_hook.c:434
+20:17:00.860 >   #9  0x4200166f:0x3fced560 in MyTask2(void*) at D:/2025/education/IIOT_LectureCode/FreeeRtos/02_Queue/02_Queue/02_Queue.ino:85
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > ELF file SHA256: 84c608c750f52e7e
+20:17:00.860 > 
+20:17:00.860 > Re-entered core dump! Exception happened during core dump!
+20:17:00.860 > Rebooting...
+20:17:00.860 > ESP-ROM:esp32s3-20210327
+20:17:00.860 > Build:Mar 27 2021
+20:17:00.860 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:00.860 > Saved PC:0x40376bd4
+20:17:00.860 > SPIWP:0xee
+20:17:00.860 > mode:DIO, clock div:1
+20:17:00.860 > load:0x3fce3808,len:0x44c
+20:17:00.860 > load:0x403c9700,len:0xbec
+20:17:00.860 > load:0x403cc700,len:0x2920
+20:17:00.860 > entry 0x403c98d8
+20:17:00.860 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:00.860 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:00.860 > Core  0 register dump:
+20:17:00.860 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:00.860 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:00.860 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:00.860 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:00.860 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:00.860 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:00.860 > 
+20:17:00.860 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:00.860 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > 
+20:17:00.860 > ELF file SHA256: 84c608c750f52e7e
+20:17:00.860 > 
+20:17:00.860 > Rebooting...
+20:17:00.860 > � �ESP-ROM:esp32s3-20210327
+20:17:00.860 > Build:Mar 27 2021
+20:17:00.860 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:00.860 > Saved PC:0x40376bd4
+20:17:00.860 > SPIWP:0xee
+20:17:00.860 > mode:DIO, clock div:1
+20:17:00.860 > load:0x3fce3808,len:0x44c
+20:17:00.860 > load:0x403c9700,len:0xbec
+20:17:00.860 > load:0x403cc700,len:0x2920
+20:17:00.860 > entry 0x403c98d8
+20:17:00.860 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:00.894 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:00.894 > Core  0 register dump:
+20:17:00.894 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:00.894 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:00.894 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:00.894 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:00.894 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:00.894 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:00.894 > 
+20:17:00.894 > 
+20:17:00.894 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:00.894 > 
+20:17:00.894 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:00.894 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:00.894 > 
+20:17:00.894 > 
+20:17:00.894 > 
+20:17:00.894 > 
+20:17:00.894 > ELF file SHA256: 84c608c750f52e7e
+20:17:00.894 > 
+20:17:00.894 > Rebooting...
+20:17:00.894 > � �ESP-ROM:esp32s3-20210327
+20:17:00.894 > Build:Mar 27 2021
+20:17:00.894 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:00.894 > Saved PC:0x40376bd4
+20:17:00.894 > SPIWP:0xee
+20:17:00.894 > mode:DIO, clock div:1
+20:17:00.894 > load:0x3fce3808,len:0x44c
+20:17:00.894 > load:0x403c9700,len:0xbec
+20:17:00.894 > load:0x403cc700,len:0x2920
+20:17:00.894 > entry 0x403c98d8
+20:17:00.908 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:00.913 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:00.919 > Core  0 register dump:
+20:17:00.922 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:00.928 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:00.937 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:00.944 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:00.952 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:00.961 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:00.967 > 
+20:17:00.969 > 
+20:17:00.969 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:01.019 > 
+20:17:01.019 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:01.019 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:01.019 > 
+20:17:01.019 > 
+20:17:01.019 > 
+20:17:01.019 > 
+20:17:01.019 > ELF file SHA256: 84c608c750f52e7e
+20:17:01.020 > 
+20:17:01.111 > Rebooting...
+20:17:01.111 > � �ESP-ROM:esp32s3-20210327
+20:17:01.118 > Build:Mar 27 2021
+20:17:01.121 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:01.127 > Saved PC:0x40376bd4
+20:17:01.127 > SPIWP:0xee
+20:17:01.129 > mode:DIO, clock div:1
+20:17:01.129 > load:0x3fce3808,len:0x44c
+20:17:01.132 > load:0x403c9700,len:0xbec
+20:17:01.135 > load:0x403cc700,len:0x2920
+20:17:01.138 > entry 0x403c98d8
+20:17:01.221 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:01.227 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:01.233 > Core  0 register dump:
+20:17:01.235 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:01.241 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:01.250 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:01.258 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:01.267 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:01.275 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:01.280 > 
+20:17:01.283 > 
+20:17:01.283 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:01.326 > 
+20:17:01.326 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:01.326 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:01.326 > 
+20:17:01.326 > 
+20:17:01.326 > 
+20:17:01.326 > 
+20:17:01.326 > ELF file SHA256: 84c608c750f52e7e
+20:17:01.327 > 
+20:17:01.424 > Rebooting...
+20:17:01.424 > � �ESP-ROM:esp32s3-20210327
+20:17:01.431 > Build:Mar 27 2021
+20:17:01.434 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:01.439 > Saved PC:0x40376bd4
+20:17:01.439 > SPIWP:0xee
+20:17:01.442 > mode:DIO, clock div:1
+20:17:01.442 > load:0x3fce3808,len:0x44c
+20:17:01.445 > load:0x403c9700,len:0xbec
+20:17:01.447 > load:0x403cc700,len:0x2920
+20:17:01.450 > entry 0x403c98d8
+20:17:01.533 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:01.539 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:01.546 > Core  0 register dump:
+20:17:01.549 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:01.554 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:01.562 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:01.571 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:01.579 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:01.587 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:01.593 > 
+20:17:01.596 > 
+20:17:01.596 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:01.638 > 
+20:17:01.638 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:01.638 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:01.638 > 
+20:17:01.638 > 
+20:17:01.638 > 
+20:17:01.638 > 
+20:17:01.638 > ELF file SHA256: 84c608c750f52e7e
+20:17:01.639 > 
+20:17:01.737 > Rebooting...
+20:17:01.737 > � �ESP-ROM:esp32s3-20210327
+20:17:01.744 > Build:Mar 27 2021
+20:17:01.747 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:01.752 > Saved PC:0x40376bd4
+20:17:01.752 > SPIWP:0xee
+20:17:01.756 > mode:DIO, clock div:1
+20:17:01.756 > load:0x3fce3808,len:0x44c
+20:17:01.759 > load:0x403c9700,len:0xbec
+20:17:01.761 > load:0x403cc700,len:0x2920
+20:17:01.764 > entry 0x403c98d8
+20:17:01.848 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:01.854 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:01.860 > Core  0 register dump:
+20:17:01.862 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:01.868 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:01.876 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:01.885 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:01.893 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:01.901 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:01.907 > 
+20:17:01.910 > 
+20:17:01.910 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:01.952 > 
+20:17:01.952 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:01.952 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:01.952 > 
+20:17:01.952 > 
+20:17:01.952 > 
+20:17:01.952 > 
+20:17:01.952 > ELF file SHA256: 84c608c750f52e7e
+20:17:01.952 > 
+20:17:02.056 > Rebooting...
+20:17:02.056 > � �ESP-ROM:esp32s3-20210327
+20:17:02.064 > Build:Mar 27 2021
+20:17:02.066 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:02.073 > Saved PC:0x40376bd4
+20:17:02.073 > SPIWP:0xee
+20:17:02.075 > mode:DIO, clock div:1
+20:17:02.075 > load:0x3fce3808,len:0x44c
+20:17:02.078 > load:0x403c9700,len:0xbec
+20:17:02.081 > load:0x403cc700,len:0x2920
+20:17:02.084 > entry 0x403c98d8
+20:17:02.168 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:02.173 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:02.179 > Core  0 register dump:
+20:17:02.182 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:02.188 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:02.195 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:02.204 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:02.212 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:02.220 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:02.226 > 
+20:17:02.229 > 
+20:17:02.229 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:02.273 > 
+20:17:02.273 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:02.273 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:02.273 > 
+20:17:02.273 > 
+20:17:02.273 > 
+20:17:02.273 > 
+20:17:02.273 > ELF file SHA256: 84c608c750f52e7e
+20:17:02.273 > 
+20:17:02.370 > Rebooting...
+20:17:02.370 > � �ESP-ROM:esp32s3-20210327
+20:17:02.378 > Build:Mar 27 2021
+20:17:02.380 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:02.386 > Saved PC:0x40376bd4
+20:17:02.386 > SPIWP:0xee
+20:17:02.389 > mode:DIO, clock div:1
+20:17:02.389 > load:0x3fce3808,len:0x44c
+20:17:02.392 > load:0x403c9700,len:0xbec
+20:17:02.394 > load:0x403cc700,len:0x2920
+20:17:02.397 > entry 0x403c98d8
+20:17:02.482 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:02.488 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:02.493 > Core  0 register dump:
+20:17:02.496 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:02.501 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:02.510 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:02.518 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:02.526 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:02.535 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:02.540 > 
+20:17:02.543 > 
+20:17:02.543 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:02.585 > 
+20:17:02.585 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:02.585 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:02.585 > 
+20:17:02.585 > 
+20:17:02.585 > 
+20:17:02.585 > 
+20:17:02.585 > ELF file SHA256: 84c608c750f52e7e
+20:17:02.586 > 
+20:17:02.685 > Rebooting...
+20:17:02.686 > � �ESP-ROM:esp32s3-20210327
+20:17:02.693 > Build:Mar 27 2021
+20:17:02.696 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:02.702 > Saved PC:0x40376bd4
+20:17:02.702 > SPIWP:0xee
+20:17:02.705 > mode:DIO, clock div:1
+20:17:02.705 > load:0x3fce3808,len:0x44c
+20:17:02.708 > load:0x403c9700,len:0xbec
+20:17:02.711 > load:0x403cc700,len:0x2920
+20:17:02.713 > entry 0x403c98d8
+20:17:02.797 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:02.803 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:02.808 > Core  0 register dump:
+20:17:02.811 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:02.817 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:02.825 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:02.833 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:02.842 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:02.850 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:02.856 > 
+20:17:02.859 > 
+20:17:02.859 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:02.898 > 
+20:17:02.898 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:02.898 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:02.898 > 
+20:17:02.898 > 
+20:17:02.898 > 
+20:17:02.898 > 
+20:17:02.898 > ELF file SHA256: 84c608c750f52e7e
+20:17:02.899 > 
+20:17:03.001 > Rebooting...
+20:17:03.001 > � �ESP-ROM:esp32s3-20210327
+20:17:03.008 > Build:Mar 27 2021
+20:17:03.010 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:03.016 > Saved PC:0x40376bd4
+20:17:03.016 > SPIWP:0xee
+20:17:03.019 > mode:DIO, clock div:1
+20:17:03.019 > load:0x3fce3808,len:0x44c
+20:17:03.022 > load:0x403c9700,len:0xbec
+20:17:03.024 > load:0x403cc700,len:0x2920
+20:17:03.027 > entry 0x403c98d8
+20:17:03.112 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:03.117 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:03.122 > Core  0 register dump:
+20:17:03.124 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:03.131 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:03.139 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:03.147 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:03.156 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:03.164 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:03.170 > 
+20:17:03.173 > 
+20:17:03.173 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:03.220 > 
+20:17:03.220 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:03.220 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:03.220 > 
+20:17:03.220 > 
+20:17:03.220 > 
+20:17:03.220 > 
+20:17:03.220 > ELF file SHA256: 84c608c750f52e7e
+20:17:03.220 > 
+20:17:03.321 > Rebooting...
+20:17:03.322 > � �ESP-ROM:esp32s3-20210327
+20:17:03.329 > Build:Mar 27 2021
+20:17:03.331 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:03.337 > Saved PC:0x40376bd4
+20:17:03.337 > SPIWP:0xee
+20:17:03.340 > mode:DIO, clock div:1
+20:17:03.340 > load:0x3fce3808,len:0x44c
+20:17:03.342 > load:0x403c9700,len:0xbec
+20:17:03.346 > load:0x403cc700,len:0x2920
+20:17:03.348 > entry 0x403c98d8
+20:17:03.432 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:03.438 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:03.444 > Core  0 register dump:
+20:17:03.446 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:03.452 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:03.460 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:03.468 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:03.477 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:03.486 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:03.491 > 
+20:17:03.494 > 
+20:17:03.494 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:03.539 > 
+20:17:03.539 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:03.539 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:03.539 > 
+20:17:03.539 > 
+20:17:03.539 > 
+20:17:03.539 > 
+20:17:03.539 > ELF file SHA256: 84c608c750f52e7e
+20:17:03.539 > 
+20:17:03.641 > Rebooting...
+20:17:03.641 > � �ESP-ROM:esp32s3-20210327
+20:17:03.649 > Build:Mar 27 2021
+20:17:03.651 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:03.657 > Saved PC:0x40376bd4
+20:17:03.657 > SPIWP:0xee
+20:17:03.660 > mode:DIO, clock div:1
+20:17:03.660 > load:0x3fce3808,len:0x44c
+20:17:03.663 > load:0x403c9700,len:0xbec
+20:17:03.665 > load:0x403cc700,len:0x2920
+20:17:03.668 > entry 0x403c98d8
+20:17:03.752 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:03.758 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:03.764 > Core  0 register dump:
+20:17:03.767 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:03.772 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:03.781 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:03.788 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:03.797 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:03.805 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:03.811 > 
+20:17:03.813 > 
+20:17:03.813 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:03.858 > 
+20:17:03.858 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:03.858 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:03.858 > 
+20:17:03.858 > 
+20:17:03.858 > 
+20:17:03.858 > 
+20:17:03.858 > ELF file SHA256: 84c608c750f52e7e
+20:17:03.858 > 
+20:17:03.956 > Rebooting...
+20:17:03.956 > � �ESP-ROM:esp32s3-20210327
+20:17:03.963 > Build:Mar 27 2021
+20:17:03.966 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:03.972 > Saved PC:0x40376bd4
+20:17:03.972 > SPIWP:0xee
+20:17:03.975 > mode:DIO, clock div:1
+20:17:03.975 > load:0x3fce3808,len:0x44c
+20:17:03.978 > load:0x403c9700,len:0xbec
+20:17:03.980 > load:0x403cc700,len:0x2920
+20:17:03.982 > entry 0x403c98d8
+20:17:04.067 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:04.073 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:04.078 > Core  0 register dump:
+20:17:04.081 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:04.087 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:04.095 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:04.104 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:04.112 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:04.120 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:04.126 > 
+20:17:04.129 > 
+20:17:04.129 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:04.175 > 
+20:17:04.175 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:04.175 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:04.175 > 
+20:17:04.175 > 
+20:17:04.175 > 
+20:17:04.175 > 
+20:17:04.175 > ELF file SHA256: 84c608c750f52e7e
+20:17:04.176 > 
+20:17:04.270 > Rebooting...
+20:17:04.271 > � �ESP-ROM:esp32s3-20210327
+20:17:04.278 > Build:Mar 27 2021
+20:17:04.281 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:04.286 > Saved PC:0x40376bd4
+20:17:04.286 > SPIWP:0xee
+20:17:04.289 > mode:DIO, clock div:1
+20:17:04.289 > load:0x3fce3808,len:0x44c
+20:17:04.292 > load:0x403c9700,len:0xbec
+20:17:04.295 > load:0x403cc700,len:0x2920
+20:17:04.298 > entry 0x403c98d8
+20:17:04.381 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:04.387 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:04.392 > Core  0 register dump:
+20:17:04.396 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:04.401 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:04.409 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:04.418 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:04.426 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:04.434 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:04.439 > 
+20:17:04.443 > 
+20:17:04.443 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:04.485 > 
+20:17:04.485 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:04.485 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:04.485 > 
+20:17:04.485 > 
+20:17:04.485 > 
+20:17:04.485 > 
+20:17:04.485 > ELF file SHA256: 84c608c750f52e7e
+20:17:04.485 > 
+20:17:04.584 > Rebooting...
+20:17:04.584 > � �ESP-ROM:esp32s3-20210327
+20:17:04.592 > Build:Mar 27 2021
+20:17:04.594 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:04.600 > Saved PC:0x40376bd4
+20:17:04.600 > SPIWP:0xee
+20:17:04.604 > mode:DIO, clock div:1
+20:17:04.604 > load:0x3fce3808,len:0x44c
+20:17:04.606 > load:0x403c9700,len:0xbec
+20:17:04.609 > load:0x403cc700,len:0x2920
+20:17:04.611 > entry 0x403c98d8
+20:17:04.696 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:04.701 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:04.707 > Core  0 register dump:
+20:17:04.709 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:04.716 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:04.724 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:04.732 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:04.741 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:04.749 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:04.754 > 
+20:17:04.757 > 
+20:17:04.757 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:04.802 > 
+20:17:04.802 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:04.802 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:04.802 > 
+20:17:04.802 > 
+20:17:04.802 > 
+20:17:04.802 > 
+20:17:04.802 > ELF file SHA256: 84c608c750f52e7e
+20:17:04.802 > 
+20:17:04.902 > Rebooting...
+20:17:04.902 > � �ESP-ROM:esp32s3-20210327
+20:17:04.909 > Build:Mar 27 2021
+20:17:04.913 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:04.918 > Saved PC:0x40376bd4
+20:17:04.918 > SPIWP:0xee
+20:17:04.921 > mode:DIO, clock div:1
+20:17:04.921 > load:0x3fce3808,len:0x44c
+20:17:04.923 > load:0x403c9700,len:0xbec
+20:17:04.926 > load:0x403cc700,len:0x2920
+20:17:04.929 > entry 0x403c98d8
+20:17:05.012 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:05.019 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:05.025 > Core  0 register dump:
+20:17:05.027 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:05.033 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:05.041 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:05.050 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:05.058 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:05.066 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:05.072 > 
+20:17:05.075 > 
+20:17:05.075 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:05.117 > 
+20:17:05.117 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:05.117 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:05.117 > 
+20:17:05.117 > 
+20:17:05.117 > 
+20:17:05.117 > 
+20:17:05.117 > ELF file SHA256: 84c608c750f52e7e
+20:17:05.117 > 
+20:17:05.218 > Rebooting...
+20:17:05.218 > � �ESP-ROM:esp32s3-20210327
+20:17:05.226 > Build:Mar 27 2021
+20:17:05.229 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:05.234 > Saved PC:0x40376bd4
+20:17:05.234 > SPIWP:0xee
+20:17:05.237 > mode:DIO, clock div:1
+20:17:05.237 > load:0x3fce3808,len:0x44c
+20:17:05.239 > load:0x403c9700,len:0xbec
+20:17:05.242 > load:0x403cc700,len:0x2920
+20:17:05.245 > entry 0x403c98d8
+20:17:05.329 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:05.335 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:05.340 > Core  0 register dump:
+20:17:05.344 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:05.349 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:05.357 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:05.366 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:05.374 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:05.382 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:05.388 > 
+20:17:05.391 > 
+20:17:05.391 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:05.429 > 
+20:17:05.429 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:05.429 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:05.429 > 
+20:17:05.429 > 
+20:17:05.429 > 
+20:17:05.429 > 
+20:17:05.429 > ELF file SHA256: 84c608c750f52e7e
+20:17:05.430 > 
+20:17:05.536 > Rebooting...
+20:17:05.536 > � �ESP-ROM:esp32s3-20210327
+20:17:05.543 > Build:Mar 27 2021
+20:17:05.546 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:05.552 > Saved PC:0x40376bd4
+20:17:05.552 > SPIWP:0xee
+20:17:05.555 > mode:DIO, clock div:1
+20:17:05.555 > load:0x3fce3808,len:0x44c
+20:17:05.557 > load:0x403c9700,len:0xbec
+20:17:05.560 > load:0x403cc700,len:0x2920
+20:17:05.563 > entry 0x403c98d8
+20:17:05.647 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:05.653 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:05.658 > Core  0 register dump:
+20:17:05.661 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:05.666 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:05.675 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:05.683 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:05.691 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:05.700 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:05.706 > 
+20:17:05.708 > 
+20:17:05.708 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:05.752 > 
+20:17:05.752 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:05.752 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:05.752 > 
+20:17:05.752 > 
+20:17:05.752 > 
+20:17:05.752 > 
+20:17:05.752 > ELF file SHA256: 84c608c750f52e7e
+20:17:05.752 > 
+20:17:05.851 > Rebooting...
+20:17:05.851 > � �ESP-ROM:esp32s3-20210327
+20:17:05.858 > Build:Mar 27 2021
+20:17:05.861 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:05.865 > Saved PC:0x40376bd4
+20:17:05.865 > SPIWP:0xee
+20:17:05.869 > mode:DIO, clock div:1
+20:17:05.869 > load:0x3fce3808,len:0x44c
+20:17:05.871 > load:0x403c9700,len:0xbec
+20:17:05.875 > load:0x403cc700,len:0x2920
+20:17:05.877 > entry 0x403c98d8
+20:17:05.961 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:05.968 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:05.973 > Core  0 register dump:
+20:17:05.976 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:05.982 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:05.990 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:05.998 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:06.006 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:06.015 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:06.020 > 
+20:17:06.023 > 
+20:17:06.023 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:06.065 > 
+20:17:06.065 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:06.065 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:06.065 > 
+20:17:06.065 > 
+20:17:06.065 > 
+20:17:06.065 > 
+20:17:06.065 > ELF file SHA256: 84c608c750f52e7e
+20:17:06.066 > 
+20:17:06.169 > Rebooting...
+20:17:06.169 > � �ESP-ROM:esp32s3-20210327
+20:17:06.177 > Build:Mar 27 2021
+20:17:06.179 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:06.185 > Saved PC:0x40376bd4
+20:17:06.185 > SPIWP:0xee
+20:17:06.188 > mode:DIO, clock div:1
+20:17:06.188 > load:0x3fce3808,len:0x44c
+20:17:06.191 > load:0x403c9700,len:0xbec
+20:17:06.193 > load:0x403cc700,len:0x2920
+20:17:06.196 > entry 0x403c98d8
+20:17:06.281 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:06.286 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:06.292 > Core  0 register dump:
+20:17:06.295 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:06.301 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:06.309 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:06.317 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:06.325 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:06.334 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:06.339 > 
+20:17:06.342 > 
+20:17:06.342 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:06.386 > 
+20:17:06.386 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:06.386 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:06.386 > 
+20:17:06.386 > 
+20:17:06.386 > 
+20:17:06.386 > 
+20:17:06.386 > ELF file SHA256: 84c608c750f52e7e
+20:17:06.386 > 
+20:17:06.487 > Rebooting...
+20:17:06.487 > � �ESP-ROM:esp32s3-20210327
+20:17:06.495 > Build:Mar 27 2021
+20:17:06.497 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:06.503 > Saved PC:0x40376bd4
+20:17:06.503 > SPIWP:0xee
+20:17:06.506 > mode:DIO, clock div:1
+20:17:06.506 > load:0x3fce3808,len:0x44c
+20:17:06.508 > load:0x403c9700,len:0xbec
+20:17:06.510 > load:0x403cc700,len:0x2920
+20:17:06.514 > entry 0x403c98d8
+20:17:06.599 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:06.604 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:06.609 > Core  0 register dump:
+20:17:06.612 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:06.618 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:06.627 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:06.635 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:06.642 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:06.651 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:06.657 > 
+20:17:06.659 > 
+20:17:06.659 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:06.701 > 
+20:17:06.701 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:06.701 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:06.701 > 
+20:17:06.701 > 
+20:17:06.701 > 
+20:17:06.701 > 
+20:17:06.701 > ELF file SHA256: 84c608c750f52e7e
+20:17:06.701 > 
+20:17:06.803 > Rebooting...
+20:17:06.803 > � �ESP-ROM:esp32s3-20210327
+20:17:06.811 > Build:Mar 27 2021
+20:17:06.813 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:06.820 > Saved PC:0x40376bd4
+20:17:06.820 > SPIWP:0xee
+20:17:06.822 > mode:DIO, clock div:1
+20:17:06.822 > load:0x3fce3808,len:0x44c
+20:17:06.826 > load:0x403c9700,len:0xbec
+20:17:06.827 > load:0x403cc700,len:0x2920
+20:17:06.830 > entry 0x403c98d8
+20:17:06.915 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:06.920 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:06.925 > Core  0 register dump:
+20:17:06.928 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:06.934 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:06.943 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:06.951 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:06.960 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:06.968 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:06.974 > 
+20:17:06.975 > 
+20:17:06.975 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:07.017 > 
+20:17:07.017 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:07.017 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:07.017 > 
+20:17:07.017 > 
+20:17:07.017 > 
+20:17:07.017 > 
+20:17:07.017 > ELF file SHA256: 84c608c750f52e7e
+20:17:07.018 > 
+20:17:07.120 > Rebooting...
+20:17:07.120 > � �ESP-ROM:esp32s3-20210327
+20:17:07.127 > Build:Mar 27 2021
+20:17:07.130 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:07.135 > Saved PC:0x40376bd4
+20:17:07.135 > SPIWP:0xee
+20:17:07.139 > mode:DIO, clock div:1
+20:17:07.139 > load:0x3fce3808,len:0x44c
+20:17:07.141 > load:0x403c9700,len:0xbec
+20:17:07.144 > load:0x403cc700,len:0x2920
+20:17:07.147 > entry 0x403c98d8
+20:17:07.231 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:07.237 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:07.243 > Core  0 register dump:
+20:17:07.245 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:07.251 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:07.259 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:07.267 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:07.276 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:07.284 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:07.290 > 
+20:17:07.293 > 
+20:17:07.293 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:07.344 > 
+20:17:07.344 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:07.344 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:07.344 > 
+20:17:07.344 > 
+20:17:07.344 > 
+20:17:07.344 > 
+20:17:07.344 > ELF file SHA256: 84c608c750f52e7e
+20:17:07.345 > 
+20:17:07.438 > Rebooting...
+20:17:07.438 > � �ESP-ROM:esp32s3-20210327
+20:17:07.445 > Build:Mar 27 2021
+20:17:07.449 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:07.453 > Saved PC:0x40376bd4
+20:17:07.453 > SPIWP:0xee
+20:17:07.457 > mode:DIO, clock div:1
+20:17:07.457 > load:0x3fce3808,len:0x44c
+20:17:07.461 > load:0x403c9700,len:0xbec
+20:17:07.463 > load:0x403cc700,len:0x2920
+20:17:07.464 > entry 0x403c98d8
+20:17:07.548 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:07.555 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:07.560 > Core  0 register dump:
+20:17:07.563 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:07.569 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:07.577 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:07.585 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:07.594 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:07.602 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:07.607 > 
+20:17:07.610 > 
+20:17:07.610 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:07.655 > 
+20:17:07.655 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:07.655 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:07.655 > 
+20:17:07.655 > 
+20:17:07.655 > 
+20:17:07.655 > 
+20:17:07.655 > ELF file SHA256: 84c608c750f52e7e
+20:17:07.656 > 
+20:17:07.754 > Rebooting...
+20:17:07.754 > � �ESP-ROM:esp32s3-20210327
+20:17:07.762 > Build:Mar 27 2021
+20:17:07.764 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:07.770 > Saved PC:0x40376bd4
+20:17:07.770 > SPIWP:0xee
+20:17:07.772 > mode:DIO, clock div:1
+20:17:07.772 > load:0x3fce3808,len:0x44c
+20:17:07.776 > load:0x403c9700,len:0xbec
+20:17:07.778 > load:0x403cc700,len:0x2920
+20:17:07.781 > entry 0x403c98d8
+20:17:07.866 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:07.871 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:07.877 > Core  0 register dump:
+20:17:07.879 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:07.885 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:07.893 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:07.902 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:07.910 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:07.918 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:07.924 > 
+20:17:07.927 > 
+20:17:07.927 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:07.973 > 
+20:17:07.973 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:07.973 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:07.973 > 
+20:17:07.973 > 
+20:17:07.973 > 
+20:17:07.973 > 
+20:17:07.973 > ELF file SHA256: 84c608c750f52e7e
+20:17:07.974 > 
+20:17:08.069 > Rebooting...
+20:17:08.070 > � �ESP-ROM:esp32s3-20210327
+20:17:08.077 > Build:Mar 27 2021
+20:17:08.080 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:08.085 > Saved PC:0x40376bd4
+20:17:08.085 > SPIWP:0xee
+20:17:08.088 > mode:DIO, clock div:1
+20:17:08.088 > load:0x3fce3808,len:0x44c
+20:17:08.091 > load:0x403c9700,len:0xbec
+20:17:08.094 > load:0x403cc700,len:0x2920
+20:17:08.097 > entry 0x403c98d8
+20:17:08.180 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:08.187 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:08.192 > Core  0 register dump:
+20:17:08.195 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:08.200 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:08.208 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:08.217 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:08.225 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:08.233 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:08.239 > 
+20:17:08.242 > 
+20:17:08.242 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:08.281 > 
+20:17:08.281 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:08.281 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:08.281 > 
+20:17:08.281 > 
+20:17:08.281 > 
+20:17:08.281 > 
+20:17:08.281 > ELF file SHA256: 84c608c750f52e7e
+20:17:08.281 > 
+20:17:08.389 > Rebooting...
+20:17:08.389 > � �ESP-ROM:esp32s3-20210327
+20:17:08.398 > Build:Mar 27 2021
+20:17:08.401 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:08.406 > Saved PC:0x40376bd4
+20:17:08.406 > SPIWP:0xee
+20:17:08.409 > mode:DIO, clock div:1
+20:17:08.409 > load:0x3fce3808,len:0x44c
+20:17:08.412 > load:0x403c9700,len:0xbec
+20:17:08.414 > load:0x403cc700,len:0x2920
+20:17:08.417 > entry 0x403c98d8
+20:17:08.501 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:08.507 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:08.513 > Core  0 register dump:
+20:17:08.515 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:08.521 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:08.529 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:08.537 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:08.546 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:08.555 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:08.560 > 
+20:17:08.562 > 
+20:17:08.562 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:08.605 > 
+20:17:08.605 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:08.605 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:08.605 > 
+20:17:08.605 > 
+20:17:08.605 > 
+20:17:08.605 > 
+20:17:08.605 > ELF file SHA256: 84c608c750f52e7e
+20:17:08.605 > 
+20:17:08.712 > Rebooting...
+20:17:08.712 > � �ESP-ROM:esp32s3-20210327
+20:17:08.721 > Build:Mar 27 2021
+20:17:08.723 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:08.728 > Saved PC:0x40376bd4
+20:17:08.728 > SPIWP:0xee
+20:17:08.732 > mode:DIO, clock div:1
+20:17:08.732 > load:0x3fce3808,len:0x44c
+20:17:08.734 > load:0x403c9700,len:0xbec
+20:17:08.737 > load:0x403cc700,len:0x2920
+20:17:08.739 > entry 0x403c98d8
+20:17:08.824 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:08.829 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:08.835 > Core  0 register dump:
+20:17:08.838 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:08.844 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:08.852 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:08.860 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:08.869 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:08.876 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:08.883 > 
+20:17:08.885 > 
+20:17:08.885 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:08.929 > 
+20:17:08.929 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:08.929 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:08.929 > 
+20:17:08.929 > 
+20:17:08.929 > 
+20:17:08.929 > 
+20:17:08.929 > ELF file SHA256: 84c608c750f52e7e
+20:17:08.929 > 
+20:17:09.028 > Rebooting...
+20:17:09.028 > � �ESP-ROM:esp32s3-20210327
+20:17:09.036 > Build:Mar 27 2021
+20:17:09.039 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:09.044 > Saved PC:0x40376bd4
+20:17:09.044 > SPIWP:0xee
+20:17:09.047 > mode:DIO, clock div:1
+20:17:09.047 > load:0x3fce3808,len:0x44c
+20:17:09.049 > load:0x403c9700,len:0xbec
+20:17:09.052 > load:0x403cc700,len:0x2920
+20:17:09.055 > entry 0x403c98d8
+20:17:09.139 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:09.144 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:09.151 > Core  0 register dump:
+20:17:09.154 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:09.159 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:09.166 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:09.175 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:09.183 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:09.193 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:09.198 > 
+20:17:09.201 > 
+20:17:09.201 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:09.243 > 
+20:17:09.243 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:09.243 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:09.243 > 
+20:17:09.243 > 
+20:17:09.243 > 
+20:17:09.243 > 
+20:17:09.243 > ELF file SHA256: 84c608c750f52e7e
+20:17:09.243 > 
+20:17:09.347 > Rebooting...
+20:17:09.347 > � �ESP-ROM:esp32s3-20210327
+20:17:09.354 > Build:Mar 27 2021
+20:17:09.357 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:09.363 > Saved PC:0x40376bd4
+20:17:09.363 > SPIWP:0xee
+20:17:09.365 > mode:DIO, clock div:1
+20:17:09.365 > load:0x3fce3808,len:0x44c
+20:17:09.368 > load:0x403c9700,len:0xbec
+20:17:09.371 > load:0x403cc700,len:0x2920
+20:17:09.373 > entry 0x403c98d8
+20:17:09.458 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:09.464 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:09.470 > Core  0 register dump:
+20:17:09.472 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:09.477 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:09.486 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:09.494 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:09.503 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:09.511 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:09.516 > 
+20:17:09.519 > 
+20:17:09.519 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:09.563 > 
+20:17:09.563 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:09.563 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:09.563 > 
+20:17:09.563 > 
+20:17:09.563 > 
+20:17:09.563 > 
+20:17:09.563 > ELF file SHA256: 84c608c750f52e7e
+20:17:09.563 > 
+20:17:09.664 > Rebooting...
+20:17:09.664 > � �ESP-ROM:esp32s3-20210327
+20:17:09.671 > Build:Mar 27 2021
+20:17:09.673 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:09.679 > Saved PC:0x40376bd4
+20:17:09.679 > SPIWP:0xee
+20:17:09.681 > mode:DIO, clock div:1
+20:17:09.681 > load:0x3fce3808,len:0x44c
+20:17:09.685 > load:0x403c9700,len:0xbec
+20:17:09.688 > load:0x403cc700,len:0x2920
+20:17:09.691 > entry 0x403c98d8
+20:17:09.775 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:09.780 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:09.786 > Core  0 register dump:
+20:17:09.788 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:09.794 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:09.803 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:09.811 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:09.819 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:09.828 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:09.833 > 
+20:17:09.836 > 
+20:17:09.836 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:09.877 > 
+20:17:09.877 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:09.877 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:09.877 > 
+20:17:09.877 > 
+20:17:09.877 > 
+20:17:09.877 > 
+20:17:09.877 > ELF file SHA256: 84c608c750f52e7e
+20:17:09.877 > 
+20:17:09.980 > Rebooting...
+20:17:09.980 > � �ESP-ROM:esp32s3-20210327
+20:17:09.987 > Build:Mar 27 2021
+20:17:09.991 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:10.003 > Saved PC:0x40376bd4
+20:17:10.003 > SPIWP:0xee
+20:17:10.003 > mode:DIO, clock div:1
+20:17:10.003 > load:0x3fce3808,len:0x44c
+20:17:10.003 > load:0x403c9700,len:0xbec
+20:17:10.004 > load:0x403cc700,len:0x2920
+20:17:10.008 > entry 0x403c98d8
+20:17:10.091 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:10.096 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:10.103 > Core  0 register dump:
+20:17:10.106 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:10.111 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:10.120 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:10.128 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:10.136 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:10.145 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:10.150 > 
+20:17:10.153 > 
+20:17:10.153 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:10.202 > 
+20:17:10.202 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:10.202 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:10.202 > 
+20:17:10.202 > 
+20:17:10.202 > 
+20:17:10.202 > 
+20:17:10.202 > ELF file SHA256: 84c608c750f52e7e
+20:17:10.202 > 
+20:17:10.299 > Rebooting...
+20:17:10.299 > � �ESP-ROM:esp32s3-20210327
+20:17:10.306 > Build:Mar 27 2021
+20:17:10.309 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:10.315 > Saved PC:0x40376bd4
+20:17:10.315 > SPIWP:0xee
+20:17:10.317 > mode:DIO, clock div:1
+20:17:10.317 > load:0x3fce3808,len:0x44c
+20:17:10.320 > load:0x403c9700,len:0xbec
+20:17:10.323 > load:0x403cc700,len:0x2920
+20:17:10.326 > entry 0x403c98d8
+20:17:10.410 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:10.416 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:10.421 > Core  0 register dump:
+20:17:10.424 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:10.430 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:10.438 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:10.446 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:10.455 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:10.463 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:10.468 > 
+20:17:10.471 > 
+20:17:10.471 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:10.513 > 
+20:17:10.513 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:10.513 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:10.513 > 
+20:17:10.513 > 
+20:17:10.513 > 
+20:17:10.513 > 
+20:17:10.513 > ELF file SHA256: 84c608c750f52e7e
+20:17:10.513 > 
+20:17:10.616 > Rebooting...
+20:17:10.616 > � �ESP-ROM:esp32s3-20210327
+20:17:10.624 > Build:Mar 27 2021
+20:17:10.626 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:10.632 > Saved PC:0x40376bd4
+20:17:10.632 > SPIWP:0xee
+20:17:10.633 > mode:DIO, clock div:1
+20:17:10.633 > load:0x3fce3808,len:0x44c
+20:17:10.637 > load:0x403c9700,len:0xbec
+20:17:10.640 > load:0x403cc700,len:0x2920
+20:17:10.643 > entry 0x403c98d8
+20:17:10.726 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:10.732 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:10.738 > Core  0 register dump:
+20:17:10.740 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:10.747 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:10.755 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:10.763 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:10.771 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:10.780 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:10.786 > 
+20:17:10.788 > 
+20:17:10.788 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:10.839 > 
+20:17:10.839 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:10.839 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:10.839 > 
+20:17:10.839 > 
+20:17:10.839 > 
+20:17:10.839 > 
+20:17:10.839 > ELF file SHA256: 84c608c750f52e7e
+20:17:10.840 > 
+20:17:10.934 > Rebooting...
+20:17:10.934 > � �ESP-ROM:esp32s3-20210327
+20:17:10.941 > Build:Mar 27 2021
+20:17:10.945 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:10.950 > Saved PC:0x40376bd4
+20:17:10.950 > SPIWP:0xee
+20:17:10.952 > mode:DIO, clock div:1
+20:17:10.952 > load:0x3fce3808,len:0x44c
+20:17:10.956 > load:0x403c9700,len:0xbec
+20:17:10.958 > load:0x403cc700,len:0x2920
+20:17:10.961 > entry 0x403c98d8
+20:17:11.045 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:11.051 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:11.056 > Core  0 register dump:
+20:17:11.059 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:11.065 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:11.073 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:11.082 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:11.090 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:11.099 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:11.103 > 
+20:17:11.107 > 
+20:17:11.107 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:11.149 > 
+20:17:11.149 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:11.149 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:11.149 > 
+20:17:11.149 > 
+20:17:11.149 > 
+20:17:11.149 > 
+20:17:11.149 > ELF file SHA256: 84c608c750f52e7e
+20:17:11.149 > 
+20:17:11.251 > Rebooting...
+20:17:11.251 > � �ESP-ROM:esp32s3-20210327
+20:17:11.258 > Build:Mar 27 2021
+20:17:11.261 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:11.267 > Saved PC:0x40376bd4
+20:17:11.267 > SPIWP:0xee
+20:17:11.270 > mode:DIO, clock div:1
+20:17:11.270 > load:0x3fce3808,len:0x44c
+20:17:11.272 > load:0x403c9700,len:0xbec
+20:17:11.275 > load:0x403cc700,len:0x2920
+20:17:11.278 > entry 0x403c98d8
+20:17:11.363 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:11.368 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:11.374 > Core  0 register dump:
+20:17:11.377 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:11.382 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:11.389 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:11.399 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:11.407 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:11.415 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:11.421 > 
+20:17:11.423 > 
+20:17:11.423 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:11.467 > 
+20:17:11.467 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:11.467 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:11.467 > 
+20:17:11.467 > 
+20:17:11.467 > 
+20:17:11.467 > 
+20:17:11.467 > ELF file SHA256: 84c608c750f52e7e
+20:17:11.468 > 
+20:17:11.570 > Rebooting...
+20:17:11.570 > � �ESP-ROM:esp32s3-20210327
+20:17:11.578 > Build:Mar 27 2021
+20:17:11.580 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:11.586 > Saved PC:0x40376bd4
+20:17:11.586 > SPIWP:0xee
+20:17:11.589 > mode:DIO, clock div:1
+20:17:11.589 > load:0x3fce3808,len:0x44c
+20:17:11.591 > load:0x403c9700,len:0xbec
+20:17:11.593 > load:0x403cc700,len:0x2920
+20:17:11.597 > entry 0x403c98d8
+20:17:11.681 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:11.687 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:11.692 > Core  0 register dump:
+20:17:11.695 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:11.701 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:11.709 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:11.717 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:11.726 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:11.734 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:11.739 > 
+20:17:11.743 > 
+20:17:11.743 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:11.787 > 
+20:17:11.787 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:11.787 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:11.787 > 
+20:17:11.787 > 
+20:17:11.787 > 
+20:17:11.787 > 
+20:17:11.787 > ELF file SHA256: 84c608c750f52e7e
+20:17:11.789 > 
+20:17:11.889 > Rebooting...
+20:17:11.889 > � �ESP-ROM:esp32s3-20210327
+20:17:11.896 > Build:Mar 27 2021
+20:17:11.899 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:11.904 > Saved PC:0x40376bd4
+20:17:11.904 > SPIWP:0xee
+20:17:11.907 > mode:DIO, clock div:1
+20:17:11.907 > load:0x3fce3808,len:0x44c
+20:17:11.909 > load:0x403c9700,len:0xbec
+20:17:11.912 > load:0x403cc700,len:0x2920
+20:17:11.915 > entry 0x403c98d8
+20:17:12.000 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:12.005 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:12.011 > Core  0 register dump:
+20:17:12.014 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:12.019 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:12.028 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:12.036 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:12.045 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:12.053 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:12.058 > 
+20:17:12.061 > 
+20:17:12.061 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:12.101 > 
+20:17:12.101 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:12.101 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:12.101 > 
+20:17:12.101 > 
+20:17:12.101 > 
+20:17:12.101 > 
+20:17:12.101 > ELF file SHA256: 84c608c750f52e7e
+20:17:12.102 > 
+20:17:12.208 > Rebooting...
+20:17:12.209 > � �ESP-ROM:esp32s3-20210327
+20:17:12.216 > Build:Mar 27 2021
+20:17:12.218 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:12.224 > Saved PC:0x40376bd4
+20:17:12.224 > SPIWP:0xee
+20:17:12.227 > mode:DIO, clock div:1
+20:17:12.227 > load:0x3fce3808,len:0x44c
+20:17:12.229 > load:0x403c9700,len:0xbec
+20:17:12.232 > load:0x403cc700,len:0x2920
+20:17:12.236 > entry 0x403c98d8
+20:17:12.320 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:12.326 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:12.331 > Core  0 register dump:
+20:17:12.334 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:12.339 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:12.348 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:12.355 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:12.364 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:12.373 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:12.380 > 
+20:17:12.381 > 
+20:17:12.381 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:12.436 > 
+20:17:12.436 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:12.436 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:12.436 > 
+20:17:12.436 > 
+20:17:12.436 > 
+20:17:12.436 > 
+20:17:12.436 > ELF file SHA256: 84c608c750f52e7e
+20:17:12.436 > 
+20:17:12.526 > Rebooting...
+20:17:12.528 > � �ESP-ROM:esp32s3-20210327
+20:17:12.535 > Build:Mar 27 2021
+20:17:12.537 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:12.543 > Saved PC:0x40376bd4
+20:17:12.543 > SPIWP:0xee
+20:17:12.546 > mode:DIO, clock div:1
+20:17:12.546 > load:0x3fce3808,len:0x44c
+20:17:12.548 > load:0x403c9700,len:0xbec
+20:17:12.552 > load:0x403cc700,len:0x2920
+20:17:12.554 > entry 0x403c98d8
+20:17:12.639 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:12.644 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:12.650 > Core  0 register dump:
+20:17:12.652 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:12.658 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:12.666 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:12.675 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:12.683 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:12.691 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:12.697 > 
+20:17:12.699 > 
+20:17:12.699 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:12.744 > 
+20:17:12.744 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:12.744 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:12.744 > 
+20:17:12.744 > 
+20:17:12.744 > 
+20:17:12.744 > 
+20:17:12.744 > ELF file SHA256: 84c608c750f52e7e
+20:17:12.744 > 
+20:17:12.847 > Rebooting...
+20:17:12.848 > � �ESP-ROM:esp32s3-20210327
+20:17:12.856 > Build:Mar 27 2021
+20:17:12.858 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:12.863 > Saved PC:0x40376bd4
+20:17:12.863 > SPIWP:0xee
+20:17:12.867 > mode:DIO, clock div:1
+20:17:12.867 > load:0x3fce3808,len:0x44c
+20:17:12.869 > load:0x403c9700,len:0xbec
+20:17:12.872 > load:0x403cc700,len:0x2920
+20:17:12.875 > entry 0x403c98d8
+20:17:12.959 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:12.964 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:12.970 > Core  0 register dump:
+20:17:12.973 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:12.978 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:12.987 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:12.995 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:13.003 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:13.012 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:13.017 > 
+20:17:13.020 > 
+20:17:13.020 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:13.064 > 
+20:17:13.064 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:13.064 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:13.064 > 
+20:17:13.064 > 
+20:17:13.064 > 
+20:17:13.064 > 
+20:17:13.064 > ELF file SHA256: 84c608c750f52e7e
+20:17:13.065 > 
+20:17:13.165 > Rebooting...
+20:17:13.165 > � �ESP-ROM:esp32s3-20210327
+20:17:13.172 > Build:Mar 27 2021
+20:17:13.174 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:13.181 > Saved PC:0x40376bd4
+20:17:13.181 > SPIWP:0xee
+20:17:13.184 > mode:DIO, clock div:1
+20:17:13.184 > load:0x3fce3808,len:0x44c
+20:17:13.186 > load:0x403c9700,len:0xbec
+20:17:13.189 > load:0x403cc700,len:0x2920
+20:17:13.192 > entry 0x403c98d8
+20:17:13.277 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:13.282 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:13.288 > Core  0 register dump:
+20:17:13.289 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:13.296 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:13.303 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:13.311 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:13.321 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:13.329 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:13.334 > 
+20:17:13.337 > 
+20:17:13.337 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:13.373 > 
+20:17:13.373 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:13.373 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:13.373 > 
+20:17:13.373 > 
+20:17:13.373 > 
+20:17:13.373 > 
+20:17:13.373 > ELF file SHA256: 84c608c750f52e7e
+20:17:13.373 > 
+20:17:13.490 > Rebooting...
+20:17:13.490 > � �ESP-ROM:esp32s3-20210327
+20:17:13.497 > Build:Mar 27 2021
+20:17:13.501 > rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:17:13.506 > Saved PC:0x40376bd4
+20:17:13.506 > SPIWP:0xee
+20:17:13.509 > mode:DIO, clock div:1
+20:17:13.509 > load:0x3fce3808,len:0x44c
+20:17:13.512 > load:0x403c9700,len:0xbec
+20:17:13.514 > load:0x403cc700,len:0x2920
+20:17:13.517 > entry 0x403c98d8
+20:17:13.601 > Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+20:17:13.607 > Debug exception reason: Stack canary watchpoint triggered (Task1) 
+20:17:13.613 > Core  0 register dump:
+20:17:13.616 > PC      : 0x4037408f  PS      : 0x00040c36  A0      : 0x3fcecf10  A1      : 0x3fcecc00  
+20:17:13.621 > A2      : 0x3fced28c  A3      : 0x3fcecf10  A4      : 0x3c030262  A5      : 0x3fced080  
+20:17:13.629 > A6      : 0x3fced030  A7      : 0x00000004  A8      : 0x4201b6c7  A9      : 0x3fcecbe0  
+20:17:13.638 > A10     : 0x00060030  A11     : 0x00040023  A12     : 0x00060020  A13     : 0x3fcf4de0  
+20:17:13.646 > A14     : 0x3fc950f8  A15     : 0x00000008  SAR     : 0x0000000a  EXCCAUSE: 0x00000001  
+20:17:13.654 > EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffee  
+20:17:13.659 > 
+20:17:13.663 > 
+20:17:13.663 > Backtrace: 0x4037408c:0x3fcecc00 0x3fcecf0d:0x3fcecf10 |<-CORRUPTED
+20:17:13.701 > 
+20:17:13.701 >   #0  0x4037408c:0x3fcecc00 in _WindowOverflow8 at /Users/ficeto/Desktop/ESP32/ESP32S2/esp-idf-public/components/freertos/port/xtensa/xtensa_vectors.S:1825
+20:17:13.701 >   #1  0x3fcecf0d:0x3fcecf10 in ?? ??:0
+20:17:13.701 > 
+20:17:13.701 > 
+20:17:13.701 > 
+20:17:13.701 > 
+20:17:13.701 > ELF file SHA256: 84c608c750f52e7e
+20:17:13.701 > 
