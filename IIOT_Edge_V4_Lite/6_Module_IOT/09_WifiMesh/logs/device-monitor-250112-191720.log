@@ -1,0 +1,73 @@
+19:17:27.511 > ESP-ROM:esp32s3-20210327
+19:17:27.511 > Build:Mar 27 2021
+19:17:27.511 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+19:17:27.511 > SPIWP:0xee
+19:17:27.511 > mode:DIO, clock div:1
+19:17:27.511 > load:0x3fce3808,len:0x44c
+19:17:27.511 > load:0x403c9700,len:0xbec
+19:17:27.511 > load:0x403cc700,len:0x2920
+19:17:27.511 > entry 0x403c98d8
+19:17:27.511 > [0;37m[   180][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)[0m
+19:17:27.511 > [0;37m[   180][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)[0m
+19:17:27.511 > [0;36m[   221][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 0 - WIFI_READY[0m
+19:17:27.511 > [0;37m[   253][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started[0m
+19:17:27.511 > [0;37m[   254][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+19:17:27.511 > [0;36m[   254][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 2 - STA_START[0m
+19:17:27.511 > Connecting to AWS IOT[0;37m[   274][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279436[0m
+19:17:27.511 > [0;37m[   280][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:17:27.511 > [0;31m[   287][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a2385bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+19:17:27.511 > [0;31m[   298][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+19:17:27.511 > [0;37m[   305][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+19:17:27.511 > .[0;37m[   401][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: AID25, BSSID: 9c:53:22:7d:ea:b2, Channel: 4, Auth: WPA2_PSK[0m
+19:17:27.511 > [0;36m[   402][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 4 - STA_CONNECTED[0m
+19:17:27.511 > [0;37m[   412][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 277704[0m
+19:17:27.511 > [0;37m[   419][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:17:27.511 > [0;31m[   427][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a2385bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+19:17:27.511 > [0;37m[   431][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.0.221[0m
+19:17:27.511 > [0;31m[   437][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+19:17:27.511 > [0;36m[   445][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 7 - STA_GOT_IP[0m
+19:17:27.511 > [0;36m[   460][D][WiFiGeneric.cpp:996] _eventCallback(): STA IP: 192.168.0.221, MASK: 255.255.255.0, GW: 192.168.0.1[0m
+19:17:27.511 > [0;37m[   471][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+19:17:27.511 > .[0;37m[   579][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278208[0m
+19:17:27.511 > [0;37m[   579][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+19:17:27.511 > [0;37m[   632][V][ssl_client.cpp:151] start_ssl_client(): Seeding the random number generator[0m
+19:17:27.511 > [0;37m[   634][V][ssl_client.cpp:160] start_ssl_client(): Setting up the SSL/TLS structure...[0m
+19:17:27.511 > [0;37m[   639][V][ssl_client.cpp:183] start_ssl_client(): Loading CA cert[0m
+19:17:27.511 > [0;37m[   648][V][ssl_client.cpp:239] start_ssl_client(): Loading CRT cert[0m
+19:17:27.511 > [0;37m[   655][V][ssl_client.cpp:248] start_ssl_client(): Loading private key[0m
+19:17:27.511 > [0;37m[   663][V][ssl_client.cpp:259] start_ssl_client(): Setting hostname for TLS session...[0m
+19:17:27.511 > [0;37m[   668][V][ssl_client.cpp:274] start_ssl_client(): Performing the SSL/TLS handshake...[0m
+19:17:27.511 > [0;36m[  1599][D][ssl_client.cpp:287] start_ssl_client(): Protocol is TLSv1.2 Ciphersuite is TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256[0m
+19:17:27.511 > [0;36m[  1600][D][ssl_client.cpp:289] start_ssl_client(): Record expansion is 29[0m
+19:17:27.511 > [0;37m[  1608][V][ssl_client.cpp:295] start_ssl_client(): Verifying peer X.509 certificate...[0m
+19:17:27.511 > [0;37m[  1617][V][ssl_client.cpp:303] start_ssl_client(): Certificate verified.[0m
+19:17:27.511 > [0;37m[  1624][V][ssl_client.cpp:318] start_ssl_client(): Free internal heap after TLS 232312[0m
+19:17:27.511 > [0;37m[  1633][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 25 bytes...[0m
+19:17:27.511 > [0;37m[  1774][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 22 bytes...[0m
+19:17:27.511 > AWS IoT Connected!
+19:17:27.511 > [0;37m[  1877][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 26 bytes...[0m
+19:17:27.511 > [0;37m[  1879][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 33 bytes...[0m
+19:17:31.954 > [0;37m[ 11879][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:17:41.956 > [0;37m[ 21880][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:17:51.956 > [0;37m[ 31881][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:01.958 > [0;37m[ 41882][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:11.959 > [0;37m[ 51883][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:21.961 > [0;37m[ 61884][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:31.962 > [0;37m[ 71885][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:41.963 > [0;37m[ 81886][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:18:51.965 > [0;37m[ 91887][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:01.966 > [0;37m[101888][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:11.967 > [0;37m[111889][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:21.968 > [0;37m[121890][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:31.970 > [0;37m[131891][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:41.971 > [0;37m[141892][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:19:51.973 > [0;37m[151893][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:01.974 > [0;37m[161894][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:11.975 > [0;37m[171895][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:21.977 > [0;37m[181896][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:31.977 > [0;37m[191897][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:41.979 > [0;37m[201898][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:20:51.980 > [0;37m[211899][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:21:01.982 > [0;37m[221900][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:21:11.983 > [0;37m[231901][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
+19:21:21.985 > [0;37m[241902][V][ssl_client.cpp:374] send_ssl_data(): Writing HTTP request with 2 bytes...[0m
