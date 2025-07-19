@@ -1,0 +1,528 @@
+18:59:41.183 > ESP-ROM:esp32s3-20210327
+18:59:41.183 > Build:Mar 27 2021
+18:59:41.183 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+18:59:41.183 > SPIWP:0xee
+18:59:41.183 > mode:DIO, clock div:1
+18:59:41.183 > load:0x3fce3808,len:0x44c
+18:59:41.183 > load:0x403c9700,len:0xbec
+18:59:41.183 > load:0x403cc700,len:0x2920
+18:59:41.183 > entry 0x403c98d8
+18:59:41.183 > [0;37m[   180][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)[0m
+18:59:41.183 > [0;37m[   180][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)[0m
+18:59:41.183 > [0;36m[   221][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 0 - WIFI_READY[0m
+18:59:41.183 > [0;37m[   253][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started[0m
+18:59:41.183 > [0;37m[   254][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+18:59:41.183 > [0;36m[   254][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 2 - STA_START[0m
+18:59:41.183 > Connecting to AWS IOT[0;37m[   277][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279488[0m
+18:59:41.183 > [0;37m[   280][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   287][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   298][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   305][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[   413][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[   413][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   417][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   428][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   435][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[   543][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[   543][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   547][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   558][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   565][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[   684][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[   684][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   688][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   699][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   706][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[   825][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[   825][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   829][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   840][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   847][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[   966][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[   966][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[   970][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[   981][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[   988][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1107][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  1107][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1111][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1122][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1129][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1237][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1237][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1241][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1252][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1259][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1367][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1367][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1371][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1382][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1389][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1508][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1508][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1512][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1523][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1530][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1649][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1649][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1653][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1664][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1671][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1790][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1790][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1794][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1805][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1812][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  1931][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  1931][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  1935][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  1946][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  1953][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2072][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279148[0m
+18:59:41.183 > [0;37m[  2072][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2076][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2087][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2094][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2213][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2213][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2217][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2228][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2235][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2354][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2354][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2358][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2369][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2376][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2484][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2484][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2488][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2499][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2506][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2625][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2625][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2629][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2640][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2647][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2766][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2766][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2770][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2781][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2788][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  2907][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  2907][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  2911][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  2922][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  2929][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3048][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  3048][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  3052][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  3063][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  3070][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3189][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  3189][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  3193][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  3204][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  3211][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3330][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  3330][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  3334][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  3345][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  3352][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3471][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  3471][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  3475][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  3486][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  3493][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3612][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.183 > [0;37m[  3612][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.183 > [0;31m[  3616][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.183 > [0;31m[  3627][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.183 > [0;37m[  3634][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.183 > .[0;37m[  3753][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.199 > [0;37m[  3753][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.205 > [0;31m[  3757][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.216 > [0;31m[  3768][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.224 > [0;37m[  3775][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.231 > .[0;37m[  3894][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.341 > [0;37m[  3894][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.346 > [0;31m[  3898][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.357 > [0;31m[  3909][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.365 > [0;37m[  3916][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.372 > .[0;37m[  4035][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.481 > [0;37m[  4035][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.487 > [0;31m[  4039][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.498 > [0;31m[  4050][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.506 > [0;37m[  4057][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.513 > .[0;37m[  4176][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.622 > [0;37m[  4176][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.628 > [0;31m[  4180][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.639 > [0;31m[  4191][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.647 > [0;37m[  4198][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.654 > .[0;37m[  4317][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.764 > [0;37m[  4317][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.769 > [0;31m[  4321][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.780 > [0;31m[  4332][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.789 > [0;37m[  4339][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.796 > .[0;37m[  4458][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:41.905 > [0;37m[  4458][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:41.911 > [0;31m[  4462][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:41.922 > [0;31m[  4473][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:41.930 > [0;37m[  4480][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:41.936 > .[0;37m[  4599][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:42.045 > [0;37m[  4599][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.051 > [0;31m[  4603][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.062 > [0;31m[  4614][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.070 > [0;37m[  4621][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.077 > .[0;37m[  4740][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:42.187 > [0;37m[  4740][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.193 > [0;31m[  4744][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.203 > [0;31m[  4755][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.211 > [0;37m[  4762][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.218 > .[0;37m[  4881][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:42.328 > [0;37m[  4881][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.333 > [0;31m[  4885][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.344 > [0;31m[  4896][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.352 > [0;37m[  4903][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.359 > .[0;37m[  5022][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:42.469 > [0;37m[  5022][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.474 > [0;31m[  5026][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.485 > [0;31m[  5037][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.494 > [0;37m[  5045][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.500 > .[0;37m[  5163][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:42.609 > [0;37m[  5163][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.615 > [0;31m[  5167][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.626 > [0;31m[  5178][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.635 > [0;37m[  5185][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.641 > .[0;37m[  5304][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:42.750 > [0;37m[  5304][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.756 > [0;31m[  5308][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.767 > [0;31m[  5319][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.775 > [0;37m[  5326][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.782 > .[0;37m[  5434][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:42.881 > [0;37m[  5434][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:42.886 > [0;31m[  5438][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:42.898 > [0;31m[  5449][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:42.906 > [0;37m[  5456][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:42.912 > .[0;37m[  5575][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:43.022 > [0;37m[  5575][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.027 > [0;31m[  5579][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.038 > [0;31m[  5590][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.046 > [0;37m[  5597][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.053 > .[0;37m[  5716][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:43.162 > [0;37m[  5716][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.168 > [0;31m[  5720][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.179 > [0;31m[  5731][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.188 > [0;37m[  5738][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.194 > .[0;37m[  5857][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:43.304 > [0;37m[  5857][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.309 > [0;31m[  5861][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.320 > [0;31m[  5872][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.328 > [0;37m[  5879][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.335 > .[0;37m[  5998][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:43.444 > [0;37m[  5998][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.450 > [0;31m[  6002][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.461 > [0;31m[  6013][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.470 > [0;37m[  6020][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.476 > .[0;37m[  6139][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:43.585 > [0;37m[  6139][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.591 > [0;31m[  6143][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.602 > [0;31m[  6154][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.611 > [0;37m[  6161][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.617 > .[0;37m[  6280][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:43.727 > [0;37m[  6280][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.732 > [0;31m[  6284][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.743 > [0;31m[  6295][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.751 > [0;37m[  6302][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.758 > .[0;37m[  6421][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:43.867 > [0;37m[  6421][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:43.873 > [0;31m[  6425][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:43.884 > [0;31m[  6436][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:43.893 > [0;37m[  6443][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:43.899 > .[0;37m[  6562][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.008 > [0;37m[  6562][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.014 > [0;31m[  6566][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.025 > [0;31m[  6577][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.033 > [0;37m[  6584][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.040 > .[0;37m[  6703][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.150 > [0;37m[  6703][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.156 > [0;31m[  6707][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.166 > [0;31m[  6718][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.175 > [0;37m[  6725][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.181 > .[0;37m[  6844][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.291 > [0;37m[  6844][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.296 > [0;31m[  6848][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.307 > [0;31m[  6859][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.316 > [0;37m[  6866][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.322 > .[0;37m[  6985][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.431 > [0;37m[  6985][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.437 > [0;31m[  6989][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.448 > [0;31m[  7000][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.456 > [0;37m[  7007][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.463 > .[0;37m[  7126][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.572 > [0;37m[  7126][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.578 > [0;31m[  7130][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.589 > [0;31m[  7141][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.597 > [0;37m[  7148][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.604 > .[0;37m[  7267][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.714 > [0;37m[  7267][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.719 > [0;31m[  7271][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.730 > [0;31m[  7282][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.738 > [0;37m[  7289][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.745 > .[0;37m[  7408][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.854 > [0;37m[  7408][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:44.860 > [0;31m[  7412][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:44.871 > [0;31m[  7423][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:44.880 > [0;37m[  7430][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:44.886 > .[0;37m[  7549][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:44.996 > [0;37m[  7549][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.002 > [0;31m[  7553][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.012 > [0;31m[  7564][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.020 > [0;37m[  7571][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.027 > .[0;37m[  7690][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.137 > [0;37m[  7690][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.142 > [0;31m[  7694][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.153 > [0;31m[  7705][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.162 > [0;37m[  7712][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.168 > .[0;37m[  7831][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.277 > [0;37m[  7831][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.284 > [0;31m[  7835][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.294 > [0;31m[  7846][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.302 > [0;37m[  7853][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.309 > .[0;37m[  7972][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.419 > [0;37m[  7972][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.424 > [0;31m[  7976][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.435 > [0;31m[  7987][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.444 > [0;37m[  7994][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.450 > .[0;37m[  8113][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.560 > [0;37m[  8113][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.566 > [0;31m[  8117][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.577 > [0;31m[  8128][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.584 > [0;37m[  8135][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.591 > .[0;37m[  8254][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.700 > [0;37m[  8254][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.706 > [0;31m[  8258][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.717 > [0;31m[  8269][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.726 > [0;37m[  8276][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.732 > .[0;37m[  8384][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.830 > [0;37m[  8384][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.836 > [0;31m[  8388][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.848 > [0;31m[  8399][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.856 > [0;37m[  8406][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:45.862 > .[0;37m[  8525][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:45.972 > [0;37m[  8525][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:45.977 > [0;31m[  8529][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:45.988 > [0;31m[  8540][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:45.997 > [0;37m[  8547][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.003 > .[0;37m[  8666][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:46.112 > [0;37m[  8666][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.118 > [0;31m[  8670][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.129 > [0;31m[  8681][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.138 > [0;37m[  8688][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.144 > .[0;37m[  8807][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:46.254 > [0;37m[  8807][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.259 > [0;31m[  8811][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.271 > [0;31m[  8822][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.278 > [0;37m[  8829][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.285 > .[0;37m[  8937][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:46.384 > [0;37m[  8937][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.389 > [0;31m[  8941][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.401 > [0;31m[  8952][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.409 > [0;37m[  8959][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.415 > .[0;37m[  9078][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279164[0m
+18:59:46.524 > [0;37m[  9078][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.530 > [0;31m[  9082][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.542 > [0;31m[  9093][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.550 > [0;37m[  9100][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.557 > .[0;37m[  9219][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:46.666 > [0;37m[  9219][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.672 > [0;31m[  9223][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.682 > [0;31m[  9234][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.691 > [0;37m[  9241][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.698 > .[0;37m[  9349][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:46.796 > [0;37m[  9349][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.801 > [0;31m[  9353][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.812 > [0;31m[  9364][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.821 > [0;37m[  9371][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.828 > .[0;37m[  9490][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:46.937 > [0;37m[  9490][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:46.941 > [0;31m[  9494][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:46.953 > [0;31m[  9505][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:46.961 > [0;37m[  9512][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:46.969 > .[0;37m[  9631][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:47.078 > [0;37m[  9631][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.084 > [0;31m[  9635][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.094 > [0;31m[  9646][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.103 > [0;37m[  9653][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.109 > .[0;37m[  9772][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:47.218 > [0;37m[  9772][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.225 > [0;31m[  9776][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.235 > [0;31m[  9787][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.244 > [0;37m[  9794][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.251 > .[0;37m[  9913][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:47.359 > [0;37m[  9913][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.365 > [0;31m[  9917][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.376 > [0;31m[  9928][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.385 > [0;37m[  9935][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.391 > .[0;37m[ 10043][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:47.489 > [0;37m[ 10043][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.495 > [0;31m[ 10047][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.506 > [0;31m[ 10058][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.514 > [0;37m[ 10065][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.521 > .[0;37m[ 10184][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279156[0m
+18:59:47.631 > [0;37m[ 10184][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.636 > [0;31m[ 10188][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.647 > [0;31m[ 10199][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.656 > [0;37m[ 10206][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.662 > .[0;37m[ 10296][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: AID25, BSSID: 9c:53:22:7d:ea:b2, Reason: 204[0m
+18:59:47.746 > [0;36m[ 10297][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED[0m
+18:59:47.754 > [0;33m[ 10306][W][WiFiGeneric.cpp:955] _eventCallback(): Reason: 204 - HANDSHAKE_TIMEOUT[0m
+18:59:47.762 > [0;36m[ 10314][D][WiFiGeneric.cpp:975] _eventCallback(): WiFi Reconnect Running[0m
+18:59:47.769 > [0;37m[ 10323][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+18:59:47.783 > [0;37m[ 10333][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 279084[0m
+18:59:47.791 > [0;37m[ 10342][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.796 > [0;31m[ 10349][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.808 > [0;31m[ 10360][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.816 > [0;37m[ 10367][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.823 > .[0;37m[ 10464][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: AID25, BSSID: 9c:53:22:7d:ea:b2, Channel: 4, Auth: WPA2_PSK[0m
+18:59:47.914 > [0;36m[ 10466][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 4 - STA_CONNECTED[0m
+18:59:47.922 > [0;37m[ 10475][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278288[0m
+18:59:47.930 > [0;37m[ 10483][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:47.939 > [0;37m[ 10487][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.0.221[0m
+18:59:47.947 > [0;36m[ 10498][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 7 - STA_GOT_IP[0m
+18:59:47.955 > [0;36m[ 10506][D][WiFiGeneric.cpp:996] _eventCallback(): STA IP: 192.168.0.221, MASK: 255.255.255.0, GW: 192.168.0.1[0m
+18:59:47.963 > [0;31m[ 10526][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:47.974 > [0;31m[ 10527][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:47.983 > [0;37m[ 10535][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:47.991 > .[0;37m[ 10643][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.090 > [0;37m[ 10643][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.096 > [0;31m[ 10658][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.107 > [0;31m[ 10659][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.115 > [0;37m[ 10666][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.121 > .[0;37m[ 10774][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.221 > [0;37m[ 10774][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.226 > [0;31m[ 10785][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.237 > [0;31m[ 10789][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.245 > [0;37m[ 10797][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.252 > .[0;37m[ 10904][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.351 > [0;37m[ 10904][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.357 > [0;31m[ 10916][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.367 > [0;31m[ 10919][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.376 > [0;37m[ 10927][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.382 > .[0;37m[ 11034][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.481 > [0;37m[ 11034][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.487 > [0;31m[ 11046][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.497 > [0;31m[ 11049][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.505 > [0;37m[ 11057][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.512 > .[0;37m[ 11164][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.611 > [0;37m[ 11164][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.617 > [0;31m[ 11180][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.629 > [0;31m[ 11180][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.637 > [0;37m[ 11187][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.644 > .[0;37m[ 11295][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.742 > [0;37m[ 11295][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.747 > [0;31m[ 11307][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.759 > [0;31m[ 11310][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.767 > [0;37m[ 11318][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.774 > .[0;37m[ 11425][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:48.872 > [0;37m[ 11425][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:48.878 > [0;31m[ 11437][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:48.889 > [0;31m[ 11440][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:48.897 > [0;37m[ 11448][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:48.903 > .[0;37m[ 11555][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.002 > [0;37m[ 11555][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.007 > [0;31m[ 11567][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.019 > [0;31m[ 11570][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.027 > [0;37m[ 11578][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.034 > .[0;37m[ 11685][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.132 > [0;37m[ 11685][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.138 > [0;31m[ 11697][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.149 > [0;31m[ 11700][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.157 > [0;37m[ 11708][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.163 > .[0;37m[ 11815][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.262 > [0;37m[ 11815][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.279 > [0;31m[ 11840][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.287 > [0;31m[ 11840][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.296 > [0;37m[ 11847][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.303 > .[0;37m[ 11955][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.402 > [0;37m[ 11955][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.407 > [0;31m[ 11966][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.418 > [0;31m[ 11970][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.426 > [0;37m[ 11978][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.433 > .[0;37m[ 12085][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.532 > [0;37m[ 12085][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.537 > [0;31m[ 12099][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.549 > [0;31m[ 12100][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.557 > [0;37m[ 12108][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.564 > .[0;37m[ 12215][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.663 > [0;37m[ 12215][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.755 > [0;31m[ 12316][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.764 > [0;31m[ 12316][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.771 > [0;37m[ 12323][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.779 > .[0;37m[ 12431][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:49.878 > [0;37m[ 12431][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:49.883 > [0;31m[ 12445][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:49.894 > [0;31m[ 12446][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:49.903 > [0;37m[ 12454][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:49.909 > .[0;37m[ 12561][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.008 > [0;37m[ 12561][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.029 > [0;31m[ 12590][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.038 > [0;31m[ 12591][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.045 > [0;37m[ 12598][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.053 > .[0;37m[ 12706][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.153 > [0;37m[ 12706][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.179 > [0;31m[ 12740][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.187 > [0;31m[ 12740][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.195 > [0;37m[ 12747][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.202 > .[0;37m[ 12855][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.302 > [0;37m[ 12855][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.320 > [0;31m[ 12882][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.329 > [0;31m[ 12882][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.338 > [0;37m[ 12889][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.345 > .[0;37m[ 12997][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.444 > [0;37m[ 12997][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.450 > [0;31m[ 13013][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.461 > [0;31m[ 13013][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.469 > [0;37m[ 13020][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.476 > .[0;37m[ 13128][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.574 > [0;37m[ 13128][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.580 > [0;31m[ 13140][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.591 > [0;31m[ 13143][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.601 > [0;37m[ 13151][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.607 > .[0;37m[ 13258][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.705 > [0;37m[ 13258][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.710 > [0;31m[ 13271][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.721 > [0;31m[ 13273][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.730 > [0;37m[ 13281][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.736 > .[0;37m[ 13388][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.835 > [0;37m[ 13388][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.841 > [0;31m[ 13400][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.851 > [0;31m[ 13403][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.860 > [0;37m[ 13411][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.866 > .[0;37m[ 13518][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:50.964 > [0;37m[ 13518][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:50.970 > [0;31m[ 13531][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:50.982 > [0;31m[ 13533][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:50.990 > [0;37m[ 13541][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:50.996 > .[0;37m[ 13648][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:51.095 > [0;37m[ 13648][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:51.101 > [0;31m[ 13661][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:51.111 > [0;31m[ 13663][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:51.119 > [0;37m[ 13671][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:51.126 > .[0;37m[ 13778][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:51.225 > [0;37m[ 13778][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:51.233 > [0;31m[ 13794][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:51.242 > [0;31m[ 13795][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:51.250 > [0;37m[ 13802][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:51.257 > .[0;37m[ 13910][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:51.357 > [0;37m[ 13910][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:51.363 > [0;31m[ 13921][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:51.374 > [0;31m[ 13925][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:51.382 > [0;37m[ 13933][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:51.389 > .[0;37m[ 14040][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:51.487 > [0;37m[ 14040][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:51.493 > [0;31m[ 14056][E][WiFiGeneric.cpp:1476] hostByName(): DNS Failed for a238asda5bpaevdm5e-ats.iot.ap-south-1.amazonaws.com[0m
+18:59:51.505 > [0;31m[ 14056][E][WiFiClientSecure.cpp:135] connect(): start_ssl_client: -1[0m
+18:59:51.512 > [0;37m[ 14063][V][ssl_client.cpp:326] stop_ssl_socket(): Cleaning SSL connection.[0m
+18:59:51.520 > .[0;37m[ 14171][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 278016[0m
+18:59:51.619 > [0;37m[ 14171][V][ssl_client.cpp:68] start_ssl_client(): Starting socket[0m
+18:59:51.624 > [0;31m[ 1418

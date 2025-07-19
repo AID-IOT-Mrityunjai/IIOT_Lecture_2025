@@ -1,0 +1,236 @@
+18:24:13.421 > ESP-ROM:esp32s3-20210327
+18:24:13.426 > Build:Mar 27 2021
+18:24:13.426 > rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+18:24:13.431 > SPIWP:0xee
+18:24:13.431 > mode:DIO, clock div:1
+18:24:13.435 > load:0x3fce3808,len:0x4bc
+18:24:13.547 > load:0x403c9700,len:0xbd8
+18:24:13.547 > load:0x403cc700,len:0x2a0c
+18:24:13.575 > entry 0x403c98d0
+18:24:13.654 > [0;37m[   234][V][esp32-hal-uart.c:330] uartBegin(): UART0 baud(115200) Mode(800001c) rxPin(44) txPin(43)[0m
+18:24:13.663 > [0;37m[   244][V][esp32-hal-uart.c:416] uartBegin(): UART0 not installed. Starting installation[0m
+18:24:13.672 > [0;37m[   253][V][esp32-hal-uart.c:467] uartBegin(): UART0 initialization done.[0m
+18:24:13.680 > [0;32m[   261][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=1 scl=2 freq=100000[0m
+18:24:13.689 > [0;33m[   270][W][Wire.cpp:301] begin(): Bus already started in Master Mode.[0m
+18:24:14.053 > [0;37m[   633][V][BLEDevice.cpp:76] createServer(): >> createServer[0m
+18:24:14.059 > [0;37m[   640][V][BLEServer.cpp:291] registerApp(): >> registerApp - 0[0m
+18:24:14.064 > [0;37m[   647][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: RegisterAppEvt (0x3fcaa520), owner: <N/A> for registerApp[0m
+18:24:14.091 > [0;37m[   658][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: RegisterAppEvt (0x3fcaa520), owner: registerApp[0m
+18:24:14.104 > [0;37m[   669][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: RegisterAppEvt (0x3fcaa520), owner: registerApp for re[0;erm[  [66
+18:24:14.116 > [D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_REG_EVT[0m
+18:24:14.117 > [0;37m[   692][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_REG_EVT[0m
+18:24:14.121 > [0;37m[   701][V][BLEUtils.cpp:1673] dumpGattServerEvent(): [status: ESP_GATT_OK, app_id: 0][0m
+18:24:14.130 > [0;37m[   710][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_REG_EVT[0m
+18:24:14.138 > [0;37m[   720][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: RegisterAppEvt (0x3fcaa520), owner: registerApp[0m
+18:24:14.167 > [0;37m[   730][V][BLEServer.cpp:281] handleGATTServerEv[e0n;t3(7)m:[  < <  7h3a0n]d[lVe]G[AFTrTeSeeRrTvOeSr.Ecvpepn:t77[]0 mwait(): << wait: Semaphore released: name: RegisterAppEvt (0x3fcaa520), owner: <N/A>[0m
+18:24:14.187 > [0;37m[   749][V][BLEServer.cpp:295] registerApp(): << registerApp[0m
+18:24:14.187 > [0;37m[   756][V][BLEDevice.cpp:83] createServer(): << createServer[0m
+18:24:14.187 > [0;37m[   762][V][BLEServer.cpp:67] createService(): >> createService - 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+18:24:14.191 > [0;37m[   772][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcaa784), owner: <N/A> for createService[0m
+18:24:14.218 > [0;37m[   784][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcaa784), owner: createService[0m
+18:24:14.231 > [0;37m[   794][V][BLEService.cpp:60] executeCreate(): >> executeCreate() - Creating service (esp_ble_gatts_create_service) service uuid: 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+18:24:14.231 > [0;37m[   810][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcaa9f0), owner: <N/A> for executeCreate[0m
+18:24:14.254 > [0;37m[   821][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcaa9f0), owner: executeCreate[0m
+18:24:14.266 > [0;37m[   832][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcaa9f0), owner: executeCreate for executC0;36e[  m
+18:24:14.279 > 2][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CREATE_EVT[0m
+18:24:14.279 > [0;37m[   855][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_CREATE_EVT[0m
+18:24:14.284 > [0;37m[   865][V][BLEUtils.cpp:1599] dumpGattServerEvent(): [status: ESP_GATT_OK, service_handle: 40 0x28, service_id: [uuid: 91bad492-b950-4226-aa2b-4ede9fa42f59, inst_id: 0]][0m
+18:24:14.298 > [0;37m[   881][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CREATE_EVT[0m
+18:24:14.309 > [0;37m[   891][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcaa784), owner: createService[0m
+18:24:14.333 > [0;37m[   901][V][BLEService.cpp:194] setHandle(): >> setHandle - Handle=0x28, service UUID=91bad492-b950-4226-aa2b-4ede9fa42f59)[0m
+18:24:14.333 > [0;37m[   913][V][BLEService.cpp:200] setHandle(): << setHandle[0m
+18:24:14.337 > [0;37m[   919][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcaa9f0), owner: executeCreate[0m
+18:24:14.361 > [0;37m[   930][V][BLEServer.cpp:281] handleGATTSe[r0v;e3r7Emv[e n t (9)3:0 ]<[<V ]h[aFnrdeleeRGTAOTST.Sceprpv:e7r7E]v ewnatit[():
+18:24:14.361 > << wait: Semaphore released: name: CreateEvt (0x3fcaa9f0), owner: <N/A>[0m
+18:24:14.378 > [0;37m[   948][V][BLEService.cpp:76] executeCreate(): << executeCreate[0m
+18:24:14.378 > [0;37m[   955][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcaa784), owner: <N/A> for createService[0m
+18:24:14.397 > [0;37m[   967][V][FreeRTOS.cpp:77] wait(): << wait: Semaphore released: name: CreateEvt (0x3fcaa784), owner: <N/A>[0m
+18:24:14.410 > [0;37m[   978][V][BLEServer.cpp:83] createService(): << createService[0m
+18:24:14.410 > [0;37m[   984][V][BLEService.cpp:222] addCharacteristic(): >> addCharacteristic()[0m
+18:24:14.410 > [0;36m[   992][D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=cba1d466-344c-4be3-ab3f-189f80dd7518 to service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+18:24:14.428 > [0;37m[  1010][V][BLEService.cpp:237] addCharacteristic(): << addCharacteristic()[0m
+18:24:14.436 > [0;37m[  1018][V][BLECharacteristic.cpp:68] addDescriptor(): >> addDescriptor(): Adding UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff to UUID: cba1d466-344c-4be3-ab3f-189f80dd7518, handle : 0xffff Notify [0m
+18:24:14.455 > [0;37m[  1037][V][BLECharacteristic.cpp:70] addDescriptor(): << addDescriptor()[0m
+18:24:14.464 > [0;37m[  1045][V][BLEService.cpp:222] addCharacteristic(): >> addCharacteristic()[0m
+18:24:14.473 > [0;36m[  1053][D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=d7a2e6f4-8b2c-4f2a-a9e8-3d2b6c5f4a00 to service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+18:24:14.489 > [0;37m[  1070][V][BLEService.cpp:237] addCharacteristic(): << addCharacteristic()[0m
+18:24:14.498 > [0;37m[  1078][V][BLECharacteristic.cpp:68] addDescriptor(): >> addDescriptor(): Adding UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff to UUID: d7a2e6f4-8b2c-4f2a-a9e8-3d2b6c5f4a00, handle : 0xffff Notify [0m
+18:24:14.518 > [0;37m[  1098][V][BLECharacteristic.cpp:70] addDescriptor(): << addDescriptor()[0m
+18:24:14.523 > [0;37m[  1105][V][BLEService.cpp:134] start(): >> start(): Starting service (esp_ble_gatts_start_service): UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+18:24:14.540 > [0;37m[  1120][V][BLECharacteristic.cpp:79] executeCreate(): >> executeCreate()[0m
+18:24:14.546 > [0;36m[  1128][D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: d7a2e6f4-8b2c-4f2a-a9e8-3d2b6c5f4a00, service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+18:24:14.568 > [0;37m[  1148][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcf1cc0), owner: <N/A> for executeCreate[0m
+18:24:14.593 > [0;37m[  1160][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcf1cc0), owner: executeCreate[0m
+18:24:14.606 > [0;37m[  1170][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcf1cc0), owner: executeCreate for exeu0;36ea e110m][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:14.625 > [0;37m[  1193][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:14.626 > [0;37m[  1203][V][BLEUtils.cpp:1553] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 42 0x2a, service_handle: 40 0x28, char_uuid: d7a2e6f4-8b2c-4f2a-a9e8-3d2b6c5f4a00][0m
+18:24:14.638 > [0;37m[  1219][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:14.646 > [0;37m[  1229][V][BLECharacteristic.cpp:604] setHandle(): >> setHandle: handle=0x2a, characteristic uuid=d7a2e6f4-8b2c-4f2a-a9e8-3d2b6c5f4a00[0m
+18:24:14.660 > [0;37m[  1242][V][BLECharacteristic.cpp:606] setHandle(): << setHandle[0m
+18:24:14.665 > [0;37m[  1249][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:14.677 > [0;37m[  1260][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcf1cc0), owner: executeCreate[0m
+18:24:14.701 > [0;37m[  1270][V][BLECharacteristic.cpp[:04;6357]m [h a n1d2l7e0G]A[TVT]S[eFrrveeerRETvOeSn.tc(p)p:: 7<7<]  hwaanidtl(e)G:A T<T<ServtrEvemthome released: name: CreateEvt (0x3fcf1cc0), owner: <N/A>[0m
+18:24:14.718 > [0;37m[  1288][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> h[a0n;d3l7emG[A T T1S2e8r8v]e[rVE]v[eBnLtE:D eEsScPr_iGpTTS.cDD_C7]RexVcu[0mreate(): >> executeCreate(): UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff[0m
+18:24:14.728 > [0;37m[  1310][V][BLECharacteristic.cpp:465] handleGATTServe[r0E;v3e7nmt[( ) :1 3<1<0 ]h[aVn]d[lFerGeAeTRTTSOeSr.vceprpE:v1e8n9t][take(): Semaphore taking: name: CreateEvt (0x3fcab430), owner: <N/A> for executeCreate[0m
+18:24:14.761 > [0;37m[  1329][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerE[v0e;n3t7m[[0 m 1
+18:24:14.761 > 329][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcab430), owner: executeCreate[0m
+18:24:14.779 > [0;37m[  1348][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcab430), owner: executeCreate for exec36eC  13e]0D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:14.802 > [0;37m[  1371][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:14.802 > [0;37m[  1381][V][BLEUtils.cpp:1541] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 43 0x2b, service_handle: 40 0x28, char_uuid: 00002902-0000-1000-8000-00805f9b34fb][0m
+18:24:14.814 > [0;37m[  1397][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:14.826 > [0;37m[  1408][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:14.837 > [0;37m[  1420][V][BLEDescriptor.cpp:220] setHandle(): >> setHandle(0x2b): Setting descriptor handle to be 0x2b[0m
+18:24:14.848 > [0;37m[  1430][V][BLEDescriptor.cpp:222] setHandle(): << setHandle()[0m
+18:24:14.854 > [0;37m[  1436][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcab430), owner: executeCreate[0m
+18:24:14.877 > [0;37m[  1447][V][BLECharacteristic.cpp:465][ 0h;a3n7dml[e G A1T4T4S7e]r[vVe]r[EFvreenetR(T)O:S .<c<p ph:a7n7d]l ewGaAiTtT(S)e:r erEwent 0mmaphore released: name: CreateEvt (0x3fcab430), owner: <N/A>[0m
+18:24:14.897 > [0;37m[  1465][V][BLEDe[s0c;r3i7pmt[o r .1c4p6p5:]8[1V]] [eBxLeEcCuhtaerCarcetaetrei(s)t:i c<.<c pepx:e2c0u5t]e ChraenadtleeG[ATmS
+18:24:14.897 > rverEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:14.901 > [0;3[70m;[3 7 m1[4 8 31]4[8V3]][[BVL]E[CBhLaErCahcatrearcitsetriics.tcipcp.:c4p6p5:]1 1h6a]n delxeeGcAuTtTeSCerrevaetreE(v)e:n t<<: xec henrleteTT0mrverEvent[0m
+18:24:14.916 > [0[;03;73m7[m [  1 419489]8[]V[]V[]B[LBELSEeCrhvaerra.cctpepr:i2s8t1i]c .hcapnpd:l7e9G]A TeTxSeecruvteerCErveeantte(())::  <><>  exeletATrSetve)ven
+18:24:14.929 > [0m
+18:24:14.929 > [0;36m[  1511][D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: cba1d466-344c-4be3-ab3f-189f80dd7518, service: UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59, handle: 0x0028[0m
+18:24:14.950 > [0;37m[  1532][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcf1b94), owner: <N/A> for executeCreate[0m
+18:24:14.974 > [0;37m[  1543][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcf1b94), owner: executeCreate[0m
+18:24:14.988 > [0;37m[  1553][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcf1b94), owner: executeCreate for execte;36mte 15m
+18:24:15.001 > [D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:15.001 > [0;37m[  1577][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:15.006 > [0;37m[  1586][V][BLEUtils.cpp:1553] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 45 0x2d, service_handle: 40 0x28, char_uuid: cba1d466-344c-4be3-ab3f-189f80dd7518][0m
+18:24:15.022 > [0;37m[  1602][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:15.030 > [0;37m[  1613][V][BLECharacteristic.cpp:604] setHandle(): >> setHandle: handle=0x2d, characteristic uuid=cba1d466-344c-4be3-ab3f-189f80dd7518[0m
+18:24:15.045 > [0;37m[  1626][V][BLECharacteristic.cpp:606] setHandle(): << setHandle[0m
+18:24:15.050 > [0;37m[  1632][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:15.062 > [0;37m[  1643][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:15.070 > [0;37m[  1652][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_EVT[0m
+18:24:15.081 > [0;37m[  1663][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcf1b94), owner: executeCreate[0m
+18:24:15.105 > [0;37m[  1674][V][BLECharacteristic.cpp:465] handleGAT[T0;37m[  S16e7r4v]e[rVE]v[eFnrte(e)R:T O<S<. chpapn:d7l7e]G AwTaTiSte(r)v: Ev wai[0 S
+18:24:15.105 > maphore released: name: CreateEvt (0x3fcf1b94), owner: <N/A>[0m
+18:24:15.122 > [0;37m[  1692][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0[m0;
+18:24:15.122 > 37m[  1692][V][BLEDescriptor.cpp:57] executeCreate(): >> executeCreate(): UUID: 00002902-0000-1000-8000-00805f9b34fb, handle: 0xffff[0m
+18:24:15.131 > [0;37m[  1712][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3fcab228), owner: <N/A> for executeCreate[0m
+18:24:15.159 > [0;37m[  1724][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3fcab228), owner: executeCreate[0m
+18:24:15.174 > [0;37m[  1734][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: CreateEvt (0x3fcab228), owner: executeCreate for e[0e3ute  e7te][0][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:15.194 > [0;37m[  1758][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:15.195 > [0;37m[  1768][V][BLEUtils.cpp:1541] dumpGattServerEvent(): [status: ESP_GATT_OK, attr_handle: 46 0x2e, service_handle: 40 0x28, char_uuid: 00002902-0000-1000-8000-00805f9b34fb][0m
+18:24:15.202 > [0;37m[  1784][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:15.213 > [0;37m[  1795][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:15.224 > [0;37m[  1806][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:15.233 > [0;37m[  1815][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_ADD_CHAR_DESCR_EVT[0m
+18:24:15.244 > [0;37m[  1826][V][BLEDescriptor.cpp:220] setHandle(): >> setHandle(0x2e): Setting descriptor handle to be 0x2e[0m
+18:24:15.255 > [0;37m[  1837][V][BLEDescriptor.cpp:222] setHandle(): << setHandle()[0m
+18:24:15.261 > [0;37m[  1843][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: CreateEvt (0x3fcab228), owner: executeCreate[0m
+18:24:15.286 > [0;37m[  1854][V][BLECharacteristic.cpp:465] handle[G0A;T3T7Sme[r v e1r8E5v4e]n[tV(])[:F r<e<e RhTaOnSd.lcepGpA:T7T7S]e rwvaeirtEv: <<[0ait: Semaphore released: name: CreateEvt (0x3fcab228), owner: <N/A>[0m
+18:24:15.303 > [[00;;3377mm[[    11887722]][[VV]][[BBLLEESDeersvcerri.pctpopr:.2c8p1p]: 8h1a]n delxeeGcAuTtTeSCerrevaetreE(v)e:n t<(<) :e x<e<chaeCleGAeS0rverEvent[0m
+18:24:15.305 > [0;37m[  1886][V][BLECharacteristic.cpp:116] executeCreate(): << executeCreate[0m
+18:24:15.311 > [0;37m[  1893][V][FreeRTOS.cpp:189] take(): Semaphore taking: name: StartEvt (0x3fcaaab8), owner: <N/A> for start[0m
+18:24:15.336 > [0;37m[  1904][V][FreeRTOS.cpp:198] take(): Semaphore taken:  name: StartEvt (0x3fcaaab8), owner: start[0m
+18:24:15.348 > [0;37m[  1914][V][FreeRTOS.cpp:63] wait(): >> wait: Semaphore waiting: name: StartEvt (0x3fcaaab8), owner: start for start[0m
+18:24:15.361 > [0;36m[  1914][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_START_EVT[0m
+18:24:15.361 > [0;37m[  1936][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_START_EVT[0m
+18:24:15.364 > [0;37m[  1946][V][BLEUtils.cpp:1686] dumpGattServerEvent(): [status: ESP_GATT_OK, service_handle: 0x28][0m
+18:24:15.373 > [0;37m[  1955][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_START_EVT[0m
+18:24:15.385 > [0;37m[  1965][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: StartEvt (0x3fcaaab8), owner: start[0m
+18:24:15.405 > [0;37m[  1975][V][BLECharacter[i0s;t3i7cm.[c p p1:927055]][ Vh]a[nFdrleeeGRATTOTSS.ecrpvpe:r7E7v]e nwta(i)t:( )>:>  <h<a nwdalietATTServerorenre Eas_d:TTa_S:ARTarVTt mx3fcaaab8), owner: <N/A>[0m
+18:24:15.412 > [0;37m[  1992][V][BLES[e0r;v3i7cme[. c p1p9:9135]9[]V ]s[tBaLrEtC(h)a:r a<c<t esrtiasrtti(c).c[p0pm:46
+18:24:15.420 > 5] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:15.426 > [0;37m[  2007][V][BLEChara[c0t;e3r2ims[t i c2.0c0p7p]:[2I0]5[]B LhEaDnedvliecGeA.TcTpSpe:r5v7e7r]E vgeenttA(d)v:e r>t>i shianngdl)GAcTSarv aEvert:siSgGATS_START_EVT[0m
+18:24:15.440 > [0;36m[[ 0 ;23072m2[] [ D2]0[2B2L]E[DVe]v[iBcLeE.Cchpapr:a5c7t9e]r igsettiAcd.vceprpt:i4s6i5n]g (h)a:n dgleetG AaTdTvSeerrtviesrEvgt0): << handleGATTServerEvent[0m
+18:24:15.456 > [0;37m[  2037][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:15.462 > [0;37m[  2037][V][BLEAdvertising.cpp:187] start(): >> start: customAdvData: 0, customScanResponseData: 0[0m
+18:24:15.473 > [0;36m[  2055][D][BLEAdvertising.cpp:199] start(): - advertising service: 91bad492-b950-4226-aa2b-4ede9fa42f59[0m
+18:24:15.484 > [0;37m[  2065][V][BLEAdvertising.cpp:252] start(): << start[0m
+18:24:15.491 > [0;37m[  2068][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT[0m
+18:24:15.499 > Waiting for BLE client to connect...
+18:24:15.504 > [0;37m[  2081][V][BLEUtils.cpp:1056] dumpGapEvent(): [status: 0][0m
+18:24:15.510 > [0;36m[  2091][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:15.516 > [0;36m[  2098][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 0][0m
+18:24:15.524 > [0;37m[  2106][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT[0m
+18:24:15.535 > [0;37m[  2117][V][BLEUtils.cpp:1206] dumpGapEvent(): [status: 0][0m
+18:24:15.540 > [0;36m[  2123][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:15.549 > [0;36m[  2130][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 1][0m
+18:24:15.558 > [0;37m[  2138][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_ADV_START_COMPLETE_EVT[0m
+18:24:15.566 > [0;37m[  2148][V][BLEUtils.cpp:1074] dumpGapEvent(): [status: 0][0m
+18:24:15.572 > [0;36m[  2154][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:15.580 > [0;36m[  2161][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 6][0m
+18:24:26.737 > [0;36m[ 13316][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_CONNECT_EVT[0m
+18:24:26.748 > [0;37m[ 13328][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_CONNECT_EVT[0m
+18:24:26.757 > [0;37m[ 13337][V][BLEUtils.cpp:1590] dumpGattServerEvent(): [conn_id: 0, remote_bda: 71:7a:72:a2:34:e1][0m
+18:24:26.765 > [0;37m[ 13347][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+18:24:26.776 > [0;36m[ 13357][D][BLEServer.cpp:366] onConnect(): BLEServerCallbacks[0m
+18:24:26.782 > [0;36m[ 13364][D][BLEServer.cpp:367] onConnect(): BLEServerCallbacks[0m
+18:24:26.790 > [0;36m[ 13371][D][BLEServer.cpp:368] onConnect(): BLEServerCallbacks[0m
+18:24:26.795 > [0;37m[ 13377][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+18:24:26.807 > [0;37m[ 13388][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:26.815 > [0;37m[ 13397][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_CONNECT_EVT[0m
+18:24:26.827 > [0;37m[ 13408][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:26.835 > [0;37m[ 13417][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:26.843 > [0;37m[ 13425][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_SEC_REQ_EVT[0m
+18:24:26.852 > [0;37m[ 13434][V][BLEUtils.cpp:1259] dumpGapEvent(): [bd_addr: 71:7a:72:a2:34:e1][0m
+18:24:26.860 > [0;32m[ 13442][I][BLEDevice.cpp:222] gapEventHandler(): ESP_GAP_BLE_SEC_REQ_EVT[0m
+18:24:26.868 > [0;36m[ 13450][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:26.875 > [0;36m[ 13456][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 10][0m
+18:24:28.024 > [0;37m[ 14603][V][BLEUtils.cpp:1817] gapEventToString(): gapEventToString: Unknown event type 55 0x37[0m
+18:24:28.032 > [0;37m[ 14603][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: Unknown event type[0m
+18:24:28.041 > [0;37m[ 14622][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:28.049 > [0;36m[ 14630][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:28.054 > [0;36m[ 14637][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 55][0m
+18:24:32.588 > [0;37m[ 19167][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.597 > [0;37m[ 19176][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.604 > [0;36m[ 19185][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.610 > [0;32m[ 19192][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_LENC[0m
+18:24:32.619 > [0;36m[ 19200][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.624 > [0;36m[ 19207][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.633 > [0;37m[ 19215][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.644 > [0;37m[ 19224][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.653 > E (21073) BT_SMP: smp_calculate_link_key_from_long_term_key failed to update link_key. Sec Mode = 2, sm4 = 0x00
+18:24:32.661 > E (21078) BT_SMP: smp_derive_link_key_from_long_term_key failed
+18:24:32.667 > 
+18:24:32.667 > E (21085) BT_BTM: btm_proc_smp_cback received for unknown device
+18:24:32.672 > [0;36m[ 19254][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.681 > [0;32m[ 19261][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_PENC[0m
+18:24:32.689 > [0;36m[ 19269][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.695 > [0;36m[ 19276][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.703 > [0;37m[ 19284][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.711 > [0;37m[ 19293][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.720 > [0;36m[ 19301][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.728 > [0;32m[ 19309][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_LID[0m
+18:24:32.737 > [0;36m[ 19316][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.742 > [0;36m[ 19323][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.751 > [0;37m[ 19331][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.759 > [0;37m[ 19340][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.768 > [0;36m[ 19349][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.776 > [0;32m[ 19356][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_LCSRK[0m
+18:24:32.784 > [0;36m[ 19364][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.790 > [0;36m[ 19371][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.798 > [0;37m[ 19379][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.806 > [0;37m[ 19388][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.815 > [0;36m[ 19396][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.824 > [0;32m[ 19404][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_PID[0m
+18:24:32.829 > [0;36m[ 19411][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.837 > [0;36m[ 19418][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.846 > [0;37m[ 19426][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.854 > [0;37m[ 19435][V][BLEUtils.cpp:1264] dumpGapEvent(): *** dumpGapEvent: Logger not coded ***[0m
+18:24:32.863 > [0;36m[ 19444][D][BLEDevice.cpp:247] gapEventHandler(): ESP_GAP_BLE_KEY_EVT[0m
+18:24:32.871 > [0;32m[ 19451][I][BLEDevice.cpp:249] gapEventHandler(): key type = ESP_LE_KEY_PCSRK[0m
+18:24:32.877 > [0;36m[ 19459][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.885 > [0;36m[ 19466][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 9][0m
+18:24:32.896 > [0;37m[ 19475][V][BLEUtils.cpp:1049] dumpGapEvent(): Received a GAP event: ESP_GAP_BLE_AUTH_CMPL_EVT[0m
+18:24:32.904 > [0;37m[ 19485][V][BLEUtils.cpp:1105] dumpGapEvent(): [bd_addr: 71:7a:72:a2:34:e1, key_present: 0, key: ***, key_type: 0, success: 0, fail_reason: 85, addr_type: ***, dev_type: ESP_BT_DEVICE_TYPE_BLE][0m
+18:24:32.921 > [0;32m[ 19503][I][BLEDevice.cpp:253] gapEventHandler(): ESP_GAP_BLE_AUTH_CMPL_EVT[0m
+18:24:32.929 > [0;36m[ 19511][D][BLEDevice.cpp:579] getAdvertising(): get advertising[0m
+18:24:32.936 > [0;36m[ 19517][D][BLEAdvertising.cpp:506] handleGAPEvent(): handleGAPEvent [event no: 8][0m
+18:24:35.660 > [0;36m[ 22239][D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 3] ... ESP_GATTS_DISCONNECT_EVT[0m
+18:24:35.671 > [0;37m[ 22252][V][BLEUtils.cpp:1530] dumpGattServerEvent(): GATT ServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+18:24:35.680 > E (24102) BT_BTM: Device not found
+18:24:35.683 > 
+18:24:35.683 > [0;37m[ 22264][V][BLEUtils.cpp:1606] dumpGattServerEvent(): [conn_id: 0, remote_bda: 71:7a:72:a2:34:e1][0m
+18:24:35.694 > [0;37m[ 22274][V][BLEServer.cpp:144] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+18:24:35.705 > [0;36m[ 22285][D][BLEServer.cpp:379] onDisconnect(): BLEServerCallbacks[0m
+18:24:35.710 > [0;36m[ 22292][D][BLEServer.cpp:380] onDisconnect(): BLEServerCallbacks[0m
+18:24:35.716 > [0;36m[ 22298][D][BLEServer.cpp:381] onDisconnect(): BLEServerCallbacks[0m
+18:24:35.724 > [0;37m[ 22305][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+18:24:35.736 > [0;37m[ 22316][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1d24), owner: <N/A>[0m
+18:24:35.762 > [0;37m[ 22326][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:35.762 > [0;37m[ 22335][V][BLECharacteristic.cpp:205] handleGATTServerEvent(): >> handleGATTServerEvent: ESP_GATTS_DISCONNECT_EVT[0m
+18:24:35.764 > [0;37m[ 22346][V][FreeRTOS.cpp:143] give(): Semaphore giving: name: ConfEvt (0x3fcf1bf8), owner: <N/A>[0m
+18:24:35.794 > [0;37m[ 22356][V][BLECharacteristic.cpp:465] handleGATTServerEvent(): << handleGATTServerEvent[0m
+18:24:35.794 > [0;37m[ 22364][V][BLEServer.cpp:281] handleGATTServerEvent(): << handleGATTServerEvent[0m
