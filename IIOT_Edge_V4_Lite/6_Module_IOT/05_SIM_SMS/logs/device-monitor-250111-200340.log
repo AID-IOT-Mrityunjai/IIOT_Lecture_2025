@@ -1,0 +1,318 @@
+20:03:44.253 > ESP-ROM:esp32s3-20210327
+20:03:44.253 > Build:Mar 27 2021
+20:03:44.253 > rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+20:03:44.253 > SPIWP:0xee
+20:03:44.253 > mode:DIO, clock div:1
+20:03:44.253 > load:0x3fce3808,len:0x44c
+20:03:44.253 > load:0x403c9700,len:0xbec
+20:03:44.253 > load:0x403cc700,len:0x2920
+20:03:44.253 > entry 0x403c98d8
+20:03:44.253 > [0;37m[   159][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)[0m
+20:03:44.253 > [0;37m[   160][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)[0m
+20:03:44.253 > [0;36m[   199][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 0 - WIFI_READY[0m
+20:03:44.253 > [0;37m[   232][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started[0m
+20:03:44.253 > [0;37m[   234][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0[0m
+20:03:44.253 > [0;36m[   234][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 2 - STA_START[0m
+20:03:44.253 > 
+20:03:44.253 > [0;37m[   481][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: AID25, BSSID: 9c:53:22:7d:ea:b2, Channel: 5, Auth: WPA2_PSK[0m
+20:03:44.253 > [0;36m[   483][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 4 - STA_CONNECTED[0m
+20:03:44.253 > [0;37m[   569][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.0.121[0m
+20:03:44.253 > [0;36m[   570][D][WiFiGeneric.cpp:931] _eventCallback(): Arduino Event: 7 - STA_GOT_IP[0m
+20:03:44.253 > [0;36m[   575][D][WiFiGeneric.cpp:996] _eventCallback(): STA IP: 192.168.0.121, MASK: 255.255.255.0, GW: 192.168.0.1[0m
+20:03:44.253 > .
+20:03:44.253 > Connected to AID25
+20:03:44.253 > IP address: 192.168.0.121
+20:03:44.253 > MDNS responder started
+20:03:44.253 > HTTP server started
+20:03:44.253 > [0;37m[  2758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1944 [0m
+20:03:44.304 > IP address: 192.168.0.121
+20:03:45.159 > [0;37m[  4858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:47.259 > [0;37m[  6958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:48.306 > IP address: 192.168.0.121
+20:03:49.359 > [0;37m[  9058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:51.459 > [0;37m[ 11158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:52.309 > IP address: 192.168.0.121
+20:03:53.560 > [0;37m[ 13258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:55.660 > [0;37m[ 15358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:56.310 > IP address: 192.168.0.121
+20:03:57.759 > [0;37m[ 17458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:03:59.860 > [0;37m[ 19558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:00.313 > IP address: 192.168.0.121
+20:04:01.959 > [0;37m[ 21658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:04.060 > [0;37m[ 23758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:04.314 > IP address: 192.168.0.121
+20:04:06.160 > [0;37m[ 25858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:08.260 > [0;37m[ 27958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:08.317 > IP address: 192.168.0.121
+20:04:10.360 > [0;37m[ 30058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:12.319 > IP address: 192.168.0.121
+20:04:12.460 > [0;37m[ 32158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:14.560 > [0;37m[ 34258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:16.321 > IP address: 192.168.0.121
+20:04:16.660 > [0;37m[ 36358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:18.760 > [0;37m[ 38458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:20.323 > IP address: 192.168.0.121
+20:04:20.860 > [0;37m[ 40558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:22.960 > [0;37m[ 42658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:24.325 > IP address: 192.168.0.121
+20:04:25.060 > [0;37m[ 44758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:27.161 > [0;37m[ 46858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:28.327 > IP address: 192.168.0.121
+20:04:29.261 > [0;37m[ 48958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:31.360 > [0;37m[ 51058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:32.329 > IP address: 192.168.0.121
+20:04:33.460 > [0;37m[ 53158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:35.560 > [0;37m[ 55258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:36.332 > IP address: 192.168.0.121
+20:04:37.660 > [0;37m[ 57358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:39.760 > [0;37m[ 59458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:40.334 > IP address: 192.168.0.121
+20:04:41.861 > [0;37m[ 61558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:43.960 > [0;37m[ 63658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:44.336 > IP address: 192.168.0.121
+20:04:46.061 > [0;37m[ 65758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:48.161 > [0;37m[ 67858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:48.338 > IP address: 192.168.0.121
+20:04:50.261 > [0;37m[ 69958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:52.340 > IP address: 192.168.0.121
+20:04:52.361 > [0;37m[ 72058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:54.461 > [0;37m[ 74158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:56.342 > IP address: 192.168.0.121
+20:04:56.561 > [0;37m[ 76258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:04:58.661 > [0;37m[ 78358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:00.344 > IP address: 192.168.0.121
+20:05:00.762 > [0;37m[ 80458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:02.861 > [0;37m[ 82558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:04.346 > IP address: 192.168.0.121
+20:05:04.961 > [0;37m[ 84658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:07.061 > [0;37m[ 86758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:08.349 > IP address: 192.168.0.121
+20:05:09.162 > [0;37m[ 88858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:11.262 > [0;37m[ 90958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:12.351 > IP address: 192.168.0.121
+20:05:13.362 > [0;37m[ 93058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:15.461 > [0;37m[ 95158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:16.353 > IP address: 192.168.0.121
+20:05:17.562 > [0;37m[ 97258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:19.662 > [0;37m[ 99358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:20.356 > IP address: 192.168.0.121
+20:05:21.762 > [0;37m[101458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:23.863 > [0;37m[103558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:24.358 > IP address: 192.168.0.121
+20:05:25.962 > [0;37m[105658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:28.062 > [0;37m[107758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:28.359 > IP address: 192.168.0.121
+20:05:30.162 > [0;37m[109858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:32.263 > [0;37m[111958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:32.360 > IP address: 192.168.0.121
+20:05:34.362 > [0;37m[114058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:36.363 > IP address: 192.168.0.121
+20:05:36.462 > [0;37m[116158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:38.563 > [0;37m[118258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:40.366 > IP address: 192.168.0.121
+20:05:40.664 > [0;37m[120358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:42.763 > [0;37m[122458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:44.368 > IP address: 192.168.0.121
+20:05:44.863 > [0;37m[124558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:46.963 > [0;37m[126658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:48.370 > IP address: 192.168.0.121
+20:05:49.064 > [0;37m[128758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:51.163 > [0;37m[130858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:52.373 > IP address: 192.168.0.121
+20:05:53.264 > [0;37m[132958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:55.364 > [0;37m[135058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:56.374 > IP address: 192.168.0.121
+20:05:57.464 > [0;37m[137158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:05:59.564 > [0;37m[139258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:00.377 > IP address: 192.168.0.121
+20:06:01.663 > [0;37m[141358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:03.763 > [0;37m[143458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:04.379 > IP address: 192.168.0.121
+20:06:05.864 > [0;37m[145558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:07.963 > [0;37m[147658][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:08.380 > IP address: 192.168.0.121
+20:06:10.063 > [0;37m[149758][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:12.163 > [0;37m[151858][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:12.383 > IP address: 192.168.0.121
+20:06:14.264 > [0;37m[153958][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:16.364 > [0;37m[156058][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:16.385 > IP address: 192.168.0.121
+20:06:18.464 > [0;37m[158158][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:20.387 > IP address: 192.168.0.121
+20:06:20.563 > [0;37m[160258][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:22.664 > [0;37m[162358][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:24.389 > IP address: 192.168.0.121
+20:06:24.764 > [0;37m[164458][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:26.865 > [0;37m[166558][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:28.390 > IP address: 192.168.0.121
+20:06:28.965 > [0;37m[168659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:31.065 > [0;37m[170759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:32.402 > IP address: 192.168.0.121
+20:06:33.166 > [0;37m[172859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:35.266 > [0;37m[174959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:36.404 > IP address: 192.168.0.121
+20:06:37.365 > [0;37m[177059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:39.465 > [0;37m[179159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:40.406 > IP address: 192.168.0.121
+20:06:41.566 > [0;37m[181259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:43.666 > [0;37m[183359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:44.408 > IP address: 192.168.0.121
+20:06:45.766 > [0;37m[185459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:47.866 > [0;37m[187559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:48.410 > IP address: 192.168.0.121
+20:06:49.966 > [0;37m[189659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:52.066 > [0;37m[191759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:52.412 > IP address: 192.168.0.121
+20:06:54.166 > [0;37m[193859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:56.266 > [0;37m[195959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:06:56.414 > IP address: 192.168.0.121
+20:06:58.366 > [0;37m[198059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:00.417 > IP address: 192.168.0.121
+20:07:00.466 > [0;37m[200159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:02.567 > [0;37m[202259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:04.419 > IP address: 192.168.0.121
+20:07:04.667 > [0;37m[204359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:06.767 > [0;37m[206459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:08.420 > IP address: 192.168.0.121
+20:07:08.867 > [0;37m[208559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:10.966 > [0;37m[210659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:12.422 > IP address: 192.168.0.121
+20:07:13.067 > [0;37m[212759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:15.167 > [0;37m[214859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:16.424 > IP address: 192.168.0.121
+20:07:17.267 > [0;37m[216959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:19.367 > [0;37m[219059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:20.428 > IP address: 192.168.0.121
+20:07:21.467 > [0;37m[221159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:23.567 > [0;37m[223259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:24.429 > IP address: 192.168.0.121
+20:07:25.667 > [0;37m[225359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:27.767 > [0;37m[227459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:28.431 > IP address: 192.168.0.121
+20:07:29.867 > [0;37m[229559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:31.968 > [0;37m[231659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:32.433 > IP address: 192.168.0.121
+20:07:34.068 > [0;37m[233759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:36.168 > [0;37m[235859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:36.435 > IP address: 192.168.0.121
+20:07:38.267 > [0;37m[237959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:40.368 > [0;37m[240059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:40.437 > IP address: 192.168.0.121
+20:07:42.468 > [0;37m[242159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:44.439 > IP address: 192.168.0.121
+20:07:44.568 > [0;37m[244259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:46.668 > [0;37m[246359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:48.443 > IP address: 192.168.0.121
+20:07:48.768 > [0;37m[248459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:50.869 > [0;37m[250559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:52.444 > IP address: 192.168.0.121
+20:07:52.968 > [0;37m[252659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:55.069 > [0;37m[254759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:56.446 > IP address: 192.168.0.121
+20:07:57.168 > [0;37m[256859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:07:59.268 > [0;37m[258959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:08:00.449 > IP address: 192.168.0.121
+20:08:01.369 > [0;37m[261059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1436 [0m
+20:08:03.469 > [0;37m[263159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:04.450 > IP address: 192.168.0.121
+20:08:05.568 > [0;37m[265259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:07.669 > [0;37m[267359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:08.453 > IP address: 192.168.0.121
+20:08:09.768 > [0;37m[269459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:11.869 > [0;37m[271559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:12.455 > IP address: 192.168.0.121
+20:08:13.969 > [0;37m[273659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:16.069 > [0;37m[275759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:16.457 > IP address: 192.168.0.121
+20:08:18.169 > [0;37m[277859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:20.269 > [0;37m[279959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:20.459 > IP address: 192.168.0.121
+20:08:22.369 > [0;37m[282059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:24.461 > IP address: 192.168.0.121
+20:08:24.469 > [0;37m[284159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:26.569 > [0;37m[286259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:28.463 > IP address: 192.168.0.121
+20:08:28.669 > [0;37m[288359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:30.770 > [0;37m[290459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:32.465 > IP address: 192.168.0.121
+20:08:32.870 > [0;37m[292559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:34.969 > [0;37m[294659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:36.468 > IP address: 192.168.0.121
+20:08:37.069 > [0;37m[296759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:39.170 > [0;37m[298859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:40.471 > IP address: 192.168.0.121
+20:08:41.270 > [0;37m[300959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:43.369 > [0;37m[303059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:44.471 > IP address: 192.168.0.121
+20:08:45.470 > [0;37m[305159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:47.570 > [0;37m[307259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:48.474 > IP address: 192.168.0.121
+20:08:49.670 > [0;37m[309359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:51.770 > [0;37m[311459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:52.476 > IP address: 192.168.0.121
+20:08:53.870 > [0;37m[313559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:55.970 > [0;37m[315659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:08:56.478 > IP address: 192.168.0.121
+20:08:58.070 > [0;37m[317759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:00.171 > [0;37m[319859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:00.480 > IP address: 192.168.0.121
+20:09:02.271 > [0;37m[321959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:04.371 > [0;37m[324059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:04.482 > IP address: 192.168.0.121
+20:09:06.470 > [0;37m[326159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:08.485 > IP address: 192.168.0.121
+20:09:08.570 > [0;37m[328259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:10.671 > [0;37m[330359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:12.487 > IP address: 192.168.0.121
+20:09:12.770 > [0;37m[332459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:14.871 > [0;37m[334559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:16.489 > IP address: 192.168.0.121
+20:09:16.971 > [0;37m[336659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:19.071 > [0;37m[338759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:20.491 > IP address: 192.168.0.121
+20:09:21.171 > [0;37m[340859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:23.271 > [0;37m[342959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:24.494 > IP address: 192.168.0.121
+20:09:25.371 > [0;37m[345059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:27.471 > [0;37m[347159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:28.495 > IP address: 192.168.0.121
+20:09:29.571 > [0;37m[349259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:31.672 > [0;37m[351359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:32.497 > IP address: 192.168.0.121
+20:09:33.772 > [0;37m[353459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:35.871 > [0;37m[355559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:36.500 > IP address: 192.168.0.121
+20:09:37.971 > [0;37m[357659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:40.072 > [0;37m[359759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:40.502 > IP address: 192.168.0.121
+20:09:42.171 > [0;37m[361859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:44.272 > [0;37m[363959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:44.504 > IP address: 192.168.0.121
+20:09:46.372 > [0;37m[366059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:48.472 > [0;37m[368159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:48.506 > IP address: 192.168.0.121
+20:09:50.572 > [0;37m[370259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:52.508 > IP address: 192.168.0.121
+20:09:52.672 > [0;37m[372359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:54.772 > [0;37m[374459][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:56.510 > IP address: 192.168.0.121
+20:09:56.872 > [0;37m[376559][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:09:58.973 > [0;37m[378659][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:00.512 > IP address: 192.168.0.121
+20:10:01.072 > [0;37m[380759][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:03.172 > [0;37m[382859][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:04.515 > IP address: 192.168.0.121
+20:10:05.273 > [0;37m[384959][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:07.373 > [0;37m[387059][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:08.516 > IP address: 192.168.0.121
+20:10:09.473 > [0;37m[389159][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:11.573 > [0;37m[391259][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:12.519 > IP address: 192.168.0.121
+20:10:13.673 > [0;37m[393359][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:15.774 > [0;37m[395460][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:16.521 > IP address: 192.168.0.121
+20:10:17.874 > [0;37m[397560][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:19.974 > [0;37m[399660][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:20.523 > IP address: 192.168.0.121
+20:10:22.074 > [0;37m[401760][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m
+20:10:24.174 > [0;37m[403860][V][Ws2812b_led.h:48] wsledTask(): TASK: wsledTask : 1208 [0m

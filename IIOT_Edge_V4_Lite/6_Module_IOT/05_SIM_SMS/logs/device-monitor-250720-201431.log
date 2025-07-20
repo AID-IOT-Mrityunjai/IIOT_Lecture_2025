@@ -1,0 +1,33 @@
+20:14:31.691 > ESP-ROM:esp32s3-20210327
+20:14:31.695 > Build:Mar 27 2021
+20:14:31.696 > rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+20:14:31.701 > SPIWP:0xee
+20:14:31.701 > mode:DIO, clock div:1
+20:14:31.704 > load:0x3fce3808,len:0x4bc
+20:14:31.876 > load:0x403c9700,len:0xbd8
+20:14:31.876 > load:0x403cc700,len:0x2a0c
+20:14:31.913 > entry 0x403c98d0
+20:14:31.913 > [0;37m[   118][V][esp32-hal-uart.c:330] uartBegin(): UART0 baud(115200) Mode(800001c) rxPin(44) txPin(43)[0m
+20:14:31.913 > [0;37m[   128][V][esp32-hal-uart.c:416] uartBegin(): UART0 not installed. Starting installation[0m
+20:14:31.913 > [0;37m[   137][V][esp32-hal-uart.c:467] uartBegin(): UART0 initialization done.[0m
+20:14:32.844 > [0;37m[  1155][V][esp32-hal-uart.c:330] uartBegin(): UART1 baud(115200) Mode(800001c) rxPin(18) txPin(17)[0m
+20:14:32.853 > [0;37m[  1165][V][esp32-hal-uart.c:416] uartBegin(): UART1 not installed. Starting installation[0m
+20:14:32.862 > [0;37m[  1174][V][esp32-hal-uart.c:467] uartBegin(): UART1 initialization done.[0m
+20:14:34.871 > [0;33m[  3182][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:36.876 > [0;33m[  5187][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:38.881 > [0;33m[  7192][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:40.887 > [0;33m[  9197][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:42.891 > [0;33m[ 11202][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:44.896 > [0;33m[ 13207][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:46.902 > [0;33m[ 15212][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:48.907 > [0;33m[ 17217][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:50.912 > [0;33m[ 19222][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:14:52.917 > [0;33m[ 21227][W][05_SIM_SMS.ino:49] setup(): sim...[0m
+20:19:50.516 > 
+20:19:50.517 > *ATREADY: 1
+20:19:52.038 > 
+20:19:52.038 > +CPIN: READY
+20:19:52.796 > 
+20:19:52.796 > SMS DONE
+20:19:58.461 > 
+20:19:58.461 > PB DONE

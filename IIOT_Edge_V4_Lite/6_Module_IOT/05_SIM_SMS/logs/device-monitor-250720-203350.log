@@ -1,0 +1,55 @@
+20:33:50.270 > ESP-ROM:esp32s3-20210327
+20:33:50.274 > Build:Mar 27 2021
+20:33:50.275 > rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+20:33:50.280 > SPIWP:0xee
+20:33:50.280 > mode:DIO, clock div:1
+20:33:50.282 > load:0x3fce3808,len:0x4bc
+20:33:50.327 > load:0x403c9700,len:0xbd8
+20:33:50.327 > load:0x403cc700,len:0x2a0c
+20:33:50.373 > entry 0x403c98d0
+20:33:50.388 > [0;37m[   119][V][esp32-hal-uart.c:330] uartBegin(): UART0 baud(115200) Mode(800001c) rxPin(44) txPin(43)[0m
+20:33:50.396 > [0;37m[   129][V][esp32-hal-uart.c:416] uartBegin(): UART0 not installed. Starting installation[0m
+20:33:50.405 > [0;37m[   138][V][esp32-hal-uart.c:467] uartBegin(): UART0 initialization done.[0m
+20:33:51.425 > [0;37m[  1156][V][esp32-hal-uart.c:330] uartBegin(): UART1 baud(115200) Mode(800001c) rxPin(18) txPin(17)[0m
+20:33:51.433 > [0;37m[  1166][V][esp32-hal-uart.c:416] uartBegin(): UART1 not installed. Starting installation[0m
+20:33:51.442 > [0;37m[  1175][V][esp32-hal-uart.c:467] uartBegin(): UART1 initialization done.[0m
+20:33:51.450 > [0;37m[  1183][V][05_SIM_SMS.ino:60] setup(): Initializing modem...[0m
+20:33:51.457 > AT
+20:33:51.756 > AT
+20:33:52.055 > AT
+20:33:52.354 > AT
+20:33:52.654 > AT
+20:33:52.952 > AT
+20:33:53.251 > AT
+20:33:53.550 > AT
+20:33:53.849 > AT
+20:33:54.148 > AT
+20:33:54.447 > AT
+20:33:54.746 > AT
+20:33:55.045 > AT
+20:33:55.344 > AT
+20:33:55.644 > AT
+20:33:55.942 > AT
+20:33:56.241 > AT
+20:33:56.256 > 
+20:33:56.256 > *ATREADY: 1
+20:33:56.260 > AT
+20:33:56.260 > OK
+20:33:56.260 > AT+CRESET
+20:33:56.266 > AT+CRESET
+20:33:56.267 > OK
+20:33:56.267 > AT+CFUN=0,0
+20:34:04.487 > 
+20:34:04.487 > *ATREADY: 1
+20:34:05.699 > 
+20:34:05.700 > +CPIN: READY
+20:34:06.269 > ATI
+20:34:06.269 > ATI[0;33m[ 17000][W][05_SIM_SMS.ino:63] setup(): Info[0m
+20:34:07.270 > 
+20:34:07.270 > [0;33m[ 17005][W][05_SIM_SMS.ino:66] setup(): Modem Info: [0m
+20:34:07.277 > AT+GSN
+20:34:10.279 > AT+CMGF=1
+20:34:11.280 > AT+CSCS="GSM"
+20:34:12.282 > AT+CMGS="+918766267676"
+20:34:12.775 > 
+20:34:12.775 > *ATREADY: 1

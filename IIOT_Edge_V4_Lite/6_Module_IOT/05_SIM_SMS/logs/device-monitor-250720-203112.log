@@ -1,0 +1,65 @@
+20:31:12.570 > ESP-ROM:esp32s3-20210327
+20:31:12.575 > Build:Mar 27 2021
+20:31:12.576 > rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+20:31:12.581 > SPIWP:0xee
+20:31:12.581 > mode:DIO, clock div:1
+20:31:12.584 > load:0x3fce3808,len:0x4bc
+20:31:12.619 > load:0x403c9700,len:0xbd8
+20:31:12.619 > load:0x403cc700,len:0x2a0c
+20:31:12.652 > entry 0x403c98d0
+20:31:12.688 > [0;37m[   119][V][esp32-hal-uart.c:330] uartBegin(): UART0 baud(115200) Mode(800001c) rxPin(44) txPin(43)[0m
+20:31:12.698 > [0;37m[   129][V][esp32-hal-uart.c:416] uartBegin(): UART0 not installed. Starting installation[0m
+20:31:12.706 > [0;37m[   138][V][esp32-hal-uart.c:467] uartBegin(): UART0 initialization done.[0m
+20:31:13.726 > [0;37m[  1156][V][esp32-hal-uart.c:330] uartBegin(): UART1 baud(115200) Mode(800001c) rxPin(18) txPin(17)[0m
+20:31:13.735 > [0;37m[  1166][V][esp32-hal-uart.c:416] uartBegin(): UART1 not installed. Starting installation[0m
+20:31:13.743 > [0;37m[  1175][V][esp32-hal-uart.c:467] uartBegin(): UART1 initialization done.[0m
+20:31:13.752 > [0;37m[  1183][V][05_SIM_SMS.ino:60] setup(): Initializing modem...[0m
+20:31:13.758 > AT
+20:31:13.761 > AT
+20:31:13.762 > OK
+20:31:13.762 > AT+CRESET
+20:31:13.767 > AT+CRESET
+20:31:13.767 > OK
+20:31:13.767 > AT+CFUN=0,0
+20:31:13.935 > 
+20:31:13.937 > +CPIN: READY
+20:31:21.853 > 
+20:31:21.853 > *ATREADY: 1
+20:31:23.306 > 
+20:31:23.307 > +CPIN: READY
+20:31:23.768 > ATI
+20:31:23.768 > ATI
+20:31:23.787 > Manufacturer: SIMCOM INCORPORATED
+20:31:23.790 > Model: A7672S-LASC
+20:31:23.790 > Revision: V1.11.2
+20:31:23.793 > IMEI: 862360073784303
+20:31:23.795 > 
+20:31:23.795 > OK
+20:31:23.795 > [0;33m[ 11227][W][05_SIM_SMS.ino:63] setup(): Info[0m
+20:31:23.801 > ATI  Manufacturer: SIMCOM INCORPORATED Model: A7672S-LASC Revision: V1.11.2 IMEI: 862360073784303
+20:31:23.810 > [0;33m[ 11232][W][05_SIM_SMS.ino:66] setup(): Modem Info: $��?o[0m
+20:31:23.815 > AT+GSN
+20:31:23.821 > AT+GSN
+20:31:23.821 > 862360073784303
+20:31:23.821 > 
+20:31:23.821 > OK
+20:31:23.823 > AT+CMGF=1
+20:31:23.824 > AT+CMGF=1
+20:31:23.894 > OK
+20:31:23.894 > AT+CSCS="GSM"
+20:31:23.899 > AT+CSCS="GSM"
+20:31:23.975 > OK
+20:31:23.975 > AT+CMGS="+9187"
+20:31:23.979 > AT+CMGS="+9187"
+20:31:23.980 > >Hello from 862360073784303 Hello from 862360073784303
+20:31:24.092 > SMS DONE
+20:31:24.107 > 
+20:31:24.107 > +CMS ERROR: Network timeout
+20:31:25.299 > 
+20:31:25.299 > +CCIOTOPTI: 1
+20:31:25.305 > 
+20:31:25.305 > +CGEV: EPS PDN ACT 1
+20:31:25.679 > 
+20:31:25.679 > +CGEV: ME PDN ACT 8,1
+20:31:29.747 > 
+20:31:29.747 > PB DONE
